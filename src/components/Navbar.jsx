@@ -507,7 +507,7 @@ export default function Navbar() {
                   </span>
 
                   {/* Mobile Menu Language Switcher Pill */}
-                  <div
+                  {/* <div
                     role="group"
                     aria-label={t.navbar.languageLabel}
                     className="inline-flex items-center rounded-full border border-[#214779]/25 bg-white p-1"
@@ -542,7 +542,7 @@ export default function Navbar() {
                     >
                       हिंदी
                     </button>
-                  </div>
+                  </div> */}
                 </div>
 
                 {navItems.map((item, idx) => {
