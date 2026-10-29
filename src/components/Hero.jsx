@@ -1,3 +1,6 @@
+
+// // border inhnce 
+
 // // src/components/Hero.jsx
 // import { useEffect, useState } from "react";
 // import {
@@ -79,10 +82,10 @@
 //       className="relative isolate overflow-hidden bg-[#F5F7FB]"
 //     >
 //       {/* Soft background glow */}
-//       <div
+//       {/* <div
 //         aria-hidden="true"
 //         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,#ffffff_0%,#F5F7FB_55%,#e6eef9_100%)]"
-//       />
+//       /> */}
 
 //       <div className="mx-auto flex w-full max-w-[1600px] flex-col">
 //         {/* Content */}
@@ -116,7 +119,7 @@
 //           {/* Description */}
 //           <motion.p
 //             variants={fadeUp}
-//             className="mt-5 max-w-xl text-[15px] leading-relaxed text-[#64748B] sm:text-base md:text-lg lg:max-w-lg xl:max-w-xl"
+//             className="mt-5 max-w-xl text-[15px] leading-relaxed text-[#334155] sm:text-base md:text-lg lg:max-w-lg xl:max-w-xl"
 //           >
 //             Discover savings opportunities and financial solutions designed around your needs.
 //             Kalyan Urban Co-operative Credit Society Limited aims to support its members through
@@ -149,7 +152,7 @@
 //               onClick={(e) => scrollToSection(e, CONTACT_ID)}
 //               whileHover={reduceMotion ? undefined : { y: -3 }}
 //               whileTap={reduceMotion ? undefined : { scale: 0.98 }}
-//               className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-[#214779]/40 bg-white/80 px-6 py-3 text-base font-semibold text-[#214779] shadow-[0_8px_20px_-10px_rgba(16,44,77,0.35)] backdrop-blur transition-colors hover:border-[#214779] hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#214779]/30"
+//               className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-[#214779]/65 bg-white/99 px-6 py-3 text-base font-semibold text-[#214779] shadow-[0_8px_20px_-10px_rgba(16,44,77,0.70)] backdrop-blur transition-colors hover:border-[#214779] hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#214779]/80"
 //             >
 //               Contact Us
 //               <ArrowRight
@@ -173,8 +176,8 @@
 //                 <span
 //                   className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${
 //                     tone === "red"
-//                       ? "bg-[#EF303B]/10 text-[#EF303B]"
-//                       : "bg-[#214779]/10 text-[#214779]"
+//                       ? "bg-[#EF303B]/30 text-[#EF303B] ring-1 ring-[#EF303B]/60"
+//                       : "bg-[#214779]/30 text-[#214779] ring-1 ring-[#214779]/60"
 //                   }`}
 //                 >
 //                   <Icon aria-hidden="true" className="h-5 w-5" />
@@ -188,12 +191,12 @@
 
 //           {/* Divider + supporting line */}
 //           <motion.div variants={fadeIn} className="mt-8">
-//             <hr className="border-0 border-t border-[#214779]/15" />
-//             <p className="mt-4 text-[10px] font-medium uppercase leading-relaxed tracking-[0.14em] text-[#64748B] sm:text-xs">
+//             <hr className="border-0 border-t border-[#214779]/70" />
+//             <p className="mt-4 text-[10px] font-medium uppercase leading-relaxed tracking-[0.14em] text-[#334155] sm:text-xs">
 //               Accessible Deposits
-//               <span aria-hidden="true" className="mx-2 text-[#214779]/40">|</span>
+//               <span aria-hidden="true" className="mx-2 text-[#214779]/90">|</span>
 //               Loan Facilities
-//               <span aria-hidden="true" className="mx-2 text-[#214779]/40">|</span>
+//               <span aria-hidden="true" className="mx-2 text-[#214779]/90">|</span>
 //               Responsible Financial Services
 //             </p>
 //           </motion.div>
@@ -236,7 +239,7 @@
 
 
 
-// border inhnce 
+//english hindi swicher 
 
 // src/components/Hero.jsx
 import { useEffect, useState } from "react";
@@ -247,6 +250,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { ArrowRight, ShieldCheck, Users, TrendingUp } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 // ⚠️ Update this path to your actual background image asset.
 import heroImage from "../assets/images/hero-bg.png";
@@ -293,6 +297,7 @@ function scrollToSection(e, id) {
 }
 
 export default function Hero() {
+  const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
   const [allowParallax, setAllowParallax] = useState(false);
 
@@ -336,7 +341,7 @@ export default function Hero() {
           <motion.div variants={fadeIn} className="flex items-center gap-3">
             <span aria-hidden="true" className="h-[2px] w-8 shrink-0 bg-[#EF303B] sm:w-12" />
             <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#214779] sm:text-xs md:text-sm">
-              Your Financial Goals. Our Commitment.
+              {t.hero.eyebrow}
             </p>
           </motion.div>
 
@@ -346,10 +351,10 @@ export default function Hero() {
             className="mt-5 text-[2.1rem] font-extrabold leading-[1.08] tracking-tight min-[375px]:text-[2.4rem] sm:text-5xl md:text-6xl lg:text-[3.25rem] xl:text-6xl 2xl:text-[4.25rem]"
           >
             <motion.span variants={fadeUp} className="block text-[#214779]">
-              Build Your Savings.
+              {t.hero.headingLine1}
             </motion.span>
             <motion.span variants={fadeUp} className="block text-[#EF303B]">
-              Plan Your Future.
+              {t.hero.headingLine2}
             </motion.span>
           </h1>
 
@@ -358,9 +363,7 @@ export default function Hero() {
             variants={fadeUp}
             className="mt-5 max-w-xl text-[15px] leading-relaxed text-[#334155] sm:text-base md:text-lg lg:max-w-lg xl:max-w-xl"
           >
-            Discover savings opportunities and financial solutions designed around your needs.
-            Kalyan Urban Co-operative Credit Society Limited aims to support its members through
-            accessible deposit schemes, loan facilities, and responsible financial services.
+            {t.hero.description}
           </motion.p>
 
           {/* CTAs */}
@@ -376,7 +379,7 @@ export default function Hero() {
               whileTap={reduceMotion ? undefined : { scale: 0.98 }}
               className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg bg-[#EF303B] px-6 py-3 text-base font-semibold text-white shadow-[0_10px_24px_-8px_rgba(239,48,59,0.6)] transition-colors hover:bg-[#d92730] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#EF303B]/40"
             >
-              Explore Our Services
+              {t.hero.exploreServices}
               <ArrowRight
                 aria-hidden="true"
                 className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
@@ -391,7 +394,7 @@ export default function Hero() {
               whileTap={reduceMotion ? undefined : { scale: 0.98 }}
               className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-[#214779]/65 bg-white/99 px-6 py-3 text-base font-semibold text-[#214779] shadow-[0_8px_20px_-10px_rgba(16,44,77,0.70)] backdrop-blur transition-colors hover:border-[#214779] hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#214779]/80"
             >
-              Contact Us
+              {t.hero.contactUs}
               <ArrowRight
                 aria-hidden="true"
                 className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
@@ -404,7 +407,7 @@ export default function Hero() {
             variants={container}
             className="mt-9 grid grid-cols-1 gap-4 min-[480px]:grid-cols-3 min-[480px]:gap-3 lg:gap-4"
           >
-            {trustItems.map(({ icon: Icon, label, tone }) => (
+            {trustItems.map(({ icon: Icon, label, tone }, index) => (
               <motion.li
                 key={label}
                 variants={fadeUp}
@@ -420,7 +423,7 @@ export default function Hero() {
                   <Icon aria-hidden="true" className="h-5 w-5" />
                 </span>
                 <span className="text-sm font-medium leading-snug text-[#102C4D]">
-                  {label}
+                  {t.hero.trustItems[index] || label}
                 </span>
               </motion.li>
             ))}
@@ -430,11 +433,11 @@ export default function Hero() {
           <motion.div variants={fadeIn} className="mt-8">
             <hr className="border-0 border-t border-[#214779]/70" />
             <p className="mt-4 text-[10px] font-medium uppercase leading-relaxed tracking-[0.14em] text-[#334155] sm:text-xs">
-              Accessible Deposits
+              {t.hero.pills[0]}
               <span aria-hidden="true" className="mx-2 text-[#214779]/90">|</span>
-              Loan Facilities
+              {t.hero.pills[1]}
               <span aria-hidden="true" className="mx-2 text-[#214779]/90">|</span>
-              Responsible Financial Services
+              {t.hero.pills[2]}
             </p>
           </motion.div>
         </motion.div>
@@ -448,7 +451,7 @@ export default function Hero() {
         >
           <motion.img
             src={heroImage}
-            alt="A smiling family saving coins in a jar in front of a modern home, with a growth arrow rising behind them"
+            alt={t.hero.imageAlt}
             width={1672}
             height={941}
             loading="eager"

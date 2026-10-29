@@ -1,3 +1,7 @@
+
+// //border inhance 
+
+
 // // src/components/About.jsx
 // import { motion, useReducedMotion } from "framer-motion";
 // import { ArrowRight, Target, Eye, ZoomIn } from "lucide-react";
@@ -24,18 +28,18 @@
 
 // const toneStyles = {
 //   red: {
-//     card: "border-[#EF303B]/20 bg-gradient-to-br from-[#EF303B]/[0.08] to-[#EF303B]/[0.03] shadow-[0_10px_28px_-18px_rgba(239,48,59,0.4)] group-hover/card:border-[#EF303B]/35 group-hover/card:shadow-[0_20px_40px_-18px_rgba(239,48,59,0.38)]",
-//     iconWrap: "bg-[#EF303B]/12 text-[#EF303B]",
+//     card: "border-[#EF303B]/65 bg-gradient-to-br from-[#EF303B]/[0.13] to-[#EF303B]/[0.04] shadow-[0_10px_28px_-18px_rgba(239,48,59,0.55)] group-hover/card:border-[#EF303B]/100 group-hover/card:shadow-[0_20px_40px_-18px_rgba(239,48,59,0.70)]",
+//     iconWrap: "bg-[#EF303B]/20 text-[#EF303B]",
 //     underline: "bg-[#EF303B]",
-//     arrow:
-//       "border-[#EF303B]/30 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
+//     arrow: 
+//       "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
 //   },
 //   navy: {
-//     card: "border-[#214779]/20 bg-gradient-to-br from-[#214779]/[0.07] to-[#214779]/[0.025] shadow-[0_10px_28px_-18px_rgba(16,44,77,0.4)] group-hover/card:border-[#214779]/35 group-hover/card:shadow-[0_20px_40px_-18px_rgba(16,44,77,0.38)]",
-//     iconWrap: "bg-[#214779]/12 text-[#214779]",
+//     card: "border-[#214779]/65 bg-gradient-to-br from-[#214779]/[0.13] to-[#214779]/[0.04] shadow-[0_10px_28px_-18px_rgba(16,44,77,0.55)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_20px_40px_-18px_rgba(16,44,77,0.70)]",
+//     iconWrap: "bg-[#214779]/20 text-[#214779]",
 //     underline: "bg-[#214779]",
-//     arrow:
-//       "border-[#214779]/30 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
+//     arrow: 
+//       "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
 //   },
 // };
 
@@ -57,7 +61,7 @@
 //     <section
 //       id="about"
 //       aria-labelledby="about-heading"
-//       className="relative isolate overflow-hidden bg-[#F5F7FB]/60 bg-white py-16 sm:py-20 lg:py-23"
+//       className="relative isolate overflow-hidden bg-[#F5F7FB]/60 bg-white py-5 sm:py-20 lg:py-20"
 //     >
 //       {/* Subtle decorative shapes */}
 //       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
@@ -101,7 +105,7 @@
 
 //             <motion.p
 //               variants={fadeUp}
-//               className="mt-7 max-w-xl text-base leading-relaxed text-[#64748B] sm:text-lg"
+//               className="mt-7 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
 //             >
 //               At Kalyan Urban Co-operative Credit Society Limited, we believe that
 //               financial confidence begins with the right information and
@@ -110,7 +114,7 @@
 
 //             <motion.p
 //               variants={fadeUp}
-//               className="mt-5 max-w-xl text-base leading-relaxed text-[#64748B] sm:text-lg"
+//               className="mt-5 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
 //             >
 //               Our aim is to encourage regular savings and provide our members with
 //               information about available deposit schemes and credit facilities.
@@ -126,7 +130,7 @@
 //             initial={initial}
 //             whileInView="show"
 //             viewport={{ once: true, amount: 0.2 }}
-//             className="group/img relative m-0 w-full min-w-0 overflow-hidden rounded-2xl border border-white bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.45)] sm:rounded-3xl"
+//             className="group/img relative m-0 w-full min-w-0 overflow-hidden rounded-2xl border border-[#214779]/60 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/99 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:rounded-3xl"
 //           >
 //             <img
 //               src={aboutImage}
@@ -181,7 +185,7 @@
 //                       aria-hidden="true"
 //                       className={`mt-2 block h-[3px] w-8 rounded-full ${s.underline}`}
 //                     />
-//                     <p className="mt-3 text-sm leading-relaxed text-[#64748B] sm:text-base">
+//                     <p className="mt-3 text-sm leading-relaxed text-[#334155] sm:text-base">
 //                       {description}
 //                     </p>
 //                   </div>
@@ -205,46 +209,86 @@
 
 
 
-//border inhance 
-
+// english hindi swicher 
 
 // src/components/About.jsx
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, Target, Eye, ZoomIn } from "lucide-react";
+import { ArrowRight, Target, Eye } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 // ⚠️ Update this path to your actual finance-themed image in the project assets.
 import aboutImage from "../assets/images/about-finance.png";
 
-const cards = [
-  {
-    icon: Target,
-    title: "Our Mission",
-    description:
-      "To encourage financial discipline, promote savings, and provide accessible information about financial services to our members.",
-    tone: "red",
+const aboutContent = {
+  en: {
+    eyebrow: "About Us",
+    headingLine1: "A Trusted Partner for",
+    headingLine2: "Your Financial Journey",
+    para1:
+      "At Kalyan Urban Co-operative Credit Society Limited, we believe that financial confidence begins with the right information and responsible financial planning.",
+    para2:
+      "Our aim is to encourage regular savings and provide our members with information about available deposit schemes and credit facilities. We strive to maintain a transparent, member-focused approach while delivering services in accordance with applicable policies and eligibility requirements.",
+    imageAlt:
+      "Ascending stacks of coins beside a jar of coins with a green plant growing from it, and a small wooden house, symbolising savings and growth",
+    cards: [
+      {
+        icon: Target,
+        title: "Our Mission",
+        description:
+          "To encourage financial discipline, promote savings, and provide accessible information about financial services to our members.",
+        tone: "red",
+      },
+      {
+        icon: Eye,
+        title: "Our Vision",
+        description:
+          "To build long-term relationships with our members through trust, transparency, and responsible service.",
+        tone: "navy",
+      },
+    ],
   },
-  {
-    icon: Eye,
-    title: "Our Vision",
-    description:
-      "To build long-term relationships with our members through trust, transparency, and responsible service.",
-    tone: "navy",
+  hi: {
+    eyebrow: "हमारे बारे में",
+    headingLine1: "आपकी वित्तीय यात्रा के लिए",
+    headingLine2: "एक विश्वसनीय साथी",
+    para1:
+      "कल्याण अर्बन को-ऑपरेटिव क्रेडिट सोसायटी लिमिटेड में, हमारा मानना है कि वित्तीय आत्मविश्वास सही जानकारी और जिम्मेदार वित्तीय योजना से शुरू होता है।",
+    para2:
+      "हमारा उद्देश्य नियमित बचत को प्रोत्साहित करना और अपने सदस्यों को उपलब्ध जमा योजनाओं तथा ऋण सुविधाओं के बारे में सटीक जानकारी प्रदान करना है। हम लागू नीतियों और पात्रता आवश्यकताओं के अनुसार सेवाएँ प्रदान करते हुए एक पारदर्शी और सदस्य-केंद्रित दृष्टिकोण बनाए रखने का प्रयास करते हैं।",
+    imageAlt:
+      "सिक्कों के बढ़ते ढेर, पौधे के साथ सिक्कों का जार और एक छोटा घर, जो बचत और विकास का प्रतीक है",
+    cards: [
+      {
+        icon: Target,
+        title: "हमारा उद्देश्य",
+        description:
+          "वित्तीय अनुशासन को प्रोत्साहित करना, बचत को बढ़ावा देना और अपने सदस्यों को वित्तीय सेवाओं के बारे में सुलभ जानकारी प्रदान करना।",
+        tone: "red",
+      },
+      {
+        icon: Eye,
+        title: "हमारी दृष्टि",
+        description:
+          "विश्वास, पारदर्शिता और जिम्मेदार सेवा के माध्यम से अपने सदस्यों के साथ दीर्घकालिक संबंध बनाना।",
+        tone: "navy",
+      },
+    ],
   },
-];
+};
 
 const toneStyles = {
   red: {
     card: "border-[#EF303B]/65 bg-gradient-to-br from-[#EF303B]/[0.13] to-[#EF303B]/[0.04] shadow-[0_10px_28px_-18px_rgba(239,48,59,0.55)] group-hover/card:border-[#EF303B]/100 group-hover/card:shadow-[0_20px_40px_-18px_rgba(239,48,59,0.70)]",
     iconWrap: "bg-[#EF303B]/20 text-[#EF303B]",
     underline: "bg-[#EF303B]",
-    arrow: 
+    arrow:
       "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
   },
   navy: {
     card: "border-[#214779]/65 bg-gradient-to-br from-[#214779]/[0.13] to-[#214779]/[0.04] shadow-[0_10px_28px_-18px_rgba(16,44,77,0.55)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_20px_40px_-18px_rgba(16,44,77,0.70)]",
     iconWrap: "bg-[#214779]/20 text-[#214779]",
     underline: "bg-[#214779]",
-    arrow: 
+    arrow:
       "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
   },
 };
@@ -260,8 +304,11 @@ const fadeUp = {
 };
 
 export default function About() {
+  const { lang } = useLanguage();
   const reduceMotion = useReducedMotion();
   const initial = reduceMotion ? false : "hidden";
+
+  const copy = aboutContent[lang] || aboutContent.en;
 
   return (
     <section
@@ -290,7 +337,7 @@ export default function About() {
             <motion.div variants={fadeUp} className="flex items-center gap-3">
               <span aria-hidden="true" className="h-[2px] w-10 bg-[#EF303B] sm:w-12" />
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EF303B] sm:text-sm">
-                About Us
+                {copy.eyebrow}
               </p>
             </motion.div>
 
@@ -299,8 +346,8 @@ export default function About() {
               variants={fadeUp}
               className="mt-5 text-[1.9rem] font-extrabold leading-[1.12] tracking-tight min-[400px]:text-4xl sm:text-5xl xl:text-[3.25rem]"
             >
-              <span className="block text-[#102C4D]">A Trusted Partner for</span>
-              <span className="block text-[#EF303B]">Your Financial Journey</span>
+              <span className="block text-[#102C4D]">{copy.headingLine1}</span>
+              <span className="block text-[#EF303B]">{copy.headingLine2}</span>
             </motion.h2>
 
             <motion.div
@@ -313,20 +360,14 @@ export default function About() {
               variants={fadeUp}
               className="mt-7 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
             >
-              At Kalyan Urban Co-operative Credit Society Limited, we believe that
-              financial confidence begins with the right information and
-              responsible financial planning.
+              {copy.para1}
             </motion.p>
 
             <motion.p
               variants={fadeUp}
               className="mt-5 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
             >
-              Our aim is to encourage regular savings and provide our members with
-              information about available deposit schemes and credit facilities.
-              We strive to maintain a transparent, member-focused approach while
-              delivering services in accordance with applicable policies and
-              eligibility requirements.
+              {copy.para2}
             </motion.p>
           </motion.div>
 
@@ -340,20 +381,13 @@ export default function About() {
           >
             <img
               src={aboutImage}
-              alt="Ascending stacks of coins beside a jar of coins with a green plant growing from it, and a small wooden house, symbolising savings and growth"
+              alt={copy.imageAlt}
               width={1634}
               height={963}
               loading="lazy"
               decoding="async"
               className="block aspect-[4/3] h-auto w-full transform-gpu object-cover object-[78%_center] transition-[scale] duration-500 ease-out will-change-transform group-hover/img:scale-[1.04] sm:aspect-[16/11] lg:aspect-[1.47/1] motion-reduce:transition-none motion-reduce:group-hover/img:scale-100"
             />
-            {/* Decorative zoom badge (purely visual) */}
-            {/* <span
-              aria-hidden="true"
-              className="pointer-events-none absolute left-[62%] top-[34%] hidden h-11 w-11 items-center justify-center rounded-full bg-white text-[#102C4D] shadow-[0_8px_20px_-6px_rgba(16,44,77,0.4)] sm:flex"
-            >
-              <ZoomIn className="h-5 w-5" />
-            </span> */}
           </motion.figure>
         </div>
 
@@ -365,11 +399,11 @@ export default function About() {
           viewport={{ once: true, amount: 0.15 }}
           className="m-0 mt-10 grid list-none grid-cols-1 gap-5 p-0 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:mt-14 lg:gap-8"
         >
-          {cards.map(({ icon: Icon, title, description, tone }) => {
+          {copy.cards.map(({ icon: Icon, title, description, tone }) => {
             const s = toneStyles[tone];
             return (
               // Stationary hover trigger so the lifted card can't cause flicker.
-              <motion.li key={title} variants={fadeUp} className="group/card flex">
+              <motion.li key={tone} variants={fadeUp} className="group/card flex">
                 <article
                   className={`flex w-full transform-gpu items-start gap-4 rounded-2xl border p-5 transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-[5px] motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 sm:gap-5 sm:p-6 lg:p-7 ${s.card}`}
                 >

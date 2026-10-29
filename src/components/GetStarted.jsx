@@ -1,3 +1,6 @@
+// //border new change 
+
+
 // // src/components/GetStarted.jsx
 // import { motion, useReducedMotion } from "framer-motion";
 // import { FileCheck, FileSearch, PhoneCall } from "lucide-react";
@@ -33,16 +36,14 @@
 
 // const tones = {
 //   red: {
-//     card: "border-[#EF303B]/15 bg-gradient-to-b from-[#EF303B]/[0.06] to-white/80 shadow-[0_12px_30px_-22px_rgba(239,48,59,0.45)] group-hover/card:border-[#EF303B]/35 group-hover/card:shadow-[0_22px_44px_-22px_rgba(239,48,59,0.45)]",
-//     icon: "bg-[#EF303B]/12 text-[#EF303B]",
-//     underline: "bg-[#EF303B]",
-//     badge: "text-[#EF303B] ring-[#EF303B]/15",
+//     card: "border-[#EF303B]/60 bg-gradient-to-b from-[#EF303B]/[0.13] to-[#EF303B]/[0.04] shadow-[0_12px_30px_-22px_rgba(239,48,59,0.55)] group-hover/card:border-[#EF303B]/99 group-hover/card:shadow-[0_22px_44px_-22px_rgba(239,48,59,0.70)]",
+//     icon: "bg-[#EF303B]/20 text-[#EF303B]",
+//     badge: "text-[#EF303B] ring-[#EF303B]/60",
 //   },
 //   blue: {
-//     card: "border-[#214779]/15 bg-gradient-to-b from-[#214779]/[0.06] to-white/80 shadow-[0_12px_30px_-22px_rgba(16,44,77,0.45)] group-hover/card:border-[#214779]/35 group-hover/card:shadow-[0_22px_44px_-22px_rgba(16,44,77,0.45)]",
-//     icon: "bg-[#214779]/12 text-[#214779]",
-//     underline: "bg-[#214779]",
-//     badge: "text-[#214779] ring-[#214779]/15",
+//     card: "border-[#214779]/60 bg-gradient-to-b from-[#214779]/[0.13] to-[#214779]/[0.04] shadow-[0_12px_30px_-22px_rgba(16,44,77,0.55)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_22px_44px_-22px_rgba(16,44,77,0.70)]",
+// icon: "bg-[#214779]/20 text-[#214779]",
+// badge: "text-[#214779] ring-[#214779]/60",
 //   },
 // };
 
@@ -97,12 +98,12 @@
 //     <section
 //       id="process"
 //       aria-labelledby="get-started-heading"
-//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-16 sm:py-20 md:-mt-20 lg:py-20"
+//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-10 sm:py-20 md:-mt-20 lg:py-20"
 //     >
 //       {/* Decorative shapes */}
 //       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
 //         <div className="absolute -left-28 top-1/3 h-80 w-80 rounded-full bg-[#214779]/[0.05] blur-3xl" />
-//         <div className="absolute -right-24 -top-20 h-[26rem] w-[26rem] rounded-full border-[26px] border-[#EF303B]/[0.06]" />
+//         <div className="absolute -right-24 -top-20 h-[26rem] w-[26rem] rounded-full border-[26px] border-[#EF303B]/[0.10]" />
 //         <div className="absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-[#EF303B]/[0.04] blur-3xl" />
 //       </div>
 
@@ -146,7 +147,7 @@
 //             initial={initial}
 //             whileInView="show"
 //             viewport={{ once: true, amount: 0.2 }}
-//             className="group/img mx-auto w-full max-w-md min-w-0 overflow-hidden rounded-3xl sm:max-w-[1000px]  lg:ml-auto lg:mr-0 lg:max-w-none"
+//             className="group/img mx-auto w-full max-w-md min-w-0 overflow-hidden rounded-3xl border border-[#214779]/50 bg-white shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/90 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:max-w-[1000px] lg:ml-auto lg:mr-0 lg:max-w-none"
 //           >
 //             <img
 //               src={journeyImage}
@@ -193,7 +194,7 @@
 //                     aria-hidden="true"
 //                     className={`mt-3 block h-[3px] w-10 rounded-full ${t.underline}`}
 //                   />
-//                   <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#64748B] sm:text-base">
+//                   <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#334155] sm:text-base">
 //                     {description}
 //                   </p>
 //                 </article>
@@ -216,65 +217,48 @@
 
 
 
-
-
-//border new change 
-
+//enlish hindi swicher
 
 // src/components/GetStarted.jsx
 import { motion, useReducedMotion } from "framer-motion";
 import { FileCheck, FileSearch, PhoneCall } from "lucide-react";
-
-// ⚠️ Update this path to your actual finance illustration in the project assets.
+import { useLanguage } from "../context/LanguageContext";
 import journeyImage from "../assets/images/get-started-illustration.png";
-
-const steps = [
-  {
-    no: "01",
-    icon: PhoneCall,
-    title: "Connect With Us",
-    description: "Contact our office to learn about membership and available services.",
-    tone: "red",
-  },
-  {
-    no: "02",
-    icon: FileSearch,
-    title: "Explore Your Options",
-    description:
-      "Understand the available deposit schemes, loan facilities, and applicable conditions.",
-    tone: "blue",
-  },
-  {
-    no: "03",
-    icon: FileCheck,
-    title: "Submit Your Application",
-    description:
-      "Complete the relevant application process and provide the required documents.",
-    tone: "red",
-  },
-];
 
 const tones = {
   red: {
     card: "border-[#EF303B]/60 bg-gradient-to-b from-[#EF303B]/[0.13] to-[#EF303B]/[0.04] shadow-[0_12px_30px_-22px_rgba(239,48,59,0.55)] group-hover/card:border-[#EF303B]/99 group-hover/card:shadow-[0_22px_44px_-22px_rgba(239,48,59,0.70)]",
     icon: "bg-[#EF303B]/20 text-[#EF303B]",
     badge: "text-[#EF303B] ring-[#EF303B]/60",
+    underline: "bg-[#EF303B]",
   },
   blue: {
     card: "border-[#214779]/60 bg-gradient-to-b from-[#214779]/[0.13] to-[#214779]/[0.04] shadow-[0_12px_30px_-22px_rgba(16,44,77,0.55)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_22px_44px_-22px_rgba(16,44,77,0.70)]",
-icon: "bg-[#214779]/20 text-[#214779]",
-badge: "text-[#214779] ring-[#214779]/60",
+    icon: "bg-[#214779]/20 text-[#214779]",
+    badge: "text-[#214779] ring-[#214779]/60",
+    underline: "bg-[#214779]",
   },
 };
 
 const container = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.12 } },
+  show: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
 };
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.55,
+      ease: "easeOut",
+    },
+  },
 };
 
 // Dotted curved connector with an arrowhead, shown between steps on desktop only.
@@ -300,6 +284,7 @@ function Connector() {
           opacity="0.7"
         />
       </svg>
+
       <svg
         viewBox="0 0 12 12"
         className="absolute bottom-1.5 right-0 h-3 w-3 rotate-[28deg] text-[#102C4D]"
@@ -311,8 +296,41 @@ function Connector() {
 }
 
 export default function GetStarted() {
+  const { lang } = useLanguage();
+  const isHi = lang === "hi";
+
   const reduceMotion = useReducedMotion();
   const initial = reduceMotion ? false : "hidden";
+
+  const steps = [
+    {
+      no: "01",
+      icon: PhoneCall,
+      title: isHi ? "हमसे संपर्क करें" : "Connect With Us",
+      description: isHi
+        ? "सदस्यता और उपलब्ध सेवाओं के बारे में जानकारी प्राप्त करने के लिए हमारे कार्यालय से संपर्क करें।"
+        : "Contact our office to learn about membership and available services.",
+      tone: "red",
+    },
+    {
+      no: "02",
+      icon: FileSearch,
+      title: isHi ? "अपने विकल्प जानें" : "Explore Your Options",
+      description: isHi
+        ? "उपलब्ध जमा योजनाओं, ऋण सुविधाओं और लागू शर्तों को समझें।"
+        : "Understand the available deposit schemes, loan facilities, and applicable conditions.",
+      tone: "blue",
+    },
+    {
+      no: "03",
+      icon: FileCheck,
+      title: isHi ? "अपना आवेदन जमा करें" : "Submit Your Application",
+      description: isHi
+        ? "संबंधित आवेदन प्रक्रिया पूरी करें और आवश्यक दस्तावेज़ जमा करें।"
+        : "Complete the relevant application process and provide the required documents.",
+      tone: "red",
+    },
+  ];
 
   return (
     <section
@@ -321,7 +339,10 @@ export default function GetStarted() {
       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-10 sm:py-20 md:-mt-20 lg:py-20"
     >
       {/* Decorative shapes */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10"
+      >
         <div className="absolute -left-28 top-1/3 h-80 w-80 rounded-full bg-[#214779]/[0.05] blur-3xl" />
         <div className="absolute -right-24 -top-20 h-[26rem] w-[26rem] rounded-full border-[26px] border-[#EF303B]/[0.10]" />
         <div className="absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-[#EF303B]/[0.04] blur-3xl" />
@@ -329,7 +350,6 @@ export default function GetStarted() {
 
       <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-8 lg:px-12 2xl:max-w-[1440px]">
         {/* Header: heading (left) + illustration (right) */}
-        {/* <div className="grid items-center gap-8 lg:grid-cols-[1fr_1.1fr] lg:gap-10"> */}
         <div className="grid items-stretch gap-8 lg:grid-cols-[1fr_1.1fr] lg:gap-10">
           <motion.div
             variants={container}
@@ -338,10 +358,16 @@ export default function GetStarted() {
             viewport={{ once: true, amount: 0.3 }}
             className="min-w-0 text-left"
           >
-            <motion.div variants={fadeUp} className="flex items-center gap-3">
-              <span aria-hidden="true" className="h-[2px] w-10 bg-[#EF303B] sm:w-12" />
+            <motion.div
+              variants={fadeUp}
+              className="flex items-center gap-3"
+            >
+              <span
+                aria-hidden="true"
+                className="h-[2px] w-10 bg-[#EF303B] sm:w-12"
+              />
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EF303B] sm:text-sm">
-                How to Get Started
+                {isHi ? "शुरुआत कैसे करें" : "How to Get Started"}
               </p>
             </motion.div>
 
@@ -350,8 +376,12 @@ export default function GetStarted() {
               variants={fadeUp}
               className="mt-5 text-[2.1rem] font-extrabold leading-[1.1] tracking-tight min-[1000px]:text-4xl sm:text-5xl xl:text-[3.4rem]"
             >
-              <span className="block text-[#102C4D]">Your Journey</span>
-              <span className="block text-[#EF303B]">Starts Here</span>
+              <span className="block text-[#102C4D]">
+                {isHi ? "आपकी यात्रा" : "Your Journey"}
+              </span>
+              <span className="block text-[#EF303B]">
+                {isHi ? "यहाँ से शुरू होती है" : "Starts Here"}
+              </span>
             </motion.h2>
 
             <motion.div
@@ -361,7 +391,7 @@ export default function GetStarted() {
             />
           </motion.div>
 
-          {/* Illustration: stationary wrapper is the hover trigger; only the img scales */}
+          {/* Illustration with smooth hover zoom */}
           <motion.div
             variants={fadeUp}
             initial={initial}
@@ -371,7 +401,11 @@ export default function GetStarted() {
           >
             <img
               src={journeyImage}
-              alt="Finance illustration with stacks of gold coins, a growing plant and a small house, symbolising savings and growth"
+              alt={
+                isHi
+                  ? "बचत और वित्तीय विकास का प्रतीक सिक्कों, पौधे और घर का चित्रण"
+                  : "Finance illustration with stacks of gold coins, a growing plant and a small house, symbolising savings and growth"
+              }
               loading="lazy"
               decoding="async"
               className="block h-auto w-full transform-gpu object-contain transition-[scale] duration-500 ease-out group-hover/img:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover/img:scale-100"
@@ -379,7 +413,7 @@ export default function GetStarted() {
           </motion.div>
         </div>
 
-        {/* Steps */}
+        {/* Three Getting Started Steps */}
         <motion.ol
           variants={container}
           initial={initial}
@@ -389,8 +423,8 @@ export default function GetStarted() {
         >
           {steps.map(({ no, icon: Icon, title, description, tone }, i) => {
             const t = tones[tone];
+
             return (
-              // Stationary hover trigger so the lifted card can't cause flicker.
               <motion.li
                 key={no}
                 variants={fadeUp}
@@ -404,26 +438,34 @@ export default function GetStarted() {
                   <span
                     className={`flex h-20 w-20 items-center justify-center rounded-full sm:h-24 sm:w-24 ${t.icon}`}
                   >
-                    <Icon aria-hidden="true" strokeWidth={1.75} className="h-9 w-9 sm:h-11 sm:w-11" />
+                    <Icon
+                      aria-hidden="true"
+                      strokeWidth={1.75}
+                      className="h-9 w-9 sm:h-11 sm:w-11"
+                    />
                   </span>
 
                   <h3 className="mt-6 text-xl font-extrabold text-[#102C4D] sm:text-2xl">
                     {title}
                   </h3>
+
                   <span
                     aria-hidden="true"
                     className={`mt-3 block h-[3px] w-10 rounded-full ${t.underline}`}
                   />
+
                   <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#334155] sm:text-base">
                     {description}
                   </p>
                 </article>
 
-                {/* Number badge: sits above the card's top edge, in front of connectors */}
+                {/* Number badge */}
                 <span
                   className={`absolute -top-10 left-1/2 z-10 flex h-16 w-16 -translate-x-1/2 items-center justify-center rounded-full bg-white text-xl font-extrabold shadow-[0_10px_24px_-10px_rgba(16,44,77,0.35)] ring-1 ${t.badge}`}
                 >
-                  <span className="sr-only">Step </span>
+                  <span className="sr-only">
+                    {isHi ? "चरण " : "Step "}
+                  </span>
                   {no}
                 </span>
               </motion.li>

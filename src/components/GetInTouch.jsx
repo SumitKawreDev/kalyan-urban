@@ -1,4 +1,6 @@
-// // src/components/GetInTouch.jsx
+//border changes
+
+// src/components/GetInTouch.jsx
 // import { motion, useReducedMotion } from "framer-motion";
 // import { ArrowRight, MapPin, Phone } from "lucide-react";
 
@@ -23,7 +25,7 @@
 //     <section
 //       id="contact"
 //       aria-labelledby="get-in-touch-heading"
-//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB]/60 to-white py-16 sm:py-20 md:-mt-20 lg:py-20"
+//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB]/60 to-white py-10 sm:py-20 md:-mt-20 lg:py-20"
 //     >
 //       {/* Subtle decorative ambient glows */}
 //       <div
@@ -74,32 +76,32 @@
 
 //               <motion.p
 //                 variants={fadeUp}
-//                 className="mt-5 max-w-xl text-sm leading-relaxed text-[#64748B] sm:text-[15px]"
+//                 className="mt-5 max-w-xl text-sm leading-relaxed text-[#334155] sm:text-[15px]"
 //               >
 //                 Have questions about our deposit schemes, loan facilities, or
 //                 membership process? Our office can help you understand the
 //                 available options and applicable requirements.
 //               </motion.p>
 //               {/* Mobile and tablet image: directly after the description */}
-// <motion.figure
-//   variants={fadeUp}
-//   className="group/img relative mt-6 mb-0 aspect-[4/3] w-full overflow-hidden rounded-3xl border border-white/80 bg-[#F5F7FB] shadow-[0_16px_35px_-20px_rgba(16,44,77,0.28)] lg:hidden"
-// >
-//   <img
-//     src={getInTouchImage}
-//     alt="Customer support representative assisting members at her desk"
-//     loading="lazy"
-//     decoding="async"
-//     className="block h-full w-full transform-gpu object-cover object-center transition-transform duration-500 ease-out group-hover/img:scale-105 motion-reduce:transition-none motion-reduce:group-hover/img:scale-100"
-//   />
-// </motion.figure>
+//             <motion.figure
+//             variants={fadeUp}
+//             className="group/img relative mt-6 mb-0 aspect-[4/3] w-full overflow-hidden rounded-3xl border border-[#214779]/50 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/90 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] lg:hidden"
+//             >
+//             <img
+//                 src={getInTouchImage}
+//                 alt="Customer support representative assisting members at her desk"
+//                 loading="lazy"
+//                 decoding="async"
+//                 className="block h-full w-full transform-gpu object-cover object-center transition-transform duration-500 ease-out group-hover/img:scale-105 motion-reduce:transition-none motion-reduce:group-hover/img:scale-100"
+//             />
+//             </motion.figure>
 //             </div>
 
 //             {/* Bottom Contact Cards & CTA Group */}
 //             <div className="mt-7 flex flex-col gap-4 sm:mt-8">
 //               {/* 1. Location / Address Card (Stationary outer wrapper prevents hover flicker) */}
 //               <motion.div variants={fadeUp} className="group/card">
-//                 <div className="transform-gpu rounded-2xl border border-[#EF303B]/15 bg-gradient-to-br from-[#FFF9F9] via-white to-[#FFF3F4] p-4 shadow-[0_10px_26px_-20px_rgba(239,48,59,0.35)] transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-[3px] group-hover/card:border-[#EF303B]/35 group-hover/card:shadow-[0_18px_38px_-20px_rgba(239,48,59,0.45)] motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 sm:p-5">
+//                 <div className="transform-gpu rounded-2xl border border-[#EF303B]/60 bg-gradient-to-br from-[#EF303B]/[0.10] to-[#EF303B]/[0.03] p-4 shadow-[0_10px_26px_-20px_rgba(239,48,59,0.55)] transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-[3px] group-hover/card:border-[#EF303B]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(239,48,59,0.70)] motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 sm:p-5">
 //                   <div className="flex items-start gap-3.5 sm:gap-4">
 //                     <span
 //                       aria-hidden="true"
@@ -121,7 +123,7 @@
 //                         <span>Head Office Address:</span>
 //                       </div>
 
-//                       <p className="m-0 mt-1 text-xs leading-relaxed text-[#64748B] sm:text-[13px]">
+//                       <p className="m-0 mt-1 text-xs leading-relaxed text-[#334155] sm:text-[13px]">
 //                         Beside Sai Ashirwad Motors, Gondia–Balaghat Road,
 //                         Rawanwadi, Gondia, Maharashtra.
 //                       </p>
@@ -132,7 +134,7 @@
 
 //               {/* 2. Phone Number Card (Stationary outer wrapper prevents hover flicker) */}
 //               <motion.div variants={fadeUp} className="group/card">
-//                 <div className="transform-gpu rounded-2xl border border-[#214779]/15 bg-gradient-to-br from-[#F5F8FC] via-white to-[#ECF3FA] p-4 shadow-[0_10px_26px_-20px_rgba(16,44,77,0.35)] transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-[3px] group-hover/card:border-[#214779]/35 group-hover/card:shadow-[0_18px_38px_-20px_rgba(16,44,77,0.45)] motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 sm:p-5">
+//                 <div className="transform-gpu rounded-2xl border border-[#214779]/60 bg-gradient-to-br from-[#214779]/[0.10] to-[#214779]/[0.03] p-4 shadow-[0_10px_26px_-20px_rgba(16,44,77,0.35)] transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-[3px] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(16,44,77,0.70)] motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 sm:p-5">
 //                   <div className="flex items-center gap-3.5 sm:gap-4">
 //                     <span
 //                       aria-hidden="true"
@@ -202,7 +204,7 @@
 //             className="hidden min-w-0 lg:flex lg:h-full"
 //           >
 //             {/* Stationary figure wrapper with relative + lg:h-full so desktop height adapts automatically to left column */}
-//             <figure className="group/img relative m-0 aspect-[4/3] w-full overflow-hidden rounded-3xl border border-white/80 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.28)] sm:aspect-[16/11] lg:aspect-auto lg:h-full">
+//             <figure className="group/img relative m-0 aspect-[4/3] w-full overflow-hidden rounded-3xl border border-[#214779]/50 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/90 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:aspect-[16/11] lg:aspect-auto lg:h-full">
 //               <img
 //                 src={getInTouchImage}
 //                 alt="Customer support representative at Kalyan Urban Co-operative Credit Society Limited assisting members on the phone at her desk with a laptop, plant, and contact icons"
@@ -220,26 +222,39 @@
 
 
 
-
+//enlish hindi swicher 
 
 // src/components/GetInTouch.jsx
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, MapPin, Phone } from "lucide-react";
-
-// ⚠️ Ensure this import matches the exact filename in your src/assets/images/ folder
+import { useLanguage } from "../context/LanguageContext";
 import getInTouchImage from "../assets/images/contact-image.png";
 
 const container = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.1 } },
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
 };
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.55,
+      ease: "easeOut",
+    },
+  },
 };
 
 export default function GetInTouch() {
+  const { lang } = useLanguage();
+  const isHi = lang === "hi";
+
   const reduceMotion = useReducedMotion();
   const initial = reduceMotion ? false : "hidden";
 
@@ -259,7 +274,7 @@ export default function GetInTouch() {
       </div>
 
       <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-8 lg:px-12 2xl:max-w-[1440px]">
-        {/* Two-column equal-width and equal-height desktop grid */}
+        {/* Two-column contact layout */}
         <div className="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-10 xl:gap-12">
           {/* Left Column: Heading, Description, Contact Cards, and CTA */}
           <motion.div
@@ -269,15 +284,18 @@ export default function GetInTouch() {
             viewport={{ once: true, amount: 0.15 }}
             className="flex min-w-0 flex-col justify-between text-left"
           >
-            {/* Top Header Group */}
+            {/* Header Group */}
             <div>
-              <motion.div variants={fadeUp} className="flex items-center gap-3">
+              <motion.div
+                variants={fadeUp}
+                className="flex items-center gap-3"
+              >
                 <span
                   aria-hidden="true"
                   className="h-[2px] w-9 bg-[#EF303B] sm:w-11"
                 />
                 <p className="m-0 text-xs font-semibold uppercase tracking-[0.18em] text-[#EF303B] sm:text-[13px]">
-                  GET IN TOUCH
+                  {isHi ? "संपर्क करें" : "GET IN TOUCH"}
                 </p>
               </motion.div>
 
@@ -286,8 +304,12 @@ export default function GetInTouch() {
                 variants={fadeUp}
                 className="mt-4 text-[2rem] font-extrabold leading-[1.12] tracking-tight min-[400px]:text-4xl sm:text-[2.75rem] xl:text-[3rem]"
               >
-                <span className="block text-[#102C4D]">Let’s Take the Next</span>
-                <span className="mt-1 block text-[#EF303B]">Step Together</span>
+                <span className="block text-[#102C4D]">
+                  {isHi ? "आइए, अगला कदम" : "Let’s Take the Next"}
+                </span>
+                <span className="mt-1 block text-[#EF303B]">
+                  {isHi ? "साथ मिलकर बढ़ाएँ" : "Step Together"}
+                </span>
               </motion.h2>
 
               <motion.div
@@ -300,28 +322,33 @@ export default function GetInTouch() {
                 variants={fadeUp}
                 className="mt-5 max-w-xl text-sm leading-relaxed text-[#334155] sm:text-[15px]"
               >
-                Have questions about our deposit schemes, loan facilities, or
-                membership process? Our office can help you understand the
-                available options and applicable requirements.
+                {isHi
+                  ? "क्या आपको हमारी जमा योजनाओं, ऋण सुविधाओं या सदस्यता प्रक्रिया के बारे में जानकारी चाहिए? हमारा कार्यालय आपको उपलब्ध विकल्पों और लागू आवश्यकताओं को समझने में सहायता कर सकता है।"
+                  : "Have questions about our deposit schemes, loan facilities, or membership process? Our office can help you understand the available options and applicable requirements."}
               </motion.p>
-              {/* Mobile and tablet image: directly after the description */}
-            <motion.figure
-            variants={fadeUp}
-            className="group/img relative mt-6 mb-0 aspect-[4/3] w-full overflow-hidden rounded-3xl border border-[#214779]/50 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/90 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] lg:hidden"
-            >
-            <img
-                src={getInTouchImage}
-                alt="Customer support representative assisting members at her desk"
-                loading="lazy"
-                decoding="async"
-                className="block h-full w-full transform-gpu object-cover object-center transition-transform duration-500 ease-out group-hover/img:scale-105 motion-reduce:transition-none motion-reduce:group-hover/img:scale-100"
-            />
-            </motion.figure>
+
+              {/* Mobile and tablet image */}
+              <motion.figure
+                variants={fadeUp}
+                className="group/img relative mt-6 mb-0 aspect-[4/3] w-full overflow-hidden rounded-3xl border border-[#214779]/50 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/90 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] lg:hidden"
+              >
+                <img
+                  src={getInTouchImage}
+                  alt={
+                    isHi
+                      ? "कल्याण अर्बन कार्यालय में सदस्यों की सहायता करती ग्राहक सेवा प्रतिनिधि"
+                      : "Customer support representative assisting members at her desk"
+                  }
+                  loading="lazy"
+                  decoding="async"
+                  className="block h-full w-full transform-gpu object-cover object-center transition-transform duration-500 ease-out group-hover/img:scale-105 motion-reduce:transition-none motion-reduce:group-hover/img:scale-100"
+                />
+              </motion.figure>
             </div>
 
-            {/* Bottom Contact Cards & CTA Group */}
+            {/* Contact Cards and CTA */}
             <div className="mt-7 flex flex-col gap-4 sm:mt-8">
-              {/* 1. Location / Address Card (Stationary outer wrapper prevents hover flicker) */}
+              {/* Address Card */}
               <motion.div variants={fadeUp} className="group/card">
                 <div className="transform-gpu rounded-2xl border border-[#EF303B]/60 bg-gradient-to-br from-[#EF303B]/[0.10] to-[#EF303B]/[0.03] p-4 shadow-[0_10px_26px_-20px_rgba(239,48,59,0.55)] transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-[3px] group-hover/card:border-[#EF303B]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(239,48,59,0.70)] motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 sm:p-5">
                   <div className="flex items-start gap-3.5 sm:gap-4">
@@ -342,19 +369,22 @@ export default function GetInTouch() {
                           aria-hidden="true"
                           className="h-3.5 w-3.5 shrink-0 text-[#214779]"
                         />
-                        <span>Head Office Address:</span>
+                        <span>
+                          {isHi ? "मुख्य कार्यालय का पता:" : "Head Office Address:"}
+                        </span>
                       </div>
 
                       <p className="m-0 mt-1 text-xs leading-relaxed text-[#334155] sm:text-[13px]">
-                        Beside Sai Ashirwad Motors, Gondia–Balaghat Road,
-                        Rawanwadi, Gondia, Maharashtra.
+                        {isHi
+                          ? "साई आशीर्वाद मोटर्स के पास, गोंदिया–बालाघाट रोड, रावनवाड़ी, गोंदिया, महाराष्ट्र।"
+                          : "Beside Sai Ashirwad Motors, Gondia–Balaghat Road, Rawanwadi, Gondia, Maharashtra."}
                       </p>
                     </div>
                   </div>
                 </div>
               </motion.div>
 
-              {/* 2. Phone Number Card (Stationary outer wrapper prevents hover flicker) */}
+              {/* Phone Number Card */}
               <motion.div variants={fadeUp} className="group/card">
                 <div className="transform-gpu rounded-2xl border border-[#214779]/60 bg-gradient-to-br from-[#214779]/[0.10] to-[#214779]/[0.03] p-4 shadow-[0_10px_26px_-20px_rgba(16,44,77,0.35)] transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-[3px] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(16,44,77,0.70)] motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 sm:p-5">
                   <div className="flex items-center gap-3.5 sm:gap-4">
@@ -367,7 +397,7 @@ export default function GetInTouch() {
 
                     <div className="min-w-0 flex-1">
                       <p className="m-0 text-xs font-bold text-[#102C4D]">
-                        Phone Number:
+                        {isHi ? "फ़ोन नंबर:" : "Phone Number:"}
                       </p>
                       <a
                         href="tel:7776000664"
@@ -380,19 +410,17 @@ export default function GetInTouch() {
                 </div>
               </motion.div>
 
-              {/* 3. Call Us to Know More CTA Card (Stationary outer wrapper prevents hover flicker) */}
+              {/* Call to Action */}
               <motion.div variants={fadeUp} className="group/card">
                 <a
                   href="tel:7776000664"
-                  aria-label="Call Us to Know More at 7776000664"
+                  aria-label={
+                    isHi
+                      ? "अधिक जानकारी के लिए 7776000664 पर कॉल करें"
+                      : "Call Us to Know More at 7776000664"
+                  }
                   className="relative flex w-full transform-gpu items-center justify-between overflow-hidden rounded-2xl border border-[#EF303B]/20 bg-gradient-to-r from-[#EF303B] via-[#F23843] to-[#E02430] p-3.5 text-white shadow-[0_14px_28px_-14px_rgba(239,48,59,0.55)] transition-[translate,box-shadow,border-color,filter] duration-300 ease-in-out group-hover/card:-translate-y-[3px] group-hover/card:border-[#EF303B] group-hover/card:shadow-[0_20px_38px_-14px_rgba(239,48,59,0.7)] group-hover/card:brightness-[1.02] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#EF303B]/40 active:translate-y-0 motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 sm:p-4"
                 >
-                  {/* Diagonal sheen matching the screenshot */}
-                  {/* <span
-                    aria-hidden="true"
-                    className="pointer-events-none absolute inset-y-0 left-1/3 w-24 -skew-x-12 bg-white/10 transition-transform duration-500 ease-out group-hover/card:translate-x-10 motion-reduce:transition-none"
-                  /> */}
-
                   <span className="relative z-10 flex items-center gap-3.5 sm:gap-4">
                     <span
                       aria-hidden="true"
@@ -402,7 +430,7 @@ export default function GetInTouch() {
                     </span>
 
                     <span className="text-sm font-extrabold tracking-wide text-white sm:text-base">
-                      Call Us to Know More
+                      {isHi ? "अधिक जानकारी के लिए कॉल करें" : "Call Us to Know More"}
                     </span>
                   </span>
 
@@ -417,7 +445,7 @@ export default function GetInTouch() {
             </div>
           </motion.div>
 
-          {/* Right Column: Dedicated <img> matching Left Column width and height on desktop */}
+          {/* Right Column: Dedicated Image — desktop only */}
           <motion.div
             variants={fadeUp}
             initial={initial}
@@ -425,11 +453,14 @@ export default function GetInTouch() {
             viewport={{ once: true, amount: 0.15 }}
             className="hidden min-w-0 lg:flex lg:h-full"
           >
-            {/* Stationary figure wrapper with relative + lg:h-full so desktop height adapts automatically to left column */}
             <figure className="group/img relative m-0 aspect-[4/3] w-full overflow-hidden rounded-3xl border border-[#214779]/50 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/90 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:aspect-[16/11] lg:aspect-auto lg:h-full">
               <img
                 src={getInTouchImage}
-                alt="Customer support representative at Kalyan Urban Co-operative Credit Society Limited assisting members on the phone at her desk with a laptop, plant, and contact icons"
+                alt={
+                  isHi
+                    ? "कल्याण अर्बन में सदस्यों की सहायता करती ग्राहक सेवा प्रतिनिधि"
+                    : "Customer support representative at Kalyan Urban assisting members on the phone at her desk"
+                }
                 loading="lazy"
                 decoding="async"
                 className="block h-full w-full transform-gpu object-cover object-center transition-transform duration-500 ease-out will-change-transform group-hover/img:scale-105 motion-reduce:transition-none motion-reduce:group-hover/img:scale-100 lg:absolute lg:inset-0"

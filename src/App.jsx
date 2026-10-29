@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Lenis from 'lenis';
+import { LanguageProvider } from "./context/LanguageContext";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -40,21 +41,23 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#F5F7FB] flex flex-col selection:bg-[#EF303B] selection:text-white">
-      {/* Sticky Fixed Navbar */}
-      <Navbar />
-      {/* Main Content Area - padded to clear the navbar cleanly */}
-      <main className="flex-1 pt-16 sm:pt-20">
-        <Hero/>
-        <About/>
-        <Services/>
-        <WhyChooseUs/>
-        <GetStarted/>
-        <FAQ/>
-        <GetInTouch/>
-      </main>
-      {/* Sticky Fixed Navbar */}
-      <Footer/>
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-[#F5F7FB] flex flex-col selection:bg-[#EF303B] selection:text-white">
+        {/* Sticky Fixed Navbar */}
+        <Navbar />
+        {/* Main Content Area - padded to clear the navbar cleanly */}
+        <main className="flex-1 pt-16 sm:pt-20">
+          <Hero/>
+          <About/>
+          <Services/>
+          <WhyChooseUs/>
+          <GetStarted/>
+          <FAQ/>
+          <GetInTouch/>
+        </main>
+        {/* Sticky Fixed Navbar */}
+        <Footer/>
+      </div>
+    </LanguageProvider>
   );
 }

@@ -1,3 +1,5 @@
+// border and hover border change 
+
 // // src/components/FAQ.jsx
 // import { useEffect, useId, useRef, useState } from "react";
 // import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
@@ -46,17 +48,17 @@
 
 // const tones = {
 //   red: {
-//     card: "border-[#EF303B]/15 bg-gradient-to-br from-[#EF303B]/[0.07] to-[#EF303B]/[0.025] shadow-[0_10px_26px_-20px_rgba(239,48,59,0.4)] group-hover/card:border-[#EF303B]/35 group-hover/card:shadow-[0_18px_38px_-20px_rgba(239,48,59,0.4)]",
-//     badge: "bg-[#EF303B]/12 text-[#EF303B]",
+//     card: "border-[#EF303B]/50 bg-gradient-to-br from-[#EF303B]/[0.13] to-[#EF303B]/[0.05] shadow-[0_10px_26px_-20px_rgba(239,48,59,0.48)] group-hover/card:border-[#EF303B]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(239,48,59,0.48)]",
+//     badge: "bg-[#EF303B]/23 text-[#EF303B]",
 //     chevron:
-//       "border-[#EF303B]/25 text-[#EF303B] group-hover/card:border-[#EF303B]/50",
+//       "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B]/99",
 //     focus: "focus-visible:ring-[#EF303B]/40",
 //   },
 //   blue: {
-//     card: "border-[#214779]/15 bg-gradient-to-br from-[#214779]/[0.07] to-[#214779]/[0.025] shadow-[0_10px_26px_-20px_rgba(16,44,77,0.4)] group-hover/card:border-[#214779]/35 group-hover/card:shadow-[0_18px_38px_-20px_rgba(16,44,77,0.4)]",
-//     badge: "bg-[#214779]/12 text-[#214779]",
+//     card: "border-[#214779]/50 bg-gradient-to-br from-[#214779]/[0.13] to-[#214779]/[0.05] shadow-[0_10px_26px_-20px_rgba(16,44,77,0.4)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(16,44,77,0.48)]",
+//     badge: "bg-[#214779]/23 text-[#214779]",
 //     chevron:
-//       "border-[#214779]/25 text-[#214779] group-hover/card:border-[#214779]/50",
+//       "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779]/99",
 //     focus: "focus-visible:ring-[#214779]/40",
 //   },
 // };
@@ -134,7 +136,7 @@
 //             >
 //               {/* Padding lives on an inner div so the height animation never clips it. */}
 //               <div className="px-4 pb-5 pl-[4.5rem] pr-5 sm:pl-[5.75rem] sm:pr-16 lg:pl-[6.25rem]">
-//                 <p className="m-0 text-sm leading-relaxed text-[#64748B] sm:text-[15px]">
+//                 <p className="m-0 text-sm leading-relaxed text-[#334155] sm:text-[15px]">
 //                   {item.answer}
 //                 </p>
 //               </div>
@@ -209,12 +211,12 @@
 //     <section
 //       id="faqs"
 //       aria-labelledby="faq-heading"
-//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-16 sm:py-20 md:-mt-20 lg:py-23"
+//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-5 sm:py-20 md:-mt-20 lg:py-23"
 //     >
 //       {/* Decorative shapes */}
 //       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
 //         <div className="absolute -left-24 bottom-10 h-80 w-80 rounded-full bg-[#214779]/[0.05] blur-3xl" />
-//         <div className="absolute -right-24 -top-24 h-[26rem] w-[26rem] rounded-full border-[26px] border-[#EF303B]/[0.06]" />
+//         <div className="absolute -right-24 -top-24 h-[26rem] w-[26rem] rounded-full border-[26px] border-[#EF303B]/[0.10]" />
 //         <div className="absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-[#EF303B]/[0.04] blur-3xl" />
 //       </div>
 
@@ -253,7 +255,7 @@
 
 //               <motion.p
 //                 variants={fadeUp}
-//                 className="mt-6 max-w-xl text-base leading-relaxed text-[#64748B] sm:text-lg"
+//                 className="mt-6 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
 //               >
 //                 Find answers to common questions about our membership, deposit
 //                 schemes, loan facilities, and other services.
@@ -265,7 +267,7 @@
 //               ref={figureRef}
 //               variants={fadeUp}
 //               style={figureHeight !== null ? { height: `${figureHeight}px` } : undefined}
-//               className="group/img m-0 mt-8 flex w-full items-center justify-center overflow-hidden rounded-3xl border border-white bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.45)] sm:mt-10"
+//               className="group/img m-0 mt-8 flex w-full items-center justify-center overflow-hidden rounded-3xl border border-[#214779]/50 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/90 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:mt-10"
 //             >
 //               <img
 //                 src={faqImage}
@@ -304,68 +306,124 @@
 
 
 
+//enlish hindi swicher 
 
-//older coder border and hover border change 
 
 // src/components/FAQ.jsx
 import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 // ⚠️ Update this path to your actual FAQ illustration in the project assets.
 import faqImage from "../assets/images/faq-illustration.png";
 
-const faqs = [
-  {
-    no: "01",
-    question: "Which deposit schemes are available?",
-    answer:
-      "Available options may include Fixed Deposits, Recurring Deposits, savings accounts, daily deposit schemes, and other applicable plans. Contact our office to confirm current availability.",
-    tone: "red",
+const faqContent = {
+  en: {
+    eyebrow: "Frequently Asked Questions",
+    headingLine1: "Frequently Asked",
+    headingLine2: "Questions",
+    para: "Find answers to common questions about our membership, deposit schemes, loan facilities, and other services.",
+    imageAlt:
+      "A large navy question mark with chat bubbles, a plant, FAQ letter blocks, stacked books, a checklist, gold coins and a pen, representing frequently asked questions about deposits, loans and membership",
+    faqs: [
+      {
+        no: "01",
+        question: "Which deposit schemes are available?",
+        answer:
+          "Available options may include Fixed Deposits, Recurring Deposits, savings accounts, daily deposit schemes, and other applicable plans. Contact our office to confirm current availability.",
+        tone: "red",
+      },
+      {
+        no: "02",
+        question: "Who can apply for a loan?",
+        answer:
+          "Eligible members may apply for available loan facilities, subject to the society's policies, documentation, and approval process.",
+        tone: "blue",
+      },
+      {
+        no: "03",
+        question: "How can I check current interest rates?",
+        answer:
+          "Please contact our office for the latest applicable interest rates, deposit tenures, loan terms, and charges.",
+        tone: "red",
+      },
+      {
+        no: "04",
+        question: "How do I become a member?",
+        answer:
+          "Contact our office for membership eligibility, required documents, and the application procedure.",
+        tone: "blue",
+      },
+      {
+        no: "05",
+        question: "Where can I get more information?",
+        answer:
+          "You can contact our office directly using the phone number and address provided below.",
+        tone: "red",
+      },
+    ],
   },
-  {
-    no: "02",
-    question: "Who can apply for a loan?",
-    answer:
-      "Eligible members may apply for available loan facilities, subject to the society's policies, documentation, and approval process.",
-    tone: "blue",
+  hi: {
+    eyebrow: "अक्सर पूछे जाने वाले प्रश्न",
+    headingLine1: "अक्सर पूछे जाने वाले",
+    headingLine2: "प्रश्न",
+    para: "हमारी सदस्यता, जमा योजनाओं, ऋण सुविधाओं और अन्य सेवाओं के बारे में सामान्य प्रश्नों के उत्तर यहाँ पाएँ।",
+    imageAlt:
+      "चैट बबल, पौधा, FAQ ब्लॉक, किताबें, चेकलिस्ट और सोने के सिक्कों के साथ एक बड़ा प्रश्न चिह्न, जो जमा, ऋण और सदस्यता से जुड़े प्रश्नों को दर्शाता है",
+    faqs: [
+      {
+        no: "01",
+        question: "कौन-सी जमा योजनाएँ उपलब्ध हैं?",
+        answer:
+          "उपलब्ध विकल्पों में सावधि जमा (Fixed Deposits), आवर्ती जमा (Recurring Deposits), बचत खाते, दैनिक जमा योजनाएँ और अन्य लागू योजनाएँ शामिल हो सकती हैं। वर्तमान उपलब्धता की पुष्टि के लिए हमारे कार्यालय से संपर्क करें।",
+        tone: "red",
+      },
+      {
+        no: "02",
+        question: "ऋण के लिए कौन आवेदन कर सकता है?",
+        answer:
+          "पात्र सदस्य सोसायटी की नीतियों, दस्तावेज़ीकरण और स्वीकृति प्रक्रिया के अधीन उपलब्ध ऋण सुविधाओं के लिए आवेदन कर सकते हैं।",
+        tone: "blue",
+      },
+      {
+        no: "03",
+        question: "मैं वर्तमान ब्याज दरों की जानकारी कैसे प्राप्त कर सकता हूँ?",
+        answer:
+          "नवीनतम लागू ब्याज दरों, जमा अवधि, ऋण शर्तों और शुल्कों की जानकारी के लिए कृपया हमारे कार्यालय से संपर्क करें।",
+        tone: "red",
+      },
+      {
+        no: "04",
+        question: "मैं सदस्य कैसे बन सकता हूँ?",
+        answer:
+          "सदस्यता पात्रता, आवश्यक दस्तावेज़ों और आवेदन प्रक्रिया की जानकारी के लिए हमारे कार्यालय से संपर्क करें।",
+        tone: "blue",
+      },
+      {
+        no: "05",
+        question: "मुझे अधिक जानकारी कहाँ से मिल सकती है?",
+        answer:
+          "आप नीचे दिए गए फ़ोन नंबर और पते के माध्यम से सीधे हमारे कार्यालय से संपर्क कर सकते हैं।",
+        tone: "red",
+      },
+    ],
   },
-  {
-    no: "03",
-    question: "How can I check current interest rates?",
-    answer:
-      "Please contact our office for the latest applicable interest rates, deposit tenures, loan terms, and charges.",
-    tone: "red",
-  },
-  {
-    no: "04",
-    question: "How do I become a member?",
-    answer:
-      "Contact our office for membership eligibility, required documents, and the application procedure.",
-    tone: "blue",
-  },
-  {
-    no: "05",
-    question: "Where can I get more information?",
-    answer:
-      "You can contact our office directly using the phone number and address provided below.",
-    tone: "red",
-  },
-];
+};
 
 const tones = {
   red: {
-    card: "border-[#EF303B]/50 bg-gradient-to-br from-[#EF303B]/[0.13] to-[#EF303B]/[0.05] shadow-[0_10px_26px_-20px_rgba(239,48,59,0.48)] group-hover/card:border-[#EF303B]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(239,48,59,0.48)]",
-    badge: "bg-[#EF303B]/23 text-[#EF303B]",
+    card: "border-[#EF303B]/65 bg-gradient-to-br from-[#EF303B]/[0.13] to-[#EF303B]/[0.04] shadow-[0_10px_28px_-18px_rgba(239,48,59,0.55)] group-hover/card:border-[#EF303B]/100 group-hover/card:shadow-[0_20px_40px_-18px_rgba(239,48,59,0.70)]",
+    badge: "bg-[#EF303B]/20 text-[#EF303B]",
     chevron:
-      "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B]/99",
+      "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
     focus: "focus-visible:ring-[#EF303B]/40",
   },
   blue: {
-    card: "border-[#214779]/50 bg-gradient-to-br from-[#214779]/[0.13] to-[#214779]/[0.05] shadow-[0_10px_26px_-20px_rgba(16,44,77,0.4)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(16,44,77,0.48)]",
-    badge: "bg-[#214779]/23 text-[#214779]",
+    card: "border-[#214779]/65 bg-gradient-to-br from-[#214779]/[0.13] to-[#214779]/[0.04] shadow-[0_10px_28px_-18px_rgba(16,44,77,0.55)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_20px_40px_-18px_rgba(16,44,77,0.70)]",
+    badge: "bg-[#214779]/20 text-[#214779]",
     chevron:
-      "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779]/99",
+      "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
     focus: "focus-visible:ring-[#214779]/40",
   },
 };
@@ -414,7 +472,7 @@ function FaqItem({ item, isOpen, onToggle, reduceMotion }) {
 
             <span
               aria-hidden="true"
-              className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border bg-white transition-[border-color] duration-300 ease-in-out motion-reduce:transition-none sm:h-10 sm:w-10 ${t.chevron}`}
+              className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border bg-white/70 transition-[background-color,border-color,color] duration-300 ease-in-out motion-reduce:transition-none sm:h-10 sm:w-10 ${t.chevron}`}
             >
               <ChevronDown
                 className={`h-5 w-5 transition-[rotate] duration-300 ease-in-out motion-reduce:transition-none ${
@@ -456,10 +514,14 @@ function FaqItem({ item, isOpen, onToggle, reduceMotion }) {
 }
 
 export default function FAQ() {
+  const { lang } = useLanguage();
   const reduceMotion = useReducedMotion();
   const initial = reduceMotion ? false : "hidden";
   // Single-open accordion; the first item starts open, as in the reference.
   const [openIndex, setOpenIndex] = useState(0);
+
+  const copy = faqContent[lang] || faqContent.en;
+  const isHi = lang === "hi";
 
   const headerRef = useRef(null);
   const figureRef = useRef(null);
@@ -512,7 +574,7 @@ export default function FAQ() {
       mql.removeEventListener("change", scheduleSync);
       window.removeEventListener("resize", scheduleSync);
     };
-  }, []);
+  }, [lang]);
 
   return (
     <section
@@ -541,17 +603,21 @@ export default function FAQ() {
               <motion.div variants={fadeUp} className="flex items-center gap-3">
                 <span aria-hidden="true" className="h-[2px] w-10 bg-[#EF303B] sm:w-12" />
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#EF303B] sm:text-sm">
-                  Frequently Asked Questions
+                  {copy.eyebrow}
                 </p>
               </motion.div>
 
               <motion.h2
                 id="faq-heading"
                 variants={fadeUp}
-                className="mt-5 text-[2rem] font-extrabold leading-[1.1] tracking-tight min-[400px]:text-4xl sm:text-5xl xl:text-[3.4rem]"
+                className={`mt-5 font-extrabold tracking-tight ${
+                  isHi
+                    ? "text-[1.85rem] leading-[1.28] min-[400px]:text-3xl sm:text-4xl lg:text-[2.5rem] xl:text-[2.85rem]"
+                    : "text-[2rem] leading-[1.1] min-[400px]:text-4xl sm:text-5xl xl:text-[3.4rem]"
+                }`}
               >
-                <span className="block text-[#102C4D]">Frequently Asked</span>
-                <span className="block text-[#EF303B]">Questions</span>
+                <span className="block text-[#102C4D]">{copy.headingLine1}</span>
+                <span className="block text-[#EF303B]">{copy.headingLine2}</span>
               </motion.h2>
 
               <motion.div
@@ -564,8 +630,7 @@ export default function FAQ() {
                 variants={fadeUp}
                 className="mt-6 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
               >
-                Find answers to common questions about our membership, deposit
-                schemes, loan facilities, and other services.
+                {copy.para}
               </motion.p>
             </div>
 
@@ -574,11 +639,11 @@ export default function FAQ() {
               ref={figureRef}
               variants={fadeUp}
               style={figureHeight !== null ? { height: `${figureHeight}px` } : undefined}
-              className="group/img m-0 mt-8 flex w-full items-center justify-center overflow-hidden rounded-3xl border border-[#214779]/50 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/90 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:mt-10"
+              className="group/img m-0 mt-8 flex w-full items-center justify-center overflow-hidden rounded-3xl border border-[#214779]/60 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/99 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:mt-10"
             >
               <img
                 src={faqImage}
-                alt="A large navy question mark with chat bubbles, a plant, FAQ letter blocks, stacked books, a checklist, gold coins and a pen, representing frequently asked questions about deposits, loans and membership"
+                alt={copy.imageAlt}
                 loading="lazy"
                 decoding="async"
                 className="block aspect-[4/3] h-auto w-full transform-gpu object-cover object-center transition-transform duration-500 ease-out will-change-transform group-hover/img:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover/img:scale-100 lg:aspect-auto lg:h-full"
@@ -595,7 +660,7 @@ export default function FAQ() {
             viewport={{ once: true, amount: 0.1 }}
             className="m-0 flex min-w-0 list-none flex-col gap-4 p-0 sm:gap-5"
           >
-            {faqs.map((item, i) => (
+            {copy.faqs.map((item, i) => (
               <FaqItem
                 key={item.no}
                 item={item}
