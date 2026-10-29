@@ -373,7 +373,7 @@ export default function Navbar() {
             <div
               role="group"
               aria-label={t.navbar.languageLabel}
-              className="inline-flex items-center rounded-full border border-[#214779]/25 bg-white p-1 shadow-[0_2px_10px_-4px_rgba(16,44,77,0.18)] transition-colors duration-200 hover:border-[#214779]/45"
+              className="inline-flex items-center rounded-full border border-[#214779]/80 bg-white p-1 shadow-[0_2px_10px_-4px_rgba(16,44,77,0.70)] transition-colors duration-200 hover:border-[#214779]/99"
             >
               <button
                 type="button"
@@ -390,7 +390,7 @@ export default function Navbar() {
 
               <span
                 aria-hidden="true"
-                className="mx-0.5 select-none text-xs font-normal text-[#214779]/30"
+                className="mx-0.5 select-none text-xs font-normal text-[#214779]/99"
               >
                 |
               </span>
@@ -424,7 +424,7 @@ export default function Navbar() {
             <div
               role="group"
               aria-label={t.navbar.languageLabel}
-              className="inline-flex items-center rounded-full border border-[#214779]/25 bg-white p-0.5 shadow-xs"
+              className="inline-flex items-center rounded-full border border-[#214779]/80 bg-white p-0.5 shadow-xs"
             >
               <button
                 type="button"
@@ -440,7 +440,7 @@ export default function Navbar() {
               </button>
               <span
                 aria-hidden="true"
-                className="select-none text-[11px] text-[#214779]/30"
+                className="select-none text-[11px] text-[#214779]/99"
               >
                 |
               </span>
