@@ -1,0 +1,413 @@
+// // src/components/About.jsx
+// import { motion, useReducedMotion } from "framer-motion";
+// import { ArrowRight, Target, Eye, ZoomIn } from "lucide-react";
+
+// // ⚠️ Update this path to your actual finance-themed image in the project assets.
+// import aboutImage from "../assets/images/about-finance.png";
+
+// const cards = [
+//   {
+//     icon: Target,
+//     title: "Our Mission",
+//     description:
+//       "To encourage financial discipline, promote savings, and provide accessible information about financial services to our members.",
+//     tone: "red",
+//   },
+//   {
+//     icon: Eye,
+//     title: "Our Vision",
+//     description:
+//       "To build long-term relationships with our members through trust, transparency, and responsible service.",
+//     tone: "navy",
+//   },
+// ];
+
+// const toneStyles = {
+//   red: {
+//     card: "border-[#EF303B]/20 bg-gradient-to-br from-[#EF303B]/[0.08] to-[#EF303B]/[0.03] shadow-[0_10px_28px_-18px_rgba(239,48,59,0.4)] group-hover/card:border-[#EF303B]/35 group-hover/card:shadow-[0_20px_40px_-18px_rgba(239,48,59,0.38)]",
+//     iconWrap: "bg-[#EF303B]/12 text-[#EF303B]",
+//     underline: "bg-[#EF303B]",
+//     arrow:
+//       "border-[#EF303B]/30 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
+//   },
+//   navy: {
+//     card: "border-[#214779]/20 bg-gradient-to-br from-[#214779]/[0.07] to-[#214779]/[0.025] shadow-[0_10px_28px_-18px_rgba(16,44,77,0.4)] group-hover/card:border-[#214779]/35 group-hover/card:shadow-[0_20px_40px_-18px_rgba(16,44,77,0.38)]",
+//     iconWrap: "bg-[#214779]/12 text-[#214779]",
+//     underline: "bg-[#214779]",
+//     arrow:
+//       "border-[#214779]/30 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
+//   },
+// };
+
+// const container = {
+//   hidden: {},
+//   show: { transition: { staggerChildren: 0.12 } },
+// };
+
+// const fadeUp = {
+//   hidden: { opacity: 0, y: 20 },
+//   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+// };
+
+// export default function About() {
+//   const reduceMotion = useReducedMotion();
+//   const initial = reduceMotion ? false : "hidden";
+
+//   return (
+//     <section
+//       id="about"
+//       aria-labelledby="about-heading"
+//       className="relative isolate overflow-hidden bg-[#F5F7FB]/60 bg-white py-16 sm:py-20 lg:py-23"
+//     >
+//       {/* Subtle decorative shapes */}
+//       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+//         <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-[#F5F7FB] blur-2xl sm:h-96 sm:w-96" />
+//         <div className="absolute -right-16 -top-10 h-56 w-56 rounded-full bg-[#EF303B]/[0.05] blur-2xl sm:h-72 sm:w-72" />
+//         <div className="absolute -right-20 bottom-0 h-64 w-64 rounded-full bg-[#214779]/[0.05] sm:h-80 sm:w-80" />
+//       </div>
+
+//       <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-8 lg:px-10 2xl:max-w-[1440px]">
+//         {/* Top row: intro (left) + image (right) */}
+//         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-20">
+//           {/* Left: introduction */}
+//           <motion.div
+//             variants={container}
+//             initial={initial}
+//             whileInView="show"
+//             viewport={{ once: true, amount: 0.2 }}
+//             className="min-w-0 text-left"
+//           >
+//             <motion.div variants={fadeUp} className="flex items-center gap-3">
+//               <span aria-hidden="true" className="h-[2px] w-10 bg-[#EF303B] sm:w-12" />
+//               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EF303B] sm:text-sm">
+//                 About Us
+//               </p>
+//             </motion.div>
+
+//             <motion.h2
+//               id="about-heading"
+//               variants={fadeUp}
+//               className="mt-5 text-[1.9rem] font-extrabold leading-[1.12] tracking-tight min-[400px]:text-4xl sm:text-5xl xl:text-[3.25rem]"
+//             >
+//               <span className="block text-[#102C4D]">A Trusted Partner for</span>
+//               <span className="block text-[#EF303B]">Your Financial Journey</span>
+//             </motion.h2>
+
+//             <motion.div
+//               variants={fadeUp}
+//               aria-hidden="true"
+//               className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#214779] to-[#EF303B]"
+//             />
+
+//             <motion.p
+//               variants={fadeUp}
+//               className="mt-7 max-w-xl text-base leading-relaxed text-[#64748B] sm:text-lg"
+//             >
+//               At Kalyan Urban Co-operative Credit Society Limited, we believe that
+//               financial confidence begins with the right information and
+//               responsible financial planning.
+//             </motion.p>
+
+//             <motion.p
+//               variants={fadeUp}
+//               className="mt-5 max-w-xl text-base leading-relaxed text-[#64748B] sm:text-lg"
+//             >
+//               Our aim is to encourage regular savings and provide our members with
+//               information about available deposit schemes and credit facilities.
+//               We strive to maintain a transparent, member-focused approach while
+//               delivering services in accordance with applicable policies and
+//               eligibility requirements.
+//             </motion.p>
+//           </motion.div>
+
+//           {/* Right: image (stationary wrapper = hover trigger, only <img> scales) */}
+//           <motion.figure
+//             variants={fadeUp}
+//             initial={initial}
+//             whileInView="show"
+//             viewport={{ once: true, amount: 0.2 }}
+//             className="group/img relative m-0 w-full min-w-0 overflow-hidden rounded-2xl border border-white bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.45)] sm:rounded-3xl"
+//           >
+//             <img
+//               src={aboutImage}
+//               alt="Ascending stacks of coins beside a jar of coins with a green plant growing from it, and a small wooden house, symbolising savings and growth"
+//               width={1634}
+//               height={963}
+//               loading="lazy"
+//               decoding="async"
+//               className="block aspect-[4/3] h-auto w-full transform-gpu object-cover object-[78%_center] transition-[scale] duration-500 ease-out will-change-transform group-hover/img:scale-[1.04] sm:aspect-[16/11] lg:aspect-[1.47/1] motion-reduce:transition-none motion-reduce:group-hover/img:scale-100"
+//             />
+//             {/* Decorative zoom badge (purely visual) */}
+//             {/* <span
+//               aria-hidden="true"
+//               className="pointer-events-none absolute left-[62%] top-[34%] hidden h-11 w-11 items-center justify-center rounded-full bg-white text-[#102C4D] shadow-[0_8px_20px_-6px_rgba(16,44,77,0.4)] sm:flex"
+//             >
+//               <ZoomIn className="h-5 w-5" />
+//             </span> */}
+//           </motion.figure>
+//         </div>
+
+//         {/* Bottom row: Mission + Vision, full width, equal height */}
+//         <motion.ul
+//           variants={container}
+//           initial={initial}
+//           whileInView="show"
+//           viewport={{ once: true, amount: 0.15 }}
+//           className="m-0 mt-10 grid list-none grid-cols-1 gap-5 p-0 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:mt-14 lg:gap-8"
+//         >
+//           {cards.map(({ icon: Icon, title, description, tone }) => {
+//             const s = toneStyles[tone];
+//             return (
+//               // Stationary hover trigger so the lifted card can't cause flicker.
+//               <motion.li key={title} variants={fadeUp} className="group/card flex">
+//                 <article
+//                   className={`flex w-full transform-gpu items-start gap-4 rounded-2xl border p-5 transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-[5px] motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 sm:gap-5 sm:p-6 lg:p-7 ${s.card}`}
+//                 >
+//                   <span
+//                     className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full sm:h-16 sm:w-16 lg:h-[72px] lg:w-[72px] ${s.iconWrap}`}
+//                   >
+//                     <Icon
+//                       aria-hidden="true"
+//                       strokeWidth={1.75}
+//                       className="h-7 w-7 sm:h-8 sm:w-8 lg:h-9 lg:w-9"
+//                     />
+//                   </span>
+
+//                   <div className="min-w-0 flex-1">
+//                     <h3 className="text-xl font-extrabold text-[#102C4D] sm:text-2xl">
+//                       {title}
+//                     </h3>
+//                     <span
+//                       aria-hidden="true"
+//                       className={`mt-2 block h-[3px] w-8 rounded-full ${s.underline}`}
+//                     />
+//                     <p className="mt-3 text-sm leading-relaxed text-[#64748B] sm:text-base">
+//                       {description}
+//                     </p>
+//                   </div>
+
+//                   <span
+//                     aria-hidden="true"
+//                     className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border bg-white/70 transition-[background-color,border-color,color] duration-300 ease-in-out motion-reduce:transition-none sm:h-11 sm:w-11 ${s.arrow}`}
+//                   >
+//                     <ArrowRight className="h-4 w-4 transition-[translate] duration-300 ease-in-out group-hover/card:translate-x-[3px] motion-reduce:transition-none motion-reduce:group-hover/card:translate-x-0 sm:h-5 sm:w-5" />
+//                   </span>
+//                 </article>
+//               </motion.li>
+//             );
+//           })}
+//         </motion.ul>
+//       </div>
+//     </section>
+//   );
+// }
+
+
+
+
+//border inhance 
+
+
+// src/components/About.jsx
+import { motion, useReducedMotion } from "framer-motion";
+import { ArrowRight, Target, Eye, ZoomIn } from "lucide-react";
+
+// ⚠️ Update this path to your actual finance-themed image in the project assets.
+import aboutImage from "../assets/images/about-finance.png";
+
+const cards = [
+  {
+    icon: Target,
+    title: "Our Mission",
+    description:
+      "To encourage financial discipline, promote savings, and provide accessible information about financial services to our members.",
+    tone: "red",
+  },
+  {
+    icon: Eye,
+    title: "Our Vision",
+    description:
+      "To build long-term relationships with our members through trust, transparency, and responsible service.",
+    tone: "navy",
+  },
+];
+
+const toneStyles = {
+  red: {
+    card: "border-[#EF303B]/65 bg-gradient-to-br from-[#EF303B]/[0.13] to-[#EF303B]/[0.04] shadow-[0_10px_28px_-18px_rgba(239,48,59,0.55)] group-hover/card:border-[#EF303B]/100 group-hover/card:shadow-[0_20px_40px_-18px_rgba(239,48,59,0.70)]",
+    iconWrap: "bg-[#EF303B]/20 text-[#EF303B]",
+    underline: "bg-[#EF303B]",
+    arrow: 
+      "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
+  },
+  navy: {
+    card: "border-[#214779]/65 bg-gradient-to-br from-[#214779]/[0.13] to-[#214779]/[0.04] shadow-[0_10px_28px_-18px_rgba(16,44,77,0.55)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_20px_40px_-18px_rgba(16,44,77,0.70)]",
+    iconWrap: "bg-[#214779]/20 text-[#214779]",
+    underline: "bg-[#214779]",
+    arrow: 
+      "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
+  },
+};
+
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12 } },
+};
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+export default function About() {
+  const reduceMotion = useReducedMotion();
+  const initial = reduceMotion ? false : "hidden";
+
+  return (
+    <section
+      id="about"
+      aria-labelledby="about-heading"
+      className="relative isolate overflow-hidden bg-[#F5F7FB]/60 bg-white py-5 sm:py-20 lg:py-20"
+    >
+      {/* Subtle decorative shapes */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-[#F5F7FB] blur-2xl sm:h-96 sm:w-96" />
+        <div className="absolute -right-16 -top-10 h-56 w-56 rounded-full bg-[#EF303B]/[0.05] blur-2xl sm:h-72 sm:w-72" />
+        <div className="absolute -right-20 bottom-0 h-64 w-64 rounded-full bg-[#214779]/[0.05] sm:h-80 sm:w-80" />
+      </div>
+
+      <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-8 lg:px-10 2xl:max-w-[1440px]">
+        {/* Top row: intro (left) + image (right) */}
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14 xl:gap-20">
+          {/* Left: introduction */}
+          <motion.div
+            variants={container}
+            initial={initial}
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+            className="min-w-0 text-left"
+          >
+            <motion.div variants={fadeUp} className="flex items-center gap-3">
+              <span aria-hidden="true" className="h-[2px] w-10 bg-[#EF303B] sm:w-12" />
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EF303B] sm:text-sm">
+                About Us
+              </p>
+            </motion.div>
+
+            <motion.h2
+              id="about-heading"
+              variants={fadeUp}
+              className="mt-5 text-[1.9rem] font-extrabold leading-[1.12] tracking-tight min-[400px]:text-4xl sm:text-5xl xl:text-[3.25rem]"
+            >
+              <span className="block text-[#102C4D]">A Trusted Partner for</span>
+              <span className="block text-[#EF303B]">Your Financial Journey</span>
+            </motion.h2>
+
+            <motion.div
+              variants={fadeUp}
+              aria-hidden="true"
+              className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#214779] to-[#EF303B]"
+            />
+
+            <motion.p
+              variants={fadeUp}
+              className="mt-7 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
+            >
+              At Kalyan Urban Co-operative Credit Society Limited, we believe that
+              financial confidence begins with the right information and
+              responsible financial planning.
+            </motion.p>
+
+            <motion.p
+              variants={fadeUp}
+              className="mt-5 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
+            >
+              Our aim is to encourage regular savings and provide our members with
+              information about available deposit schemes and credit facilities.
+              We strive to maintain a transparent, member-focused approach while
+              delivering services in accordance with applicable policies and
+              eligibility requirements.
+            </motion.p>
+          </motion.div>
+
+          {/* Right: image (stationary wrapper = hover trigger, only <img> scales) */}
+          <motion.figure
+            variants={fadeUp}
+            initial={initial}
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+            className="group/img relative m-0 w-full min-w-0 overflow-hidden rounded-2xl border border-[#214779]/60 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/99 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:rounded-3xl"
+          >
+            <img
+              src={aboutImage}
+              alt="Ascending stacks of coins beside a jar of coins with a green plant growing from it, and a small wooden house, symbolising savings and growth"
+              width={1634}
+              height={963}
+              loading="lazy"
+              decoding="async"
+              className="block aspect-[4/3] h-auto w-full transform-gpu object-cover object-[78%_center] transition-[scale] duration-500 ease-out will-change-transform group-hover/img:scale-[1.04] sm:aspect-[16/11] lg:aspect-[1.47/1] motion-reduce:transition-none motion-reduce:group-hover/img:scale-100"
+            />
+            {/* Decorative zoom badge (purely visual) */}
+            {/* <span
+              aria-hidden="true"
+              className="pointer-events-none absolute left-[62%] top-[34%] hidden h-11 w-11 items-center justify-center rounded-full bg-white text-[#102C4D] shadow-[0_8px_20px_-6px_rgba(16,44,77,0.4)] sm:flex"
+            >
+              <ZoomIn className="h-5 w-5" />
+            </span> */}
+          </motion.figure>
+        </div>
+
+        {/* Bottom row: Mission + Vision, full width, equal height */}
+        <motion.ul
+          variants={container}
+          initial={initial}
+          whileInView="show"
+          viewport={{ once: true, amount: 0.15 }}
+          className="m-0 mt-10 grid list-none grid-cols-1 gap-5 p-0 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:mt-14 lg:gap-8"
+        >
+          {cards.map(({ icon: Icon, title, description, tone }) => {
+            const s = toneStyles[tone];
+            return (
+              // Stationary hover trigger so the lifted card can't cause flicker.
+              <motion.li key={title} variants={fadeUp} className="group/card flex">
+                <article
+                  className={`flex w-full transform-gpu items-start gap-4 rounded-2xl border p-5 transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-[5px] motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 sm:gap-5 sm:p-6 lg:p-7 ${s.card}`}
+                >
+                  <span
+                    className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full sm:h-16 sm:w-16 lg:h-[72px] lg:w-[72px] ${s.iconWrap}`}
+                  >
+                    <Icon
+                      aria-hidden="true"
+                      strokeWidth={1.75}
+                      className="h-7 w-7 sm:h-8 sm:w-8 lg:h-9 lg:w-9"
+                    />
+                  </span>
+
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-xl font-extrabold text-[#102C4D] sm:text-2xl">
+                      {title}
+                    </h3>
+                    <span
+                      aria-hidden="true"
+                      className={`mt-2 block h-[3px] w-8 rounded-full ${s.underline}`}
+                    />
+                    <p className="mt-3 text-sm leading-relaxed text-[#334155] sm:text-base">
+                      {description}
+                    </p>
+                  </div>
+
+                  <span
+                    aria-hidden="true"
+                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border bg-white/70 transition-[background-color,border-color,color] duration-300 ease-in-out motion-reduce:transition-none sm:h-11 sm:w-11 ${s.arrow}`}
+                  >
+                    <ArrowRight className="h-4 w-4 transition-[translate] duration-300 ease-in-out group-hover/card:translate-x-[3px] motion-reduce:transition-none motion-reduce:group-hover/card:translate-x-0 sm:h-5 sm:w-5" />
+                  </span>
+                </article>
+              </motion.li>
+            );
+          })}
+        </motion.ul>
+      </div>
+    </section>
+  );
+}

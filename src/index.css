@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  /* Approved Brand Color Palette */
+  --primary-navy: #214779;
+  --deep-navy: #102c4d;
+  --brand-red: #ef303b;
+  --bg-white: #ffffff;
+  --bg-light: #f5f7fb;
+  --text-primary: #183d6b;
+  --text-secondary: #64748b;
+  --navbar-height: 76px;
+}
+
+/* Global resets & scroll safety */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--navbar-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg-light);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Global sanity guard to prevent ANY image from overflowing */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Lenis classes */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+/* Accessible focus outline */
+:focus-visible {
+  outline: 2px solid var(--brand-red);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

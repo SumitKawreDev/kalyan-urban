@@ -1,0 +1,129 @@
+/* Logo hard constraints: strictly prevents any dimensional explosion */
+.navbar-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  max-height: 52px;
+  width: auto;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.navbar-logo-img {
+  height: 100% !important;
+  max-height: 52px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+@media (max-width: 640px) {
+  .navbar-logo-wrapper {
+    height: 44px;
+    max-height: 44px;
+  }
+  .navbar-logo-img {
+    max-height: 44px !important;
+  }
+}
+
+/* Underline link hover animation */
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.925rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 6px 0;
+  transition: color 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--brand-red);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--brand-red);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-link.active {
+  color: var(--primary-navy);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  transform: scaleX(1);
+  background-color: var(--brand-red);
+}
+
+/* CTA Pill Button */
+.cta-button {
+  background-color: var(--brand-red);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: 9999px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(239, 48, 59, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #d8242f;
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 16px rgba(239, 48, 59, 0.35);
+}
+
+.cta-button .cta-arrow {
+  transition: transform 0.2s ease;
+}
+
+.cta-button:hover .cta-arrow {
+  transform: translateX(3px);
+}
+
+/* Testing Section Placeholders */
+.test-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.test-section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.test-section:nth-child(odd) {
+  background-color: var(--bg-light);
+}
