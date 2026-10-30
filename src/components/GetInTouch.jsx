@@ -636,7 +636,7 @@ export default function GetInTouch() {
                       className={`w-full rounded-xl border bg-white py-2.5 pl-10 pr-4 text-sm text-[#1E2E28] placeholder-[#94A39D] transition-colors focus:outline-none focus:ring-2 ${
                         errors.fullName
                           ? "border-red-500 focus:border-red-500 focus:ring-red-500/20"
-                          : "border-gray-200 focus:border-[#0F5743] focus:ring-[#0F5743]/20"
+                          : "border-gray-400 focus:border-[#0F5743] focus:ring-[#0F5743]/20"
                       }`}
                     />
                   </div>
@@ -676,7 +676,7 @@ export default function GetInTouch() {
                       className={`w-full rounded-xl border bg-white py-2.5 pl-10 pr-4 text-sm text-[#1E2E28] placeholder-[#94A39D] transition-colors focus:outline-none focus:ring-2 ${
                         errors.mobileNumber
                           ? "border-red-500 focus:border-red-500 focus:ring-red-500/20"
-                          : "border-gray-200 focus:border-[#0F5743] focus:ring-[#0F5743]/20"
+                          : "border-gray-400 focus:border-[#0F5743] focus:ring-[#0F5743]/20"
                       }`}
                     />
                   </div>
@@ -714,7 +714,7 @@ export default function GetInTouch() {
                       } ${
                         errors.interestedIn
                           ? "border-red-500 focus:border-red-500 focus:ring-red-500/20"
-                          : "border-gray-200 focus:border-[#0F5743] focus:ring-[#0F5743]/20"
+                          : "border-gray-400 focus:border-[#0F5743] focus:ring-[#0F5743]/20"
                       }`}
                     >
                       <option value="" disabled>
@@ -764,7 +764,7 @@ export default function GetInTouch() {
                       className={`w-full resize-y rounded-xl border bg-white py-2.5 pl-10 pr-4 text-sm text-[#1E2E28] placeholder-[#94A39D] transition-colors focus:outline-none focus:ring-2 ${
                         errors.message
                           ? "border-red-500 focus:border-red-500 focus:ring-red-500/20"
-                          : "border-gray-200 focus:border-[#0F5743] focus:ring-[#0F5743]/20"
+                          : "border-gray-400 focus:border-[#0F5743] focus:ring-[#0F5743]/20"
                       }`}
                     />
                   </div>
