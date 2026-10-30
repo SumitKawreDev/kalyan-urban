@@ -793,7 +793,7 @@ export default function GetInTouch() {
                 </div>
 
                 {/* Direct WhatsApp Chat */}
-                <div>
+                {/* <div>
                   <motion.div variants={fadeUp} className="group/card">
                     <a
                       href={`https://wa.me/${WHATSAPP_NUMBER}`}
@@ -809,7 +809,7 @@ export default function GetInTouch() {
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-in-out group-hover/card:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover/card:translate-x-0" />
                     </a>
                   </motion.div>
-                </div>
+                </div> */}
               </form>
             </div>
           </motion.div>
