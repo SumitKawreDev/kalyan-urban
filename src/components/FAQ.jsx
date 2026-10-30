@@ -14,52 +14,52 @@
 //     question: "Which deposit schemes are available?",
 //     answer:
 //       "Available options may include Fixed Deposits, Recurring Deposits, savings accounts, daily deposit schemes, and other applicable plans. Contact our office to confirm current availability.",
-//     tone: "red",
+//     tone: "orange",
 //   },
 //   {
 //     no: "02",
 //     question: "Who can apply for a loan?",
 //     answer:
 //       "Eligible members may apply for available loan facilities, subject to the society's policies, documentation, and approval process.",
-//     tone: "blue",
+//     tone: "green",
 //   },
 //   {
 //     no: "03",
 //     question: "How can I check current interest rates?",
 //     answer:
 //       "Please contact our office for the latest applicable interest rates, deposit tenures, loan terms, and charges.",
-//     tone: "red",
+//     tone: "orange",
 //   },
 //   {
 //     no: "04",
 //     question: "How do I become a member?",
 //     answer:
 //       "Contact our office for membership eligibility, required documents, and the application procedure.",
-//     tone: "blue",
+//     tone: "green",
 //   },
 //   {
 //     no: "05",
 //     question: "Where can I get more information?",
 //     answer:
 //       "You can contact our office directly using the phone number and address provided below.",
-//     tone: "red",
+//     tone: "orange",
 //   },
 // ];
 
 // const tones = {
-//   red: {
-//     card: "border-[#EF303B]/50 bg-gradient-to-br from-[#EF303B]/[0.13] to-[#EF303B]/[0.05] shadow-[0_10px_26px_-20px_rgba(239,48,59,0.48)] group-hover/card:border-[#EF303B]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(239,48,59,0.48)]",
-//     badge: "bg-[#EF303B]/23 text-[#EF303B]",
+//   orange: {
+//     card: "border-[#ED6E21]/50 bg-gradient-to-br from-[#ED6E21]/[0.13] to-[#ED6E21]/[0.05] shadow-[0_10px_26px_-20px_rgba(237,110,33,0.48)] group-hover/card:border-[#ED6E21]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(237,110,33,0.48)]",
+//     badge: "bg-[#ED6E21]/23 text-[#ED6E21]",
 //     chevron:
-//       "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B]/99",
-//     focus: "focus-visible:ring-[#EF303B]/40",
+//       "border-[#ED6E21]/60 text-[#ED6E21] group-hover/card:border-[#ED6E21]/99",
+//     focus: "focus-visible:ring-[#ED6E21]/40",
 //   },
-//   blue: {
-//     card: "border-[#214779]/50 bg-gradient-to-br from-[#214779]/[0.13] to-[#214779]/[0.05] shadow-[0_10px_26px_-20px_rgba(16,44,77,0.4)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(16,44,77,0.48)]",
-//     badge: "bg-[#214779]/23 text-[#214779]",
+//   green: {
+//     card: "border-[#0F5743]/50 bg-gradient-to-br from-[#0F5743]/[0.13] to-[#0F5743]/[0.05] shadow-[0_10px_26px_-20px_rgba(10,64,51,0.4)] group-hover/card:border-[#0F5743]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(10,64,51,0.48)]",
+//     badge: "bg-[#0F5743]/23 text-[#0F5743]",
 //     chevron:
-//       "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779]/99",
-//     focus: "focus-visible:ring-[#214779]/40",
+//       "border-[#0F5743]/60 text-[#0F5743] group-hover/card:border-[#0F5743]/99",
+//     focus: "focus-visible:ring-[#0F5743]/40",
 //   },
 // };
 
@@ -101,7 +101,7 @@
 //               {item.no}
 //             </span>
 
-//             <span className="min-w-0 flex-1 text-base font-extrabold leading-snug text-[#102C4D] sm:text-lg">
+//             <span className="min-w-0 flex-1 text-base font-extrabold leading-snug text-[#0A4033] sm:text-lg">
 //               {item.question}
 //             </span>
 
@@ -136,7 +136,7 @@
 //             >
 //               {/* Padding lives on an inner div so the height animation never clips it. */}
 //               <div className="px-4 pb-5 pl-[4.5rem] pr-5 sm:pl-[5.75rem] sm:pr-16 lg:pl-[6.25rem]">
-//                 <p className="m-0 text-sm leading-relaxed text-[#334155] sm:text-[15px]">
+//                 <p className="m-0 text-sm leading-relaxed text-[#26332E] sm:text-[15px]">
 //                   {item.answer}
 //                 </p>
 //               </div>
@@ -211,13 +211,13 @@
 //     <section
 //       id="faqs"
 //       aria-labelledby="faq-heading"
-//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-5 sm:py-20 md:-mt-20 lg:py-23"
+//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F3F8F5] to-white py-5 sm:py-20 md:-mt-20 lg:py-23"
 //     >
 //       {/* Decorative shapes */}
 //       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
-//         <div className="absolute -left-24 bottom-10 h-80 w-80 rounded-full bg-[#214779]/[0.05] blur-3xl" />
-//         <div className="absolute -right-24 -top-24 h-[26rem] w-[26rem] rounded-full border-[26px] border-[#EF303B]/[0.10]" />
-//         <div className="absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-[#EF303B]/[0.04] blur-3xl" />
+//         <div className="absolute -left-24 bottom-10 h-80 w-80 rounded-full bg-[#0F5743]/[0.05] blur-3xl" />
+//         <div className="absolute -right-24 -top-24 h-[26rem] w-[26rem] rounded-full border-[26px] border-[#ED6E21]/[0.10]" />
+//         <div className="absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-[#ED6E21]/[0.04] blur-3xl" />
 //       </div>
 
 //       <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-8 lg:px-12 2xl:max-w-[1440px]">
@@ -232,8 +232,8 @@
 //           >
 //             <div ref={headerRef}>
 //               <motion.div variants={fadeUp} className="flex items-center gap-3">
-//                 <span aria-hidden="true" className="h-[2px] w-10 bg-[#EF303B] sm:w-12" />
-//                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#EF303B] sm:text-sm">
+//                 <span aria-hidden="true" className="h-[2px] w-10 bg-[#ED6E21] sm:w-12" />
+//                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#ED6E21] sm:text-sm">
 //                   Frequently Asked Questions
 //                 </p>
 //               </motion.div>
@@ -243,19 +243,19 @@
 //                 variants={fadeUp}
 //                 className="mt-5 text-[2rem] font-extrabold leading-[1.1] tracking-tight min-[400px]:text-4xl sm:text-5xl xl:text-[3.4rem]"
 //               >
-//                 <span className="block text-[#102C4D]">Frequently Asked</span>
-//                 <span className="block text-[#EF303B]">Questions</span>
+//                 <span className="block text-[#0A4033]">Frequently Asked</span>
+//                 <span className="block text-[#ED6E21]">Questions</span>
 //               </motion.h2>
 
 //               <motion.div
 //                 variants={fadeUp}
 //                 aria-hidden="true"
-//                 className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#EF303B] to-[#214779]"
+//                 className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#ED6E21] to-[#0F5743]"
 //               />
 
 //               <motion.p
 //                 variants={fadeUp}
-//                 className="mt-6 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
+//                 className="mt-6 max-w-xl text-base leading-relaxed text-[#26332E] sm:text-lg"
 //               >
 //                 Find answers to common questions about our membership, deposit
 //                 schemes, loan facilities, and other services.
@@ -267,7 +267,7 @@
 //               ref={figureRef}
 //               variants={fadeUp}
 //               style={figureHeight !== null ? { height: `${figureHeight}px` } : undefined}
-//               className="group/img m-0 mt-8 flex w-full items-center justify-center overflow-hidden rounded-3xl border border-[#214779]/50 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/90 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:mt-10"
+//               className="group/img m-0 mt-8 flex w-full items-center justify-center overflow-hidden rounded-3xl border border-[#0F5743]/50 bg-[#F3F8F5] shadow-[0_24px_50px_-24px_rgba(10,64,51,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#0F5743]/90 hover:shadow-[0_28px_56px_-22px_rgba(10,64,51,0.80)] sm:mt-10"
 //             >
 //               <img
 //                 src={faqImage}
@@ -332,35 +332,35 @@ const faqContent = {
         question: "Which deposit schemes are available?",
         answer:
           "Available options may include Fixed Deposits, Recurring Deposits, savings accounts, daily deposit schemes, and other applicable plans. Contact our office to confirm current availability.",
-        tone: "red",
+        tone: "orange",
       },
       {
         no: "02",
         question: "Who can apply for a loan?",
         answer:
           "Eligible members may apply for available loan facilities, subject to the society's policies, documentation, and approval process.",
-        tone: "blue",
+        tone: "green",
       },
       {
         no: "03",
         question: "How can I check current interest rates?",
         answer:
           "Please contact our office for the latest applicable interest rates, deposit tenures, loan terms, and charges.",
-        tone: "red",
+        tone: "orange",
       },
       {
         no: "04",
         question: "How do I become a member?",
         answer:
           "Contact our office for membership eligibility, required documents, and the application procedure.",
-        tone: "blue",
+        tone: "green",
       },
       {
         no: "05",
         question: "Where can I get more information?",
         answer:
           "You can contact our office directly using the phone number and address provided below.",
-        tone: "red",
+        tone: "orange",
       },
     ],
   },
@@ -377,54 +377,54 @@ const faqContent = {
         question: "कौन-सी जमा योजनाएँ उपलब्ध हैं?",
         answer:
           "उपलब्ध विकल्पों में सावधि जमा (Fixed Deposits), आवर्ती जमा (Recurring Deposits), बचत खाते, दैनिक जमा योजनाएँ और अन्य लागू योजनाएँ शामिल हो सकती हैं। वर्तमान उपलब्धता की पुष्टि के लिए हमारे कार्यालय से संपर्क करें।",
-        tone: "red",
+        tone: "orange",
       },
       {
         no: "02",
         question: "ऋण के लिए कौन आवेदन कर सकता है?",
         answer:
           "पात्र सदस्य सोसायटी की नीतियों, दस्तावेज़ीकरण और स्वीकृति प्रक्रिया के अधीन उपलब्ध ऋण सुविधाओं के लिए आवेदन कर सकते हैं।",
-        tone: "blue",
+        tone: "green",
       },
       {
         no: "03",
         question: "मैं वर्तमान ब्याज दरों की जानकारी कैसे प्राप्त कर सकता हूँ?",
         answer:
           "नवीनतम लागू ब्याज दरों, जमा अवधि, ऋण शर्तों और शुल्कों की जानकारी के लिए कृपया हमारे कार्यालय से संपर्क करें।",
-        tone: "red",
+        tone: "orange",
       },
       {
         no: "04",
         question: "मैं सदस्य कैसे बन सकता हूँ?",
         answer:
           "सदस्यता पात्रता, आवश्यक दस्तावेज़ों और आवेदन प्रक्रिया की जानकारी के लिए हमारे कार्यालय से संपर्क करें।",
-        tone: "blue",
+        tone: "green",
       },
       {
         no: "05",
         question: "मुझे अधिक जानकारी कहाँ से मिल सकती है?",
         answer:
           "आप नीचे दिए गए फ़ोन नंबर और पते के माध्यम से सीधे हमारे कार्यालय से संपर्क कर सकते हैं।",
-        tone: "red",
+        tone: "orange",
       },
     ],
   },
 };
 
 const tones = {
-  red: {
-    card: "border-[#EF303B]/65 bg-gradient-to-br from-[#EF303B]/[0.13] to-[#EF303B]/[0.04] shadow-[0_10px_28px_-18px_rgba(239,48,59,0.55)] group-hover/card:border-[#EF303B]/100 group-hover/card:shadow-[0_20px_40px_-18px_rgba(239,48,59,0.70)]",
-    badge: "bg-[#EF303B]/20 text-[#EF303B]",
+  orange: {
+    card: "border-[#ED6E21]/65 bg-gradient-to-br from-[#ED6E21]/[0.13] to-[#ED6E21]/[0.04] shadow-[0_10px_28px_-18px_rgba(237,110,33,0.55)] group-hover/card:border-[#ED6E21]/100 group-hover/card:shadow-[0_20px_40px_-18px_rgba(237,110,33,0.70)]",
+    badge: "bg-[#ED6E21]/20 text-[#ED6E21]",
     chevron:
-      "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
-    focus: "focus-visible:ring-[#EF303B]/40",
+      "border-[#ED6E21]/60 text-[#ED6E21] group-hover/card:border-[#ED6E21] group-hover/card:bg-[#ED6E21] group-hover/card:text-white",
+    focus: "focus-visible:ring-[#ED6E21]/40",
   },
-  blue: {
-    card: "border-[#214779]/65 bg-gradient-to-br from-[#214779]/[0.13] to-[#214779]/[0.04] shadow-[0_10px_28px_-18px_rgba(16,44,77,0.55)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_20px_40px_-18px_rgba(16,44,77,0.70)]",
-    badge: "bg-[#214779]/20 text-[#214779]",
+  green: {
+    card: "border-[#0F5743]/65 bg-gradient-to-br from-[#0F5743]/[0.13] to-[#0F5743]/[0.04] shadow-[0_10px_28px_-18px_rgba(10,64,51,0.55)] group-hover/card:border-[#0F5743]/99 group-hover/card:shadow-[0_20px_40px_-18px_rgba(10,64,51,0.70)]",
+    badge: "bg-[#0F5743]/20 text-[#0F5743]",
     chevron:
-      "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
-    focus: "focus-visible:ring-[#214779]/40",
+      "border-[#0F5743]/60 text-[#0F5743] group-hover/card:border-[#0F5743] group-hover/card:bg-[#0F5743] group-hover/card:text-white",
+    focus: "focus-visible:ring-[#0F5743]/40",
   },
 };
 
@@ -466,7 +466,7 @@ function FaqItem({ item, isOpen, onToggle, reduceMotion }) {
               {item.no}
             </span>
 
-            <span className="min-w-0 flex-1 text-base font-extrabold leading-snug text-[#102C4D] sm:text-lg">
+            <span className="min-w-0 flex-1 text-base font-extrabold leading-snug text-[#0A4033] sm:text-lg">
               {item.question}
             </span>
 
@@ -501,7 +501,7 @@ function FaqItem({ item, isOpen, onToggle, reduceMotion }) {
             >
               {/* Padding lives on an inner div so the height animation never clips it. */}
               <div className="px-4 pb-5 pl-[4.5rem] pr-5 sm:pl-[5.75rem] sm:pr-16 lg:pl-[6.25rem]">
-                <p className="m-0 text-sm leading-relaxed text-[#334155] sm:text-[15px]">
+                <p className="m-0 text-sm leading-relaxed text-[#26332E] sm:text-[15px]">
                   {item.answer}
                 </p>
               </div>
@@ -580,13 +580,13 @@ export default function FAQ() {
     <section
       id="faqs"
       aria-labelledby="faq-heading"
-      className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-5 sm:py-20 md:-mt-20 lg:py-23"
+      className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F3F8F5] to-white py-5 sm:py-20 md:-mt-20 lg:py-23"
     >
       {/* Decorative shapes */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -left-24 bottom-10 h-80 w-80 rounded-full bg-[#214779]/[0.05] blur-3xl" />
-        <div className="absolute -right-24 -top-24 h-[26rem] w-[26rem] rounded-full border-[26px] border-[#EF303B]/[0.10]" />
-        <div className="absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-[#EF303B]/[0.04] blur-3xl" />
+        <div className="absolute -left-24 bottom-10 h-80 w-80 rounded-full bg-[#0F5743]/[0.05] blur-3xl" />
+        <div className="absolute -right-24 -top-24 h-[26rem] w-[26rem] rounded-full border-[26px] border-[#ED6E21]/[0.10]" />
+        <div className="absolute -right-16 bottom-0 h-72 w-72 rounded-full bg-[#ED6E21]/[0.04] blur-3xl" />
       </div>
 
       <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-8 lg:px-12 2xl:max-w-[1440px]">
@@ -601,8 +601,8 @@ export default function FAQ() {
           >
             <div ref={headerRef}>
               <motion.div variants={fadeUp} className="flex items-center gap-3">
-                <span aria-hidden="true" className="h-[2px] w-10 bg-[#EF303B] sm:w-12" />
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#EF303B] sm:text-sm">
+                <span aria-hidden="true" className="h-[2px] w-10 bg-[#ED6E21] sm:w-12" />
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#ED6E21] sm:text-sm">
                   {copy.eyebrow}
                 </p>
               </motion.div>
@@ -616,19 +616,19 @@ export default function FAQ() {
                     : "text-[2rem] leading-[1.1] min-[400px]:text-4xl sm:text-5xl xl:text-[3.4rem]"
                 }`}
               >
-                <span className="block text-[#102C4D]">{copy.headingLine1}</span>
-                <span className="block text-[#EF303B]">{copy.headingLine2}</span>
+                <span className="block text-[#0A4033]">{copy.headingLine1}</span>
+                <span className="block text-[#ED6E21]">{copy.headingLine2}</span>
               </motion.h2>
 
               <motion.div
                 variants={fadeUp}
                 aria-hidden="true"
-                className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#EF303B] to-[#214779]"
+                className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#ED6E21] to-[#0F5743]"
               />
 
               <motion.p
                 variants={fadeUp}
-                className="mt-6 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
+                className="mt-6 max-w-xl text-base leading-relaxed text-[#26332E] sm:text-lg"
               >
                 {copy.para}
               </motion.p>
@@ -639,7 +639,7 @@ export default function FAQ() {
               ref={figureRef}
               variants={fadeUp}
               style={figureHeight !== null ? { height: `${figureHeight}px` } : undefined}
-              className="group/img m-0 mt-8 flex w-full items-center justify-center overflow-hidden rounded-3xl border border-[#214779]/60 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/99 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:mt-10"
+              className="group/img m-0 mt-8 flex w-full items-center justify-center overflow-hidden rounded-3xl border border-[#0F5743]/60 bg-[#F3F8F5] shadow-[0_24px_50px_-24px_rgba(10,64,51,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#0F5743]/99 hover:shadow-[0_28px_56px_-22px_rgba(10,64,51,0.80)] sm:mt-10"
             >
               <img
                 src={faqImage}

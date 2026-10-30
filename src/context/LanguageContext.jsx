@@ -168,35 +168,35 @@ export const translations = {
           question: "Which deposit schemes are available?",
           answer:
             "Available options may include Fixed Deposits, Recurring Deposits, savings accounts, daily deposit schemes, and other applicable plans. Contact our office to confirm current availability.",
-          tone: "red",
+          tone: "orange",
         },
         {
           no: "02",
           question: "Who can apply for a loan?",
           answer:
             "Eligible members may apply for available loan facilities, subject to the society's policies, documentation, and approval process.",
-          tone: "blue",
+          tone: "green",
         },
         {
           no: "03",
           question: "How can I check current interest rates?",
           answer:
             "Please contact our office for the latest applicable interest rates, deposit tenures, loan terms, and charges.",
-          tone: "red",
+          tone: "orange",
         },
         {
           no: "04",
           question: "How do I become a member?",
           answer:
             "Contact our office for membership eligibility, required documents, and the application procedure.",
-          tone: "blue",
+          tone: "green",
         },
         {
           no: "05",
           question: "Where can I get more information?",
           answer:
             "You can contact our office directly using the phone number and address provided below.",
-          tone: "red",
+          tone: "orange",
         },
       ],
     },
@@ -419,35 +419,35 @@ export const translations = {
           question: "कौन-कौन सी जमा योजनाएँ उपलब्ध हैं?",
           answer:
             "उपलब्ध विकल्पों में सावधि जमा (Fixed Deposit), आवर्ती जमा (Recurring Deposit), बचत खाते, दैनिक जमा योजनाएँ और अन्य लागू योजनाएँ शामिल हो सकती हैं। वर्तमान उपलब्धता की पुष्टि के लिए कृपया हमारे कार्यालय से संपर्क करें।",
-          tone: "red",
+          tone: "orange",
         },
         {
           no: "02",
           question: "ऋण के लिए कौन आवेदन कर सकता है?",
           answer:
             "पात्र सदस्य संस्था की नीतियों, आवश्यक दस्तावेज़ीकरण और स्वीकृति प्रक्रिया के अधीन उपलब्ध ऋण सुविधाओं के लिए आवेदन कर सकते हैं।",
-          tone: "blue",
+          tone: "green",
         },
         {
           no: "03",
           question: "मैं वर्तमान ब्याज दरों की जानकारी कैसे प्राप्त कर सकता हूँ?",
           answer:
             "नवीनतम लागू ब्याज दरों, जमा अवधि, ऋण शर्तों और शुल्कों की जानकारी के लिए कृपया हमारे कार्यालय से संपर्क करें।",
-          tone: "red",
+          tone: "orange",
         },
         {
           no: "04",
           question: "मैं संस्था का सदस्य कैसे बन सकता हूँ?",
           answer:
             "सदस्यता पात्रता, आवश्यक दस्तावेजों और आवेदन प्रक्रिया की जानकारी के लिए हमारे कार्यालय से संपर्क करें।",
-          tone: "blue",
+          tone: "green",
         },
         {
           no: "05",
           question: "मुझे अधिक जानकारी कहाँ से मिल सकती है?",
           answer:
             "आप नीचे दिए गए फ़ोन नंबर और पते के माध्यम से सीधे हमारे मुख्य कार्यालय से संपर्क कर सकते हैं।",
-          tone: "red",
+          tone: "orange",
         },
       ],
     },

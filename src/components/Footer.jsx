@@ -13,7 +13,7 @@
 // } from "lucide-react";
 
 // // ⚠️ Ensure this import matches the exact logo path in your project (e.g., same logo asset used in Navbar.jsx)
-// import logo from "../assets/logo/kalyan-logo.png";
+//
 
 // const NAVBAR_OFFSET = 80;
 
@@ -67,12 +67,12 @@
 //   return (
 //     <footer
 //       aria-label="Site Footer"
-//       className="relative isolate overflow-hidden bg-gradient-to-b from-[#07264B] via-[#051F3E] to-[#041830] text-white"
+//       className="relative isolate overflow-hidden bg-gradient-to-b from-[#0F5743] via-[#0A4033] to-[#0A4033] text-white"
 //     >
-//       {/* Top thin red-and-blue decorative line */}
+//       {/* Top thin green-and-orange decorative line */}
 //       <div aria-hidden="true" className="flex h-[5px] w-full">
-//         <div className="w-[36%] bg-[#EF303B]" />
-//         <div className="flex-1 bg-gradient-to-r from-[#38679E] via-[#214779] to-[#102C4D]" />
+//         <div className="w-[36%] bg-[#ED6E21]" />
+//         <div className="flex-1 bg-gradient-to-r from-[#0F5743] via-[#0F5743] to-[#0A4033]" />
 //       </div>
 
 //       {/* Main 4-Column Footer Content */}
@@ -84,11 +84,11 @@
 //               href="#home"
 //               onClick={(e) => scrollToSection(e, "home")}
 //               aria-label="Kalyan Urban Co-operative Credit Society Limited — Home"
-//               className="group inline-flex flex-col items-start focus-visible:rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//               className="group inline-flex flex-col items-start focus-visible:rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //             >
 //               {/* Original Project Logo */}
 //               <img
-//                 src={logo}
+//                 src="/kalyan-logo.png"
 //                 alt="Kalyan Urban Co-operative Credit Society Limited Logo"
 //                 loading="lazy"
 //                 decoding="async"
@@ -100,19 +100,19 @@
 //               </span>
 //             </a>
 
-//             {/* Short red accent line */}
+//             {/* Short orange accent line */}
 //             <span
 //               aria-hidden="true"
-//               className="mt-3.5 h-[2.5px] w-11 rounded-full bg-[#EF303B]"
+//               className="mt-3.5 h-[2.5px] w-11 rounded-full bg-[#ED6E21]"
 //             />
 
 //             {/* Tagline */}
-//             <p className="m-0 mt-3.5 text-[13.5px] italic tracking-wide text-slate-200/95">
+//             <p className="m-0 mt-3.5 text-[13.5px] italic tracking-wide text-white/95">
 //               Your Financial Goals. Our Commitment.
 //             </p>
 
 //             {/* Description */}
-//             <p className="m-0 mt-3 max-w-sm text-[13.5px] leading-relaxed text-[#9EB3CC]">
+//             <p className="m-0 mt-3 max-w-sm text-[13.5px] leading-relaxed text-[#FFFFFF]">
 //               Providing member-focused savings schemes and loan facilities with
 //               a commitment to trust, transparency, and responsible service.
 //             </p>
@@ -125,7 +125,7 @@
 //                     target="_blank"
 //                     rel="noopener noreferrer"
 //                     aria-label="Facebook"
-//                     className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#EF303B]/60 hover:bg-[#EF303B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//                     className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#ED6E21]/60 hover:bg-[#ED6E21] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //                 >
 //                     <svg
 //                     aria-hidden="true"
@@ -142,7 +142,7 @@
 //                     target="_blank"
 //                     rel="noopener noreferrer"
 //                     aria-label="Instagram"
-//                     className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#EF303B]/60 hover:bg-[#EF303B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//                     className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#ED6E21]/60 hover:bg-[#ED6E21] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //                 >
 //                     <svg
 //                     aria-hidden="true"
@@ -166,7 +166,7 @@
 //                     target="_blank"
 //                     rel="noopener noreferrer"
 //                     aria-label="YouTube"
-//                     className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#EF303B]/60 hover:bg-[#EF303B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//                     className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#ED6E21]/60 hover:bg-[#ED6E21] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //                 >
 //                     <svg
 //                     aria-hidden="true"
@@ -183,7 +183,7 @@
 //                 target="_blank"
 //                 rel="noopener noreferrer"
 //                 aria-label="Chat with us on WhatsApp at 7776000664"
-//                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#EF303B]/60 hover:bg-[#EF303B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#ED6E21]/60 hover:bg-[#ED6E21] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //               >
 //                 <svg
 //                   aria-hidden="true"
@@ -203,7 +203,7 @@
 //             </h2>
 //             <span
 //               aria-hidden="true"
-//               className="mt-2.5 h-[3px] w-7 rounded-full bg-[#EF303B]"
+//               className="mt-2.5 h-[3px] w-7 rounded-full bg-[#ED6E21]"
 //             />
 
 //             <ul className="m-0 mt-6 flex list-none flex-col gap-3.5 p-0">
@@ -212,11 +212,11 @@
 //                   <a
 //                     href={link.href}
 //                     onClick={(e) => scrollToSection(e, link.id)}
-//                     className="group inline-flex items-center gap-2.5 text-[14.5px] font-medium text-slate-200 transition-colors duration-200 hover:text-[#EF303B] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//                     className="group inline-flex items-center gap-2.5 text-[14.5px] font-medium text-white/90 transition-colors duration-200 hover:text-[#ED6E21] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //                   >
 //                     <ChevronRight
 //                       aria-hidden="true"
-//                       className="h-4 w-4 shrink-0 text-slate-300 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-[#EF303B]"
+//                       className="h-4 w-4 shrink-0 text-white/80 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-[#ED6E21]"
 //                     />
 //                     <span>{link.label}</span>
 //                   </a>
@@ -232,7 +232,7 @@
 //             </h2>
 //             <span
 //               aria-hidden="true"
-//               className="mt-2.5 h-[3px] w-7 rounded-full bg-[#EF303B]"
+//               className="mt-2.5 h-[3px] w-7 rounded-full bg-[#ED6E21]"
 //             />
 
 //             <ul className="m-0 mt-6 flex list-none flex-col gap-3 p-0">
@@ -241,15 +241,15 @@
 //                   <a
 //                     href={href}
 //                     onClick={(e) => scrollToSection(e, id)}
-//                     className="group inline-flex items-center gap-3 text-[14.5px] font-medium text-slate-200 transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//                     className="group inline-flex items-center gap-3 text-[14.5px] font-medium text-white/90 transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //                   >
 //                     <span
 //                       aria-hidden="true"
-//                       className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/90 text-white transition-[background-color,border-color,transform] duration-200 group-hover:scale-105 group-hover:border-[#EF303B]/60 group-hover:bg-[#EF303B]"
+//                       className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/90 text-white transition-[background-color,border-color,transform] duration-200 group-hover:scale-105 group-hover:border-[#ED6E21]/60 group-hover:bg-[#ED6E21]"
 //                     >
 //                       <Icon className="h-4 w-4 stroke-[2]" />
 //                     </span>
-//                     <span className="transition-colors duration-200 group-hover:text-[#EF303B]">
+//                     <span className="transition-colors duration-200 group-hover:text-[#ED6E21]">
 //                       {label}
 //                     </span>
 //                   </a>
@@ -265,7 +265,7 @@
 //             </h2>
 //             <span
 //               aria-hidden="true"
-//               className="mt-2.5 h-[3px] w-7 rounded-full bg-[#EF303B]"
+//               className="mt-2.5 h-[3px] w-7 rounded-full bg-[#ED6E21]"
 //             />
 
 //             <ul className="m-0 mt-6 flex w-full list-none flex-col gap-4 p-0">
@@ -273,11 +273,11 @@
 //               <li className="flex items-start gap-3.5">
 //                 <span
 //                   aria-hidden="true"
-//                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/90 text-white"
+//                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/90 text-white"
 //                 >
 //                   <MapPin className="h-4 w-4 stroke-[2]" />
 //                 </span>
-//                 <span className="pt-0.5 text-[14.5px] leading-snug text-slate-200">
+//                 <span className="pt-0.5 text-[14.5px] leading-snug text-white/90">
 //                   Rawanwadi, Gondia,
 //                   <span className="block">Maharashtra</span>
 //                 </span>
@@ -287,13 +287,13 @@
 //               <li className="flex items-center gap-3.5">
 //                 <span
 //                   aria-hidden="true"
-//                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/90 text-white"
+//                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/90 text-white"
 //                 >
 //                   <Phone className="h-4 w-4 fill-current" />
 //                 </span>
 //                 <a
 //                   href="tel:7776000664"
-//                   className="text-[15px] font-semibold tracking-wide text-white transition-colors duration-200 hover:text-[#EF303B] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//                   className="text-[15px] font-semibold tracking-wide text-white transition-colors duration-200 hover:text-[#ED6E21] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //                 >
 //                   7776000664
 //                 </a>
@@ -308,20 +308,20 @@
 //               <li className="flex items-start gap-3.5">
 //                 <span
 //                   aria-hidden="true"
-//                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/90 text-white"
+//                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/90 text-white"
 //                 >
 //                   <Clock className="h-4 w-4 stroke-[2]" />
 //                 </span>
-//                 <div className="pt-0.5 text-[14px] leading-relaxed text-slate-200">
+//                 <div className="pt-0.5 text-[14px] leading-relaxed text-white/90">
 //                   <p className="m-0">Mon - Sat: 9:00 AM - 6:00 PM</p>
-//                   <p className="m-0 text-slate-300">Sunday: By Appointment</p>
+//                   <p className="m-0 text-white/80">Sunday: By Appointment</p>
 //                 </div>
 //               </li>
 //             </ul>
 
 //             {/* Thin divider and required eligibility disclaimer */}
 //             <div className="mt-5 w-full border-t border-white/10 pt-3.5">
-//               <p className="m-0 text-xs leading-relaxed text-[#9EB3CC]">
+//               <p className="m-0 text-xs leading-relaxed text-[#FFFFFF]">
 //                 All services are subject to eligibility, applicable terms, and
 //                 approval.
 //               </p>
@@ -333,20 +333,20 @@
 //       {/* Disclaimer Section */}
 //       <div
 //       id="disclaimer"
-//       className="border-t border-white/15 bg-[#082544]/50"
+//       className="border-t border-white/15 bg-[#0F5743]/50"
 //       >
 //         <div className="mx-auto flex w-full max-w-[1360px] flex-col gap-3 px-4 py-4 sm:px-8 md:flex-row md:items-start md:gap-6 lg:px-12 2xl:max-w-[1440px]">
 //             <div className="flex shrink-0 items-start gap-3">
 //             <span
 //                 aria-hidden="true"
-//                 className="mt-0.5 h-12 w-1.5 rounded-full bg-[#EF303B]"
+//                 className="mt-0.5 h-12 w-1.5 rounded-full bg-[#ED6E21]"
 //             />
 //             <h3 className="m-0 pt-0.5 text-sm font-bold text-white sm:text-base">
 //                 Disclaimer:
 //             </h3>
 //             </div>
 
-//             <p className="m-0 min-w-0 flex-1 text-xs leading-relaxed text-slate-300 sm:text-sm">
+//             <p className="m-0 min-w-0 flex-1 text-xs leading-relaxed text-white/80 sm:text-sm">
 //             <em>
 //                 This website provides general information about the society and its
 //                 services. Scheme availability, interest rates, returns, eligibility,
@@ -360,8 +360,8 @@
 //         </div>
 
 //         {/* Bottom Copyright Bar */}
-//         <div className="border-t border-white/15 bg-[#04152B]/60">
-//             <div className="mx-auto flex w-full max-w-[1360px] flex-col items-center justify-between gap-4 px-4 py-4 text-xs text-slate-300 sm:px-8 md:flex-row lg:px-12 2xl:max-w-[1440px]">
+//         <div className="border-t border-white/15 bg-[#0A4033]/60">
+//             <div className="mx-auto flex w-full max-w-[1360px] flex-col items-center justify-between gap-4 px-4 py-4 text-xs text-white/80 sm:px-8 md:flex-row lg:px-12 2xl:max-w-[1440px]">
 //                 <p className="m-0 text-center md:text-left">
 //                 © 2026 Kalyan Urban Co-operative Credit Society Limited. All Rights
 //                 Reserved.
@@ -376,7 +376,7 @@
 //                 <a
 //                     href="#contact"
 //                     onClick={(e) => scrollToSection(e, "contact")}
-//                     className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//                     className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //                 >
 //                     Privacy Policy
 //                 </a>
@@ -388,7 +388,7 @@
 //                 <a
 //                     href="#contact"
 //                     onClick={(e) => scrollToSection(e, "contact")}
-//                     className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//                     className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //                 >
 //                     Terms &amp; Conditions
 //                 </a>
@@ -400,7 +400,7 @@
 //                 <a
 //                     href="#disclaimer"
 //                     onClick={(e) => scrollToSection(e, "disclaimer")}
-//                     className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+//                     className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
 //                 >
 //                     Disclaimer
 //                 </a>
@@ -430,9 +430,9 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
-import logo from "../assets/logo/kalyan-logo.png";
 
-const NAVBAR_OFFSET = 80;
+
+const NAVBAR_OFFSET = 84;
 
 const quickLinks = [
   { en: "Home", hi: "होम", href: "#home", id: "home" },
@@ -474,12 +474,12 @@ export default function Footer() {
   return (
     <footer
       aria-label={isHi ? "वेबसाइट का फ़ुटर" : "Site Footer"}
-      className="relative isolate overflow-hidden bg-gradient-to-b from-[#07264B] via-[#051F3E] to-[#041830] text-white"
+      className="relative isolate overflow-hidden bg-gradient-to-b from-[#0F5743] via-[#0A4033] to-[#0A4033] text-white"
     >
-      {/* Top red-and-blue accent line */}
+      {/* Top green-and-orange accent line */}
       <div aria-hidden="true" className="flex h-[5px] w-full">
-        <div className="w-[36%] bg-[#EF303B]" />
-        <div className="flex-1 bg-gradient-to-r from-[#38679E] via-[#214779] to-[#102C4D]" />
+        <div className="w-[36%] bg-[#ED6E21]" />
+        <div className="flex-1 bg-gradient-to-r from-[#0F5743] via-[#0F5743] to-[#0A4033]" />
       </div>
 
       {/* Main 4-column footer */}
@@ -495,15 +495,17 @@ export default function Footer() {
                   ? "कल्याण अर्बन सहकारी क्रेडिट सोसाइटी लिमिटेड — होम"
                   : "Kalyan Urban Co-operative Credit Society Limited — Home"
               }
-              className="group inline-flex flex-col items-start focus-visible:rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+              className="group inline-flex flex-col items-start focus-visible:rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
             >
+              <div className="w-full max-w-[100px] rounded-md bg-white p-2 sm:max-w-[100px] lg:max-w-[100px]">
               <img
-                src={logo}
+                src="/kalyan-logo-cropped.png"
                 alt="Kalyan Urban Co-operative Credit Society Limited Logo"
                 loading="lazy"
                 decoding="async"
-                className="h-auto max-h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                className="block h-auto w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
               />
+              </div>
 
               <span className="mt-2.5 block max-w-[270px] text-xs font-extrabold uppercase leading-[1.35] tracking-[0.04em] text-white sm:text-[13px]">
                 {isHi
@@ -514,16 +516,16 @@ export default function Footer() {
 
             <span
               aria-hidden="true"
-              className="mt-3.5 h-[2.5px] w-11 rounded-full bg-[#EF303B]"
+              className="mt-3.5 h-[2.5px] w-11 rounded-full bg-[#ED6E21]"
             />
 
-            <p className="m-0 mt-3.5 text-[13.5px] italic tracking-wide text-slate-200/95">
+            <p className="m-0 mt-3.5 text-[13.5px] italic tracking-wide text-white/95">
               {isHi
                 ? "आपके वित्तीय लक्ष्य, हमारी प्रतिबद्धता।"
                 : "Your Financial Goals. Our Commitment."}
             </p>
 
-            <p className="m-0 mt-3 max-w-sm text-[13.5px] leading-relaxed text-[#9EB3CC]">
+            <p className="m-0 mt-3 max-w-sm text-[13.5px] leading-relaxed text-[#FFFFFF]">
               {isHi
                 ? "विश्वास, पारदर्शिता और जिम्मेदार सेवा के प्रति प्रतिबद्धता के साथ सदस्यों के लिए बचत योजनाएँ और ऋण सुविधाएँ उपलब्ध कराने का प्रयास।"
                 : "Providing member-focused savings schemes and loan facilities with a commitment to trust, transparency, and responsible service."}
@@ -537,7 +539,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#EF303B]/60 hover:bg-[#EF303B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#ED6E21]/60 hover:bg-[#ED6E21] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
               >
                 <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-current">
                   <path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.4H7.5v3.2h2.7V22h3.3Z" />
@@ -550,7 +552,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#EF303B]/60 hover:bg-[#EF303B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#ED6E21]/60 hover:bg-[#ED6E21] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
               >
                 <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -565,7 +567,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#EF303B]/60 hover:bg-[#EF303B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#ED6E21]/60 hover:bg-[#ED6E21] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
               >
                 <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-current">
                   <path d="M21.6 7.2a2.7 2.7 0 0 0-1.9-1.9C18 4.8 12 4.8 12 4.8s-6 0-7.7.5a2.7 2.7 0 0 0-1.9 1.9C2 8.9 2 12 2 12s0 3.1.4 4.8a2.7 2.7 0 0 0 1.9 1.9c1.7.5 7.7.5 7.7.5s6 0 7.7-.5a2.7 2.7 0 0 0 1.9-1.9c.4-1.7.4-4.8.4-4.8s0-3.1-.4-4.8ZM10 15.2V8.8l5.5 3.2-5.5 3.2Z" />
@@ -578,7 +580,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={isHi ? "WhatsApp पर संपर्क करें" : "Contact us on WhatsApp"}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#EF303B]/60 hover:bg-[#EF303B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/80 text-white shadow-sm transition-[background-color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-[#ED6E21]/60 hover:bg-[#ED6E21] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
               >
                 <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-current">
                   <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm5.82 14.12c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.83-.11-.42-.13-.97-.31-1.66-.61-2.92-1.26-4.83-4.21-4.97-4.4-.15-.2-1.19-1.58-1.19-3.01 0-1.43.75-2.13 1.02-2.42.27-.29.59-.36.78-.36.2 0 .39-.07.66.5.24.59.83 2.03.9 2.18.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.38-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.29.46.12.63-.07.17-.2.73-.85.93-1.14.2-.29.39-.24.66-.15.27.1 1.71.81 2 .95.15.12.49.22.56.34.03.68-.17 1.38-.17 1.38Z" />
@@ -593,7 +595,7 @@ export default function Footer() {
               {isHi ? "त्वरित लिंक" : "Quick Links"}
             </h2>
 
-            <span aria-hidden="true" className="mt-2.5 h-[3px] w-7 rounded-full bg-[#EF303B]" />
+            <span aria-hidden="true" className="mt-2.5 h-[3px] w-7 rounded-full bg-[#ED6E21]" />
 
             <ul className="m-0 mt-6 flex list-none flex-col gap-3.5 p-0">
               {quickLinks.map((link) => (
@@ -601,11 +603,11 @@ export default function Footer() {
                   <a
                     href={link.href}
                     onClick={(e) => scrollToSection(e, link.id)}
-                    className="group inline-flex items-center gap-2.5 text-[14.5px] font-medium text-slate-200 transition-colors duration-200 hover:text-[#EF303B] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+                    className="group inline-flex items-center gap-2.5 text-[14.5px] font-medium text-white/90 transition-colors duration-200 hover:text-[#ED6E21] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
                   >
                     <ChevronRight
                       aria-hidden="true"
-                      className="h-4 w-4 shrink-0 text-slate-300 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-[#EF303B]"
+                      className="h-4 w-4 shrink-0 text-white/80 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-[#ED6E21]"
                     />
                     <span>{isHi ? link.hi : link.en}</span>
                   </a>
@@ -620,7 +622,7 @@ export default function Footer() {
               {isHi ? "हमारी सेवाएँ" : "Our Services"}
             </h2>
 
-            <span aria-hidden="true" className="mt-2.5 h-[3px] w-7 rounded-full bg-[#EF303B]" />
+            <span aria-hidden="true" className="mt-2.5 h-[3px] w-7 rounded-full bg-[#ED6E21]" />
 
             <ul className="m-0 mt-6 flex list-none flex-col gap-3 p-0">
               {services.map(({ en, hi, icon: Icon, href, id }) => (
@@ -628,15 +630,15 @@ export default function Footer() {
                   <a
                     href={href}
                     onClick={(e) => scrollToSection(e, id)}
-                    className="group inline-flex items-center gap-3 text-[14.5px] font-medium text-slate-200 transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+                    className="group inline-flex items-center gap-3 text-[14.5px] font-medium text-white/90 transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
                   >
                     <span
                       aria-hidden="true"
-                      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/90 text-white transition-[background-color,border-color,transform] duration-200 group-hover:scale-105 group-hover:border-[#EF303B]/60 group-hover:bg-[#EF303B]"
+                      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/90 text-white transition-[background-color,border-color,transform] duration-200 group-hover:scale-105 group-hover:border-[#ED6E21]/60 group-hover:bg-[#ED6E21]"
                     >
                       <Icon className="h-4 w-4 stroke-[2]" />
                     </span>
-                    <span className="transition-colors duration-200 group-hover:text-[#EF303B]">
+                    <span className="transition-colors duration-200 group-hover:text-[#ED6E21]">
                       {isHi ? hi : en}
                     </span>
                   </a>
@@ -651,19 +653,19 @@ export default function Footer() {
               {isHi ? "संपर्क करें" : "Contact Us"}
             </h2>
 
-            <span aria-hidden="true" className="mt-2.5 h-[3px] w-7 rounded-full bg-[#EF303B]" />
+            <span aria-hidden="true" className="mt-2.5 h-[3px] w-7 rounded-full bg-[#ED6E21]" />
 
             <ul className="m-0 mt-6 flex w-full list-none flex-col gap-4 p-0">
               {/* Location */}
               <li className="flex items-start gap-3.5">
                 <span
                   aria-hidden="true"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/90 text-white"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/90 text-white"
                 >
                   <MapPin className="h-4 w-4 stroke-[2]" />
                 </span>
 
-                <span className="pt-0.5 text-[14.5px] leading-snug text-slate-200">
+                <span className="pt-0.5 text-[14.5px] leading-snug text-white/90">
                   {isHi ? "रावनवाड़ी, गोंदिया," : "Rawanwadi, Gondia,"}
                   <span className="block">
                     {isHi ? "महाराष्ट्र" : "Maharashtra"}
@@ -675,14 +677,14 @@ export default function Footer() {
               <li className="flex items-center gap-3.5">
                 <span
                   aria-hidden="true"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/90 text-white"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/90 text-white"
                 >
                   <Phone className="h-4 w-4 fill-current" />
                 </span>
 
                 <a
                   href="tel:7776000664"
-                  className="text-[15px] font-semibold tracking-wide text-white transition-colors duration-200 hover:text-[#EF303B] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+                  className="text-[15px] font-semibold tracking-wide text-white transition-colors duration-200 hover:text-[#ED6E21] focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
                 >
                   7776000664
                 </a>
@@ -697,16 +699,16 @@ export default function Footer() {
               <li className="flex items-start gap-3.5">
                 <span
                   aria-hidden="true"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#163A66]/90 text-white"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 bg-[#0F5743]/90 text-white"
                 >
                   <Clock className="h-4 w-4 stroke-[2]" />
                 </span>
 
-                <div className="pt-0.5 text-[14px] leading-relaxed text-slate-200">
+                <div className="pt-0.5 text-[14px] leading-relaxed text-white/90">
                   <p className="m-0">
                     {isHi ? "सोम–शनि: सुबह 9:00 – शाम 6:00 बजे" : "Mon - Sat: 9:00 AM - 6:00 PM"}
                   </p>
-                  <p className="m-0 text-slate-300">
+                  <p className="m-0 text-white/80">
                     {isHi ? "रविवार: पूर्व नियुक्ति पर" : "Sunday: By Appointment"}
                   </p>
                 </div>
@@ -715,7 +717,7 @@ export default function Footer() {
 
             {/* Service disclaimer */}
             <div className="mt-5 w-full border-t border-white/10 pt-3.5">
-              <p className="m-0 text-xs leading-relaxed text-[#9EB3CC]">
+              <p className="m-0 text-xs leading-relaxed text-[#FFFFFF]">
                 {isHi
                   ? "सभी सेवाएँ पात्रता, लागू शर्तों और स्वीकृति के अधीन हैं।"
                   : "All services are subject to eligibility, applicable terms, and approval."}
@@ -728,13 +730,13 @@ export default function Footer() {
       {/* Full-width Disclaimer Section */}
       <div
         id="disclaimer"
-        className="border-t border-white/15 bg-[#082544]/50"
+        className="border-t border-white/15 bg-[#0F5743]/50"
       >
         <div className="mx-auto flex w-full max-w-[1360px] flex-col gap-3 px-4 py-4 sm:px-8 md:flex-row md:items-start md:gap-6 lg:px-12 2xl:max-w-[1440px]">
           <div className="flex shrink-0 items-start gap-3">
             <span
               aria-hidden="true"
-              className="mt-0.5 h-12 w-1.5 rounded-full bg-[#EF303B]"
+              className="mt-0.5 h-12 w-1.5 rounded-full bg-[#ED6E21]"
             />
 
             <h3 className="m-0 pt-0.5 text-sm font-bold text-white sm:text-base">
@@ -742,7 +744,7 @@ export default function Footer() {
             </h3>
           </div>
 
-          <p className="m-0 min-w-0 flex-1 text-xs leading-relaxed text-slate-300 sm:text-sm">
+          <p className="m-0 min-w-0 flex-1 text-xs leading-relaxed text-white/80 sm:text-sm">
             <em>
               {isHi
                 ? "यह वेबसाइट सोसाइटी और उसकी सेवाओं के बारे में सामान्य जानकारी प्रदान करती है। योजनाओं की उपलब्धता, ब्याज दरों, रिटर्न, पात्रता, शुल्क और अन्य शर्तों की पुष्टि सोसाइटी से की जानी चाहिए। जमा और ऋण संबंधी जानकारी का अर्थ यह नहीं है कि सोसाइटी एक लाइसेंस प्राप्त बैंक है या उसकी जमाएँ DICGC द्वारा बीमित हैं। प्रकाशन से पहले नियामकीय स्थिति या बीमा कवरेज की पुष्टि की जानी चाहिए।"
@@ -753,8 +755,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom Copyright Bar */}
-      <div className="border-t border-white/15 bg-[#04152B]/60">
-        <div className="mx-auto flex w-full max-w-[1360px] flex-col items-center justify-between gap-4 px-4 py-4 text-xs text-slate-300 sm:px-8 md:flex-row lg:px-12 2xl:max-w-[1440px]">
+      <div className="border-t border-white/15 bg-[#0A4033]/60">
+        <div className="mx-auto flex w-full max-w-[1360px] flex-col items-center justify-between gap-4 px-4 py-4 text-xs text-white/80 sm:px-8 md:flex-row lg:px-12 2xl:max-w-[1440px]">
           <p className="m-0 text-center md:text-left">
             {isHi
               ? "© 2026 कल्याण अर्बन को-ऑपरेटिव क्रेडिट सोसाइटी लिमिटेड। सर्वाधिकार सुरक्षित।"
@@ -770,7 +772,7 @@ export default function Footer() {
             <a
               href="#contact"
               onClick={(e) => scrollToSection(e, "contact")}
-              className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+              className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
             >
               {isHi ? "गोपनीयता नीति" : "Privacy Policy"}
             </a>
@@ -782,7 +784,7 @@ export default function Footer() {
             <a
               href="#contact"
               onClick={(e) => scrollToSection(e, "contact")}
-              className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+              className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
             >
               {isHi ? "नियम एवं शर्तें" : "Terms & Conditions"}
             </a>
@@ -794,7 +796,7 @@ export default function Footer() {
             <a
               href="#disclaimer"
               onClick={(e) => scrollToSection(e, "disclaimer")}
-              className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EF303B]"
+              className="transition-colors duration-200 hover:text-white focus-visible:rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ED6E21]"
             >
               {isHi ? "अस्वीकरण" : "Disclaimer"}
             </a> */}

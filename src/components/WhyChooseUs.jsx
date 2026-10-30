@@ -16,51 +16,51 @@
 //     title: "Member-Focused Approach",
 //     description:
 //       "We aim to understand our members' needs and provide relevant information about available financial services.",
-//     tone: "red",
+//     tone: "orange",
 //   },
 //   {
 //     icon: MessageCircle,
 //     title: "Transparent Communication",
 //     description:
 //       "We encourage informed decisions through clear information about scheme conditions and eligibility.",
-//     tone: "blue",
+//     tone: "green",
 //   },
 //   {
 //     icon: Coins,
 //     title: "Savings-Oriented Solutions",
 //     description:
 //       "Explore different savings options to support your financial planning.",
-//     tone: "red",
+//     tone: "orange",
 //   },
 //   {
 //     icon: LayoutGrid,
 //     title: "Multiple Financial Services",
 //     description:
 //       "Access information about available deposit schemes and credit facilities in one place.",
-//     tone: "blue",
+//     tone: "green",
 //   },
 //   {
 //     icon: ShieldCheck,
 //     title: "Responsible Service",
 //     description:
 //       "Our services are provided in accordance with applicable policies, procedures, and requirements.",
-//     tone: "red",
+//     tone: "orange",
 //   },
 // ];
 
 // const tones = {
-//   red: {
-//     card: "border-[#EF303B]/60 bg-gradient-to-br from-[#EF303B]/[0.13] to-[#EF303B]/[0.05] shadow-[0_10px_26px_-20px_rgba(239,48,59,0.55)] group-hover/card:border-[#EF303B]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(239,48,59,0.70)]",
-//     icon: "bg-[#EF303B]/20 text-[#EF303B]",
+//   orange: {
+//     card: "border-[#ED6E21]/60 bg-gradient-to-br from-[#ED6E21]/[0.13] to-[#ED6E21]/[0.05] shadow-[0_10px_26px_-20px_rgba(237,110,33,0.55)] group-hover/card:border-[#ED6E21]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(237,110,33,0.70)]",
+//     icon: "bg-[#ED6E21]/20 text-[#ED6E21]",
 //     arrow:
-//       "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
+//       "border-[#ED6E21]/60 text-[#ED6E21] group-hover/card:border-[#ED6E21] group-hover/card:bg-[#ED6E21] group-hover/card:text-white",
 //   },
-//   blue: {
-//     card: "border-[#214779]/60 bg-gradient-to-br from-[#214779]/[0.13] to-[#214779]/[0.05] shadow-[0_10px_26px_-20px_rgba(16,44,77,0.55)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(16,44,77,0.70)]",
-//     icon: "bg-[#214779]/20 text-[#214779]",
-//     underline: "bg-[#214779]",
+//   green: {
+//     card: "border-[#0F5743]/60 bg-gradient-to-br from-[#0F5743]/[0.13] to-[#0F5743]/[0.05] shadow-[0_10px_26px_-20px_rgba(10,64,51,0.55)] group-hover/card:border-[#0F5743]/99 group-hover/card:shadow-[0_18px_38px_-20px_rgba(10,64,51,0.70)]",
+//     icon: "bg-[#0F5743]/20 text-[#0F5743]",
+//     underline: "bg-[#0F5743]",
 //     arrow:
-//       "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
+//       "border-[#0F5743]/60 text-[#0F5743] group-hover/card:border-[#0F5743] group-hover/card:bg-[#0F5743] group-hover/card:text-white",
 //   },
 // };
 
@@ -96,16 +96,16 @@
 //     <section
 //       id="why-us"
 //       aria-labelledby="why-heading"
-//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-5 sm:py-20 md:-mt-20 lg:py-24"
+//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F3F8F5] to-white py-5 sm:py-20 md:-mt-20 lg:py-24"
 //     >
 //       {/* Decorative background shapes */}
 //       <div
 //         aria-hidden="true"
 //         className="pointer-events-none absolute inset-0 -z-10"
 //       >
-//         <div className="absolute -left-24 bottom-0 h-80 w-80 rounded-full bg-[#EF303B]/[0.05] blur-3xl" />
-//         <div className="absolute -right-24 top-0 h-96 w-96 rounded-full bg-[#214779]/[0.05] blur-3xl" />
-//         <div className="absolute -left-16 top-1/3 h-64 w-64 rounded-full border-[22px] border-[#EF303B]/[0.06]" />
+//         <div className="absolute -left-24 bottom-0 h-80 w-80 rounded-full bg-[#ED6E21]/[0.05] blur-3xl" />
+//         <div className="absolute -right-24 top-0 h-96 w-96 rounded-full bg-[#0F5743]/[0.05] blur-3xl" />
+//         <div className="absolute -left-16 top-1/3 h-64 w-64 rounded-full border-[22px] border-[#ED6E21]/[0.06]" />
 //       </div>
 
 //       <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-8 lg:px-12 2xl:max-w-[1440px]">
@@ -124,9 +124,9 @@
 //             >
 //               <span
 //                 aria-hidden="true"
-//                 className="h-[2px] w-10 bg-[#EF303B]"
+//                 className="h-[2px] w-10 bg-[#ED6E21]"
 //               />
-//               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#102C4D] sm:text-sm">
+//               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0A4033] sm:text-sm">
 //                 Why Choose Us
 //               </p>
 //             </motion.div>
@@ -136,10 +136,10 @@
 //               variants={fadeUp}
 //               className="mt-5 max-w-[520px] text-[2rem] font-extrabold leading-[1.1] tracking-tight min-[400px]:text-4xl sm:text-5xl xl:text-[3.25rem]"
 //             >
-//               <span className="block text-[#102C4D]">
+//               <span className="block text-[#0A4033]">
 //                 Banking on Trust.
 //               </span>
-//               <span className="block text-[#EF303B]">
+//               <span className="block text-[#ED6E21]">
 //                 Building Financial Confidence.
 //               </span>
 //             </motion.h2>
@@ -147,13 +147,13 @@
 //             <motion.div
 //               variants={fadeUp}
 //               aria-hidden="true"
-//               className="mt-5 h-1 w-10 rounded-full bg-gradient-to-r from-[#EF303B] to-[#214779]"
+//               className="mt-5 h-1 w-10 rounded-full bg-gradient-to-r from-[#ED6E21] to-[#0F5743]"
 //             />
 
 //             {/* Family image */}
 //             <motion.figure
 //               variants={fadeUp}
-//               className="group/img relative m-0 mt-8 w-full overflow-hidden rounded-3xl rounded-tl-[3.5rem] border border-[#214779]/50 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/90 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:mt-5 sm:rounded-tl-[5rem]"
+//               className="group/img relative m-0 mt-8 w-full overflow-hidden rounded-3xl rounded-tl-[3.5rem] border border-[#0F5743]/50 bg-[#F3F8F5] shadow-[0_24px_50px_-24px_rgba(10,64,51,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#0F5743]/90 hover:shadow-[0_28px_56px_-22px_rgba(10,64,51,0.80)] sm:mt-5 sm:rounded-tl-[5rem]"
 //             >
 //               <img
 //                 src={familyImage}
@@ -198,7 +198,7 @@
 
 //                     {/* Feature content */}
 //                     <div className="min-w-0 flex-1">
-//                       <h3 className="text-sm font-extrabold leading-snug text-[#102C4D] sm:text-base xl:text-lg">
+//                       <h3 className="text-sm font-extrabold leading-snug text-[#0A4033] sm:text-base xl:text-lg">
 //                         {title}
 //                       </h3>
 
@@ -207,7 +207,7 @@
 //                         className={`mt-2 block h-[3px] w-8 rounded-full ${t.underline}`}
 //                       />
 
-//                       <p className="mt-1.5 text-xs leading-relaxed text-[#334155] sm:text-[13px] xl:text-sm">
+//                       <p className="mt-1.5 text-xs leading-relaxed text-[#26332E] sm:text-[13px] xl:text-sm">
 //                         {description}
 //                       </p>
 //                     </div>
@@ -260,35 +260,35 @@ const whyChooseContent = {
         title: "Member-Focused Approach",
         description:
           "We aim to understand our members' needs and provide relevant information about available financial services.",
-        tone: "red",
+        tone: "orange",
       },
       {
         icon: MessageCircle,
         title: "Transparent Communication",
         description:
           "We encourage informed decisions through clear information about scheme conditions and eligibility.",
-        tone: "blue",
+        tone: "green",
       },
       {
         icon: Coins,
         title: "Savings-Oriented Solutions",
         description:
           "Explore different savings options to support your financial planning.",
-        tone: "red",
+        tone: "orange",
       },
       {
         icon: LayoutGrid,
         title: "Multiple Financial Services",
         description:
           "Access information about available deposit schemes and credit facilities in one place.",
-        tone: "blue",
+        tone: "green",
       },
       {
         icon: ShieldCheck,
         title: "Responsible Service",
         description:
           "Our services are provided in accordance with applicable policies, procedures, and requirements.",
-        tone: "red",
+        tone: "orange",
       },
     ],
   },
@@ -304,54 +304,54 @@ const whyChooseContent = {
         title: "सदस्य-केंद्रित दृष्टिकोण",
         description:
           "हमारा उद्देश्य अपने सदस्यों की आवश्यकताओं को समझना और उपलब्ध वित्तीय सेवाओं के बारे में प्रासंगिक जानकारी प्रदान करना है।",
-        tone: "red",
+        tone: "orange",
       },
       {
         icon: MessageCircle,
         title: "पारदर्शी संवाद",
         description:
           "हम योजना की शर्तों और पात्रता के बारे में स्पष्ट जानकारी के माध्यम से सूचित निर्णयों को प्रोत्साहित करते हैं।",
-        tone: "blue",
+        tone: "green",
       },
       {
         icon: Coins,
         title: "बचत-उन्मुख समाधान",
         description:
           "अपनी वित्तीय योजना को समर्थन देने के लिए विभिन्न बचत विकल्पों का अन्वेषण करें।",
-        tone: "red",
+        tone: "orange",
       },
       {
         icon: LayoutGrid,
         title: "विविध वित्तीय सेवाएँ",
         description:
           "उपलब्ध जमा योजनाओं और ऋण सुविधाओं के बारे में जानकारी एक ही स्थान पर प्राप्त करें।",
-        tone: "blue",
+        tone: "green",
       },
       {
         icon: ShieldCheck,
         title: "जिम्मेदार सेवा",
         description:
           "हमारी सेवाएँ लागू नीतियों, प्रक्रियाओं और आवश्यकताओं के अनुसार प्रदान की जाती हैं।",
-        tone: "red",
+        tone: "orange",
       },
     ],
   },
 };
 
 const tones = {
-  red: {
-    card: "border-[#EF303B]/65 bg-gradient-to-br from-[#EF303B]/[0.13] to-[#EF303B]/[0.04] shadow-[0_10px_28px_-18px_rgba(239,48,59,0.55)] group-hover/card:border-[#EF303B]/100 group-hover/card:shadow-[0_20px_40px_-18px_rgba(239,48,59,0.70)]",
-    icon: "bg-[#EF303B]/20 text-[#EF303B]",
-    underline: "bg-[#EF303B]",
+  orange: {
+    card: "border-[#ED6E21]/65 bg-gradient-to-br from-[#ED6E21]/[0.13] to-[#ED6E21]/[0.04] shadow-[0_10px_28px_-18px_rgba(237,110,33,0.55)] group-hover/card:border-[#ED6E21]/100 group-hover/card:shadow-[0_20px_40px_-18px_rgba(237,110,33,0.70)]",
+    icon: "bg-[#ED6E21]/20 text-[#ED6E21]",
+    underline: "bg-[#ED6E21]",
     arrow:
-      "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
+      "border-[#ED6E21]/60 text-[#ED6E21] group-hover/card:border-[#ED6E21] group-hover/card:bg-[#ED6E21] group-hover/card:text-white",
   },
-  blue: {
-    card: "border-[#214779]/65 bg-gradient-to-br from-[#214779]/[0.13] to-[#214779]/[0.04] shadow-[0_10px_28px_-18px_rgba(16,44,77,0.55)] group-hover/card:border-[#214779]/99 group-hover/card:shadow-[0_20px_40px_-18px_rgba(16,44,77,0.70)]",
-    icon: "bg-[#214779]/20 text-[#214779]",
-    underline: "bg-[#214779]",
+  green: {
+    card: "border-[#0F5743]/65 bg-gradient-to-br from-[#0F5743]/[0.13] to-[#0F5743]/[0.04] shadow-[0_10px_28px_-18px_rgba(10,64,51,0.55)] group-hover/card:border-[#0F5743]/99 group-hover/card:shadow-[0_20px_40px_-18px_rgba(10,64,51,0.70)]",
+    icon: "bg-[#0F5743]/20 text-[#0F5743]",
+    underline: "bg-[#0F5743]",
     arrow:
-      "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
+      "border-[#0F5743]/60 text-[#0F5743] group-hover/card:border-[#0F5743] group-hover/card:bg-[#0F5743] group-hover/card:text-white",
   },
 };
 
@@ -391,16 +391,16 @@ export default function WhyChooseUs() {
     <section
       id="why-us"
       aria-labelledby="why-heading"
-      className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-5 sm:py-20 md:-mt-20 lg:py-24"
+      className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F3F8F5] to-white py-5 sm:py-20 md:-mt-20 lg:py-24"
     >
       {/* Decorative background shapes */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10"
       >
-        <div className="absolute -left-24 bottom-0 h-80 w-80 rounded-full bg-[#EF303B]/[0.05] blur-3xl" />
-        <div className="absolute -right-24 top-0 h-96 w-96 rounded-full bg-[#214779]/[0.05] blur-3xl" />
-        <div className="absolute -left-16 top-1/3 h-64 w-64 rounded-full border-[22px] border-[#EF303B]/[0.06]" />
+        <div className="absolute -left-24 bottom-0 h-80 w-80 rounded-full bg-[#ED6E21]/[0.05] blur-3xl" />
+        <div className="absolute -right-24 top-0 h-96 w-96 rounded-full bg-[#0F5743]/[0.05] blur-3xl" />
+        <div className="absolute -left-16 top-1/3 h-64 w-64 rounded-full border-[22px] border-[#ED6E21]/[0.06]" />
       </div>
 
       <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-8 lg:px-12 2xl:max-w-[1440px]">
@@ -419,9 +419,9 @@ export default function WhyChooseUs() {
             >
               <span
                 aria-hidden="true"
-                className="h-[2px] w-10 bg-[#EF303B]"
+                className="h-[2px] w-10 bg-[#ED6E21]"
               />
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#102C4D] sm:text-sm">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0A4033] sm:text-sm">
                 {copy.eyebrow}
               </p>
             </motion.div>
@@ -435,10 +435,10 @@ export default function WhyChooseUs() {
                   : "max-w-[520px] text-[2rem] leading-[1.1] min-[400px]:text-4xl sm:text-5xl xl:text-[3.25rem]"
               }`}
             >
-              <span className="block text-[#102C4D]">
+              <span className="block text-[#0A4033]">
                 {copy.headingLine1}
               </span>
-              <span className="block text-[#EF303B]">
+              <span className="block text-[#ED6E21]">
                 {copy.headingLine2}
               </span>
             </motion.h2>
@@ -446,13 +446,13 @@ export default function WhyChooseUs() {
             <motion.div
               variants={fadeUp}
               aria-hidden="true"
-              className="mt-5 h-1 w-10 rounded-full bg-gradient-to-r from-[#EF303B] to-[#214779]"
+              className="mt-5 h-1 w-10 rounded-full bg-gradient-to-r from-[#ED6E21] to-[#0F5743]"
             />
 
             {/* Family image */}
             <motion.figure
               variants={fadeUp}
-              className="group/img relative m-0 mt-8 w-full overflow-hidden rounded-3xl rounded-tl-[3.5rem] border border-[#214779]/60 bg-[#F5F7FB] shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/99 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:mt-5 sm:rounded-tl-[5rem] lg:flex lg:flex-1"
+              className="group/img relative m-0 mt-8 w-full overflow-hidden rounded-3xl rounded-tl-[3.5rem] border border-[#0F5743]/60 bg-[#F3F8F5] shadow-[0_24px_50px_-24px_rgba(10,64,51,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#0F5743]/99 hover:shadow-[0_28px_56px_-22px_rgba(10,64,51,0.80)] sm:mt-5 sm:rounded-tl-[5rem] lg:flex lg:flex-1"
             >
               <img
                 src={familyImage}
@@ -497,7 +497,7 @@ export default function WhyChooseUs() {
 
                     {/* Feature content */}
                     <div className="min-w-0 flex-1">
-                      <h3 className="text-sm font-extrabold leading-snug text-[#102C4D] sm:text-base xl:text-lg">
+                      <h3 className="text-sm font-extrabold leading-snug text-[#0A4033] sm:text-base xl:text-lg">
                         {title}
                       </h3>
 
@@ -506,7 +506,7 @@ export default function WhyChooseUs() {
                         className={`mt-2 block h-[3px] w-8 rounded-full ${t.underline}`}
                       />
 
-                      <p className="mt-1.5 text-xs leading-relaxed text-[#334155] sm:text-[13px] xl:text-sm">
+                      <p className="mt-1.5 text-xs leading-relaxed text-[#26332E] sm:text-[13px] xl:text-sm">
                         {description}
                       </p>
                     </div>

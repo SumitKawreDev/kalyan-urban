@@ -20,9 +20,9 @@
 // const NAVBAR_OFFSET = 80; // approx. navbar height in px; adjust if needed
 
 // const trustItems = [
-//   { icon: ShieldCheck, label: "Trusted Co-operative Society", tone: "red" },
-//   { icon: Users, label: "Member-Focused Approach", tone: "navy" },
-//   { icon: TrendingUp, label: "Savings-Oriented Solutions", tone: "red" },
+//   { icon: ShieldCheck, label: "Trusted Co-operative Society", tone: "orange" },
+//   { icon: Users, label: "Member-Focused Approach", tone: "green" },
+//   { icon: TrendingUp, label: "Savings-Oriented Solutions", tone: "orange" },
 // ];
 
 // const container = {
@@ -79,12 +79,12 @@
 //     <section
 //       id="home"
 //       aria-labelledby="hero-heading"
-//       className="relative isolate overflow-hidden bg-[#F5F7FB]"
+//       className="relative isolate overflow-hidden bg-[#F3F8F5]"
 //     >
 //       {/* Soft background glow */}
 //       {/* <div
 //         aria-hidden="true"
-//         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,#ffffff_0%,#F5F7FB_55%,#e6eef9_100%)]"
+//         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,#ffffff_0%,#F3F8F5_55%,#e6eef9_100%)]"
 //       /> */}
 
 //       <div className="mx-auto flex w-full max-w-[1600px] flex-col">
@@ -97,8 +97,8 @@
 //         >
 //           {/* Eyebrow */}
 //           <motion.div variants={fadeIn} className="flex items-center gap-3">
-//             <span aria-hidden="true" className="h-[2px] w-8 shrink-0 bg-[#EF303B] sm:w-12" />
-//             <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#214779] sm:text-xs md:text-sm">
+//             <span aria-hidden="true" className="h-[2px] w-8 shrink-0 bg-[#ED6E21] sm:w-12" />
+//             <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#0F5743] sm:text-xs md:text-sm">
 //               Your Financial Goals. Our Commitment.
 //             </p>
 //           </motion.div>
@@ -108,10 +108,10 @@
 //             id="hero-heading"
 //             className="mt-5 text-[2.1rem] font-extrabold leading-[1.08] tracking-tight min-[375px]:text-[2.4rem] sm:text-5xl md:text-6xl lg:text-[3.25rem] xl:text-6xl 2xl:text-[4.25rem]"
 //           >
-//             <motion.span variants={fadeUp} className="block text-[#214779]">
+//             <motion.span variants={fadeUp} className="block text-[#0F5743]">
 //               Build Your Savings.
 //             </motion.span>
-//             <motion.span variants={fadeUp} className="block text-[#EF303B]">
+//             <motion.span variants={fadeUp} className="block text-[#ED6E21]">
 //               Plan Your Future.
 //             </motion.span>
 //           </h1>
@@ -119,7 +119,7 @@
 //           {/* Description */}
 //           <motion.p
 //             variants={fadeUp}
-//             className="mt-5 max-w-xl text-[15px] leading-relaxed text-[#334155] sm:text-base md:text-lg lg:max-w-lg xl:max-w-xl"
+//             className="mt-5 max-w-xl text-[15px] leading-relaxed text-[#64756D] sm:text-base md:text-lg lg:max-w-lg xl:max-w-xl"
 //           >
 //             Discover savings opportunities and financial solutions designed around your needs.
 //             Kalyan Urban Co-operative Credit Society Limited aims to support its members through
@@ -137,7 +137,7 @@
 //               onClick={(e) => scrollToSection(e, SERVICES_ID)}
 //               whileHover={reduceMotion ? undefined : { y: -3 }}
 //               whileTap={reduceMotion ? undefined : { scale: 0.98 }}
-//               className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg bg-[#EF303B] px-6 py-3 text-base font-semibold text-white shadow-[0_10px_24px_-8px_rgba(239,48,59,0.6)] transition-colors hover:bg-[#d92730] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#EF303B]/40"
+//               className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg bg-[#ED6E21] px-6 py-3 text-base font-semibold text-white shadow-[0_10px_24px_-8px_rgba(237,110,33,0.6)] transition-colors hover:bg-[#C95716] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#ED6E21]/40"
 //             >
 //               Explore Our Services
 //               <ArrowRight
@@ -152,7 +152,7 @@
 //               onClick={(e) => scrollToSection(e, CONTACT_ID)}
 //               whileHover={reduceMotion ? undefined : { y: -3 }}
 //               whileTap={reduceMotion ? undefined : { scale: 0.98 }}
-//               className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-[#214779]/65 bg-white/99 px-6 py-3 text-base font-semibold text-[#214779] shadow-[0_8px_20px_-10px_rgba(16,44,77,0.70)] backdrop-blur transition-colors hover:border-[#214779] hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#214779]/80"
+//               className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-[#0F5743]/65 bg-white/99 px-6 py-3 text-base font-semibold text-[#0F5743] shadow-[0_8px_20px_-10px_rgba(10,64,51,0.70)] backdrop-blur transition-colors hover:border-[#0F5743] hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0F5743]/80"
 //             >
 //               Contact Us
 //               <ArrowRight
@@ -175,14 +175,14 @@
 //               >
 //                 <span
 //                   className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${
-//                     tone === "red"
-//                       ? "bg-[#EF303B]/30 text-[#EF303B] ring-1 ring-[#EF303B]/60"
-//                       : "bg-[#214779]/30 text-[#214779] ring-1 ring-[#214779]/60"
+//                     tone === "orange"
+//                       ? "bg-[#ED6E21]/30 text-[#ED6E21] ring-1 ring-[#ED6E21]/60"
+//                       : "bg-[#0F5743]/30 text-[#0F5743] ring-1 ring-[#0F5743]/60"
 //                   }`}
 //                 >
 //                   <Icon aria-hidden="true" className="h-5 w-5" />
 //                 </span>
-//                 <span className="text-sm font-medium leading-snug text-[#102C4D]">
+//                 <span className="text-sm font-medium leading-snug text-[#0A4033]">
 //                   {label}
 //                 </span>
 //               </motion.li>
@@ -191,12 +191,12 @@
 
 //           {/* Divider + supporting line */}
 //           <motion.div variants={fadeIn} className="mt-8">
-//             <hr className="border-0 border-t border-[#214779]/70" />
-//             <p className="mt-4 text-[10px] font-medium uppercase leading-relaxed tracking-[0.14em] text-[#334155] sm:text-xs">
+//             <hr className="border-0 border-t border-[#0F5743]/70" />
+//             <p className="mt-4 text-[10px] font-medium uppercase leading-relaxed tracking-[0.14em] text-[#64756D] sm:text-xs">
 //               Accessible Deposits
-//               <span aria-hidden="true" className="mx-2 text-[#214779]/90">|</span>
+//               <span aria-hidden="true" className="mx-2 text-[#0F5743]/90">|</span>
 //               Loan Facilities
-//               <span aria-hidden="true" className="mx-2 text-[#214779]/90">|</span>
+//               <span aria-hidden="true" className="mx-2 text-[#0F5743]/90">|</span>
 //               Responsible Financial Services
 //             </p>
 //           </motion.div>
@@ -224,12 +224,12 @@
 //           {/* Fade into the content on mobile (top edge) */}
 //           <div
 //             aria-hidden="true"
-//             className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-[#F5F7FB] to-transparent lg:hidden"
+//             className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-[#F3F8F5] to-transparent lg:hidden"
 //           />
 //           {/* Fade into the text on desktop (left edge) */}
 //           <div
 //             aria-hidden="true"
-//             className="pointer-events-none absolute inset-y-0 left-0 hidden w-2/5 bg-gradient-to-r from-[#F5F7FB] via-[#F5F7FB]/60 to-transparent lg:block"
+//             className="pointer-events-none absolute inset-y-0 left-0 hidden w-2/5 bg-gradient-to-r from-[#F3F8F5] via-[#F3F8F5]/60 to-transparent lg:block"
 //           />
 //         </motion.div>
 //       </div>
@@ -258,12 +258,12 @@ import heroImage from "../assets/images/hero-bg.png";
 // ⚠️ Attach these IDs to your existing sections (or change them here).
 const SERVICES_ID = "services";
 const CONTACT_ID = "contact";
-const NAVBAR_OFFSET = 80; // approx. navbar height in px; adjust if needed
+const NAVBAR_OFFSET = 84;
 
 const trustItems = [
-  { icon: ShieldCheck, label: "Trusted Co-operative Society", tone: "red" },
-  { icon: Users, label: "Member-Focused Approach", tone: "navy" },
-  { icon: TrendingUp, label: "Savings-Oriented Solutions", tone: "red" },
+  { icon: ShieldCheck, label: "Trusted Co-operative Society", tone: "orange" },
+  { icon: Users, label: "Member-Focused Approach", tone: "green" },
+  { icon: TrendingUp, label: "Savings-Oriented Solutions", tone: "orange" },
 ];
 
 const container = {
@@ -321,12 +321,12 @@ export default function Hero() {
     <section
       id="home"
       aria-labelledby="hero-heading"
-      className="relative isolate overflow-hidden bg-[#F5F7FB]"
+      className="relative isolate overflow-hidden bg-[#F3F8F5]"
     >
       {/* Soft background glow */}
       {/* <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,#ffffff_0%,#F5F7FB_55%,#e6eef9_100%)]"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,#ffffff_0%,#F3F8F5_55%,#e6eef9_100%)]"
       /> */}
 
       <div className="mx-auto flex w-full max-w-[1600px] flex-col">
@@ -339,8 +339,8 @@ export default function Hero() {
         >
           {/* Eyebrow */}
           <motion.div variants={fadeIn} className="flex items-center gap-3">
-            <span aria-hidden="true" className="h-[2px] w-8 shrink-0 bg-[#EF303B] sm:w-12" />
-            <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#214779] sm:text-xs md:text-sm">
+            <span aria-hidden="true" className="h-[2px] w-8 shrink-0 bg-[#ED6E21] sm:w-12" />
+            <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#0F5743] sm:text-xs md:text-sm">
               {t.hero.eyebrow}
             </p>
           </motion.div>
@@ -350,10 +350,10 @@ export default function Hero() {
             id="hero-heading"
             className="mt-5 text-[2.1rem] font-extrabold leading-[1.08] tracking-tight min-[375px]:text-[2.4rem] sm:text-5xl md:text-6xl lg:text-[3.25rem] xl:text-6xl 2xl:text-[4.25rem]"
           >
-            <motion.span variants={fadeUp} className="block text-[#214779]">
+            <motion.span variants={fadeUp} className="block text-[#0F5743]">
               {t.hero.headingLine1}
             </motion.span>
-            <motion.span variants={fadeUp} className="block text-[#EF303B]">
+            <motion.span variants={fadeUp} className="block text-[#ED6E21]">
               {t.hero.headingLine2}
             </motion.span>
           </h1>
@@ -361,7 +361,7 @@ export default function Hero() {
           {/* Description */}
           <motion.p
             variants={fadeUp}
-            className="mt-5 max-w-xl text-[15px] leading-relaxed text-[#334155] sm:text-base md:text-lg lg:max-w-lg xl:max-w-xl"
+            className="mt-5 max-w-xl text-[15px] leading-relaxed text-[#26332E] sm:text-base md:text-lg lg:max-w-lg xl:max-w-xl"
           >
             {t.hero.description}
           </motion.p>
@@ -377,7 +377,7 @@ export default function Hero() {
               onClick={(e) => scrollToSection(e, SERVICES_ID)}
               whileHover={reduceMotion ? undefined : { y: -3 }}
               whileTap={reduceMotion ? undefined : { scale: 0.98 }}
-              className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg bg-[#EF303B] px-6 py-3 text-base font-semibold text-white shadow-[0_10px_24px_-8px_rgba(239,48,59,0.6)] transition-colors hover:bg-[#d92730] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#EF303B]/40"
+              className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg bg-[#ED6E21] px-6 py-3 text-base font-semibold text-white shadow-[0_10px_24px_-8px_rgba(237,110,33,0.6)] transition-colors hover:bg-[#C95716] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#ED6E21]/40"
             >
               {t.hero.exploreServices}
               <ArrowRight
@@ -392,7 +392,7 @@ export default function Hero() {
               onClick={(e) => scrollToSection(e, CONTACT_ID)}
               whileHover={reduceMotion ? undefined : { y: -3 }}
               whileTap={reduceMotion ? undefined : { scale: 0.98 }}
-              className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-[#214779]/65 bg-white/99 px-6 py-3 text-base font-semibold text-[#214779] shadow-[0_8px_20px_-10px_rgba(16,44,77,0.70)] backdrop-blur transition-colors hover:border-[#214779] hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#214779]/80"
+              className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-lg border border-[#0F5743]/65 bg-white/99 px-6 py-3 text-base font-semibold text-[#0F5743] shadow-[0_8px_20px_-10px_rgba(10,64,51,0.70)] backdrop-blur transition-colors hover:border-[#0F5743] hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0F5743]/80"
             >
               {t.hero.contactUs}
               <ArrowRight
@@ -415,14 +415,14 @@ export default function Hero() {
               >
                 <span
                   className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${
-                    tone === "red"
-                      ? "bg-[#EF303B]/30 text-[#EF303B] ring-1 ring-[#EF303B]/60"
-                      : "bg-[#214779]/30 text-[#214779] ring-1 ring-[#214779]/60"
+                    tone === "orange"
+                      ? "bg-[#ED6E21]/30 text-[#ED6E21] ring-1 ring-[#ED6E21]/60"
+                      : "bg-[#0F5743]/30 text-[#0F5743] ring-1 ring-[#0F5743]/60"
                   }`}
                 >
                   <Icon aria-hidden="true" className="h-5 w-5" />
                 </span>
-                <span className="text-sm font-medium leading-snug text-[#102C4D]">
+                <span className="text-sm font-medium leading-snug text-[#0A4033]">
                   {t.hero.trustItems[index] || label}
                 </span>
               </motion.li>
@@ -431,12 +431,12 @@ export default function Hero() {
 
           {/* Divider + supporting line */}
           <motion.div variants={fadeIn} className="mt-8">
-            <hr className="border-0 border-t border-[#214779]/70" />
-            <p className="mt-4 text-[10px] font-medium uppercase leading-relaxed tracking-[0.14em] text-[#334155] sm:text-xs">
+            <hr className="border-0 border-t border-[#0F5743]/70" />
+            <p className="mt-4 text-[10px] font-medium uppercase leading-relaxed tracking-[0.14em] text-[#26332E] sm:text-xs">
               {t.hero.pills[0]}
-              <span aria-hidden="true" className="mx-2 text-[#214779]/90">|</span>
+              <span aria-hidden="true" className="mx-2 text-[#0F5743]/90">|</span>
               {t.hero.pills[1]}
-              <span aria-hidden="true" className="mx-2 text-[#214779]/90">|</span>
+              <span aria-hidden="true" className="mx-2 text-[#0F5743]/90">|</span>
               {t.hero.pills[2]}
             </p>
           </motion.div>
@@ -464,12 +464,12 @@ export default function Hero() {
           {/* Fade into the content on mobile (top edge) */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-[#F5F7FB] to-transparent lg:hidden"
+            className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-[#F3F8F5] to-transparent lg:hidden"
           />
           {/* Fade into the text on desktop (left edge) */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-y-0 left-0 hidden w-2/5 bg-gradient-to-r from-[#F5F7FB] via-[#F5F7FB]/60 to-transparent lg:block"
+            className="pointer-events-none absolute inset-y-0 left-0 hidden w-2/5 bg-gradient-to-r from-[#F3F8F5] via-[#F3F8F5]/60 to-transparent lg:block"
           />
         </motion.div>
       </div>

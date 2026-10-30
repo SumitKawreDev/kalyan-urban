@@ -116,23 +116,23 @@
 // ];
 
 // const tones = {
-//   red: {
-//   panel: "border-[#EF303B]/60 bg-gradient-to-br from-[#EF303B]/[0.13] via-[#EF303B]/[0.06] to-white shadow-[0_18px_44px_-28px_rgba(239,48,59,0.55)]",
-//   headIcon: "bg-[#EF303B]/20 text-[#EF303B]",
-//   underline: "bg-[#EF303B]",
-//   explore: "border-[#EF303B] text-[#EF303B] hover:bg-[#EF303B] hover:text-white focus-visible:ring-[#EF303B]/60 active:bg-[#d92730] active:text-white",
-//   card: "border-[#EF303B]/60 hover:border-[#EF303B]/80 hover:shadow-[0_18px_36px_-20px_rgba(239,48,59,0.70)]",
-//   icon: "bg-[#EF303B]/20 text-[#EF303B]",
-//   arrow: "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
+//   orange: {
+//   panel: "border-[#ED6E21]/60 bg-gradient-to-br from-[#ED6E21]/[0.13] via-[#ED6E21]/[0.06] to-white shadow-[0_18px_44px_-28px_rgba(237,110,33,0.55)]",
+//   headIcon: "bg-[#ED6E21]/20 text-[#ED6E21]",
+//   underline: "bg-[#ED6E21]",
+//   explore: "border-[#ED6E21] text-[#ED6E21] hover:bg-[#ED6E21] hover:text-white focus-visible:ring-[#ED6E21]/60 active:bg-[#C95716] active:text-white",
+//   card: "border-[#ED6E21]/60 hover:border-[#ED6E21]/80 hover:shadow-[0_18px_36px_-20px_rgba(237,110,33,0.70)]",
+//   icon: "bg-[#ED6E21]/20 text-[#ED6E21]",
+//   arrow: "border-[#ED6E21]/60 text-[#ED6E21] group-hover/card:border-[#ED6E21] group-hover/card:bg-[#ED6E21] group-hover/card:text-white",
 // },
-//   blue: {
-//   panel: "border-[#214779]/60 bg-gradient-to-br from-[#214779]/[0.13] via-[#214779]/[0.06] to-white shadow-[0_18px_44px_-28px_rgba(16,44,77,0.55)]",
-//   headIcon: "bg-[#214779]/20 text-[#214779]",
-//   underline: "bg-[#214779]",
-//   explore: "border-[#214779] text-[#214779] hover:bg-[#214779] hover:text-white focus-visible:ring-[#214779]/60 active:bg-[#102C4D] active:text-white",
-//   card: "border-[#214779]/60 hover:border-[#214779]/80 hover:shadow-[0_18px_36px_-20px_rgba(16,44,77,0.70)]",
-//   icon: "bg-[#214779]/20 text-[#214779]",
-//   arrow: "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
+//   green: {
+//   panel: "border-[#0F5743]/60 bg-gradient-to-br from-[#0F5743]/[0.13] via-[#0F5743]/[0.06] to-white shadow-[0_18px_44px_-28px_rgba(10,64,51,0.55)]",
+//   headIcon: "bg-[#0F5743]/20 text-[#0F5743]",
+//   underline: "bg-[#0F5743]",
+//   explore: "border-[#0F5743] text-[#0F5743] hover:bg-[#0F5743] hover:text-white focus-visible:ring-[#0F5743]/60 active:bg-[#0A4033] active:text-white",
+//   card: "border-[#0F5743]/60 hover:border-[#0F5743]/80 hover:shadow-[0_18px_36px_-20px_rgba(10,64,51,0.70)]",
+//   icon: "bg-[#0F5743]/20 text-[#0F5743]",
+//   arrow: "border-[#0F5743]/60 text-[#0F5743] group-hover/card:border-[#0F5743] group-hover/card:bg-[#0F5743] group-hover/card:text-white",
 // },
 // };
 
@@ -177,7 +177,7 @@
 //           </span>
 //           <div className="min-w-0 sm:flex sm:flex-wrap sm:items-center sm:gap-x-6 sm:gap-y-1">
 //             <div>
-//               <h3 className="text-2xl font-extrabold text-[#102C4D] sm:text-3xl">
+//               <h3 className="text-2xl font-extrabold text-[#0A4033] sm:text-3xl">
 //                 {title}
 //               </h3>
 //               <span
@@ -185,7 +185,7 @@
 //                 className={`mt-1.5 block h-[3px] w-8 rounded-full ${t.underline}`}
 //               />
 //             </div>
-//             <p className="mt-2 max-w-xl text-sm leading-relaxed text-[#334155] sm:mt-0 sm:text-[15px]">
+//             <p className="mt-2 max-w-xl text-sm leading-relaxed text-[#26332E] sm:mt-0 sm:text-[15px]">
 //               {subtitle}
 //             </p>
 //           </div>
@@ -210,10 +210,10 @@
 //           // Stationary hover trigger so the lifted card can't cause flicker.
 //           <motion.li key={no} variants={fadeUp} className="group/card flex">
 //             <article
-//               className={`relative flex w-full transform-gpu flex-col overflow-hidden rounded-2xl border bg-white/85 p-5 shadow-[0_8px_22px_-16px_rgba(16,44,77,0.25)] transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-1 motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 ${t.card}`}
+//               className={`relative flex w-full transform-gpu flex-col overflow-hidden rounded-2xl border bg-white/85 p-5 shadow-[0_8px_22px_-16px_rgba(10,64,51,0.25)] transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-1 motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 ${t.card}`}
 //             >
 //               <div className="flex items-start justify-between gap-3">
-//                 <span className="text-base font-semibold text-[#EF303B]">{no}</span>
+//                 <span className="text-base font-semibold text-[#ED6E21]">{no}</span>
 //                 <span
 //                   className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${t.icon}`}
 //                 >
@@ -221,10 +221,10 @@
 //                 </span>
 //               </div>
 
-//               <h4 className="mt-3 text-lg font-bold leading-snug text-[#102C4D]">
+//               <h4 className="mt-3 text-lg font-bold leading-snug text-[#0A4033]">
 //                 {name}
 //               </h4>
-//               <p className="mt-2 text-sm leading-relaxed text-[#334155]">
+//               <p className="mt-2 text-sm leading-relaxed text-[#26332E]">
 //                 {description}
 //               </p>
 
@@ -234,7 +234,7 @@
 //                   aria-hidden="true"
 //                   strokeWidth={1.25}
 //                   className={`h-10 w-10 opacity-60 ${
-//                   tone === "red" ? "text-[#EF303B]" : "text-[#214779]"
+//                   tone === "orange" ? "text-[#ED6E21]" : "text-[#0F5743]"
 //                 }`}
 //                 />
 //                 <span
@@ -260,13 +260,13 @@
 //     <section
 //       id="services"
 //       aria-labelledby="services-heading"
-//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-10 sm:py-20 md:-mt-20 lg:py-20"
+//       className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F3F8F5] to-white py-10 sm:py-20 md:-mt-20 lg:py-20"
 //     >
 //       {/* Decorative shapes */}
 //       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
-//         <div className="absolute -left-28 top-10 h-80 w-80 rounded-full bg-[#214779]/[0.05] blur-3xl" />
-//         <div className="absolute -right-24 -top-16 h-96 w-96 rounded-full border-[28px] border-[#EF303B]/[0.07]" />
-//         <div className="absolute -right-20 bottom-20 h-72 w-72 rounded-full bg-[#EF303B]/[0.04] blur-3xl" />
+//         <div className="absolute -left-28 top-10 h-80 w-80 rounded-full bg-[#0F5743]/[0.05] blur-3xl" />
+//         <div className="absolute -right-24 -top-16 h-96 w-96 rounded-full border-[28px] border-[#ED6E21]/[0.07]" />
+//         <div className="absolute -right-20 bottom-20 h-72 w-72 rounded-full bg-[#ED6E21]/[0.04] blur-3xl" />
 //       </div>
 
 //       <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-8 lg:px-10 2xl:max-w-[1440px]">
@@ -280,8 +280,8 @@
 //             className="min-w-0 text-left"
 //           >
 //             <motion.div variants={fadeUp} className="flex items-center gap-3">
-//               <span aria-hidden="true" className="h-[2px] w-10 bg-[#EF303B] sm:w-12" />
-//               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EF303B] sm:text-sm">
+//               <span aria-hidden="true" className="h-[2px] w-10 bg-[#ED6E21] sm:w-12" />
+//               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#ED6E21] sm:text-sm">
 //                 Our Services
 //               </p>
 //             </motion.div>
@@ -291,19 +291,19 @@
 //               variants={fadeUp}
 //               className="mt-5 text-[2rem] font-extrabold leading-[1.1] tracking-tight min-[400px]:text-4xl sm:text-5xl xl:text-[3.4rem]"
 //             >
-//               <span className="block text-[#102C4D]">Financial Solutions</span>
-//               <span className="block text-[#EF303B]">for Your Needs</span>
+//               <span className="block text-[#0A4033]">Financial Solutions</span>
+//               <span className="block text-[#ED6E21]">for Your Needs</span>
 //             </motion.h2>
 
 //             <motion.div
 //               variants={fadeUp}
 //               aria-hidden="true"
-//               className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#EF303B] to-[#214779]"
+//               className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#ED6E21] to-[#0F5743]"
 //             />
 
 //             <motion.p
 //               variants={fadeUp}
-//               className="mt-6 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
+//               className="mt-6 max-w-xl text-base leading-relaxed text-[#26332E] sm:text-lg"
 //             >
 //               Explore our available savings schemes and loan facilities to find
 //               options that align with your financial requirements.
@@ -318,7 +318,7 @@
 //             className="flex min-w-0 flex-col items-center gap-6 sm:flex-row sm:items-center sm:justify-between lg:gap-4"
 //           >
 //             {/* Illustration: stationary wrapper is the hover trigger; only the img scales */}
-//             <div className="group/img w-full max-w-md overflow-hidden rounded-3xl border border-[#214779]/50 bg-white shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/99 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:max-w-none sm:flex-1">
+//             <div className="group/img w-full max-w-md overflow-hidden rounded-3xl border border-[#0F5743]/50 bg-white shadow-[0_24px_50px_-24px_rgba(10,64,51,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#0F5743]/99 hover:shadow-[0_28px_56px_-22px_rgba(10,64,51,0.80)] sm:max-w-none sm:flex-1">
 //               <img
 //                 src={servicesIllustration}
 //                 alt="A classical bank building with stacks of gold coins, a green plant and a rupee coin, symbolising secure savings and growth"
@@ -331,10 +331,10 @@
 //             <ul className="m-0 grid w-full max-w-md list-none grid-cols-1 gap-3 p-0 min-[480px]:grid-cols-3 sm:w-auto sm:max-w-none sm:shrink-0 sm:grid-cols-1 sm:gap-4">
 //               {features.map(({ icon: Icon, label }) => (
 //                 <li key={label} className="flex items-center gap-3">
-//                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#EF303B]/[0.08] text-[#EF303B] shadow-[0_8px_20px_-10px_rgba(239,48,59,0.60)] ring-1 ring-[#EF303B]/60">
+//                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#ED6E21]/[0.08] text-[#ED6E21] shadow-[0_8px_20px_-10px_rgba(237,110,33,0.60)] ring-1 ring-[#ED6E21]/60">
 //                     <Icon aria-hidden="true" className="h-5 w-5" />
 //                   </span>
-//                   <span className="max-w-[7.5rem] text-sm font-medium leading-snug text-[#102C4D]">
+//                   <span className="max-w-[7.5rem] text-sm font-medium leading-snug text-[#0A4033]">
 //                     {label}
 //                   </span>
 //                 </li>
@@ -346,7 +346,7 @@
 //         {/* Groups */}
 //         <div className="mt-12 space-y-6 sm:mt-14 lg:space-y-8">
 //           <ServiceGroup
-//             tone="red"
+//             tone="orange"
 //             headIcon={Coins}
 //             title="Deposit Schemes"
 //             subtitle="Build a better tomorrow with our savings schemes designed for your financial goals."
@@ -355,7 +355,7 @@
 //             gridClass="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 sm:max-lg:[&>li:last-child]:col-span-2"
 //           />
 //           <ServiceGroup
-//             tone="blue"
+//             tone="green"
 //             headIcon={HandCoins}
 //             title="Loan Facilities"
 //             subtitle="Access financial support for your personal, business, and agricultural needs."
@@ -371,13 +371,13 @@
 //             whileInView="show"
 //             viewport={{ once: true, amount: 0.5 }}
 //             role="note"
-//             className="flex items-start gap-3 rounded-2xl border border-[#214779]/60 bg-gradient-to-br from-[#214779]/[0.06] to-white px-4 py-3 shadow-[0_8px_22px_-18px_rgba(16,44,77,0.45)] sm:items-center sm:px-6"
+//             className="flex items-start gap-3 rounded-2xl border border-[#0F5743]/60 bg-gradient-to-br from-[#0F5743]/[0.06] to-white px-4 py-3 shadow-[0_8px_22px_-18px_rgba(10,64,51,0.45)] sm:items-center sm:px-6"
 //           >
 //             <Info
 //               aria-hidden="true"
-//               className="mt-0.5 h-5 w-5 shrink-0 text-[#214779] sm:mt-0"
+//               className="mt-0.5 h-5 w-5 shrink-0 text-[#0F5743] sm:mt-0"
 //             />
-//             <p className="text-xs leading-relaxed text-[#334155] sm:text-sm">
+//             <p className="text-xs leading-relaxed text-[#26332E] sm:text-sm">
 //               All services are subject to availability, eligibility, documentation,
 //               applicable policies, and approval requirements.
 //             </p>
@@ -423,29 +423,29 @@ import { useLanguage } from "../context/LanguageContext";
 import servicesIllustration from "../assets/images/services-illustration.png";
 
 const tones = {
-  red: {
+  orange: {
     panel:
-      "border-[#EF303B]/60 bg-gradient-to-br from-[#EF303B]/[0.13] via-[#EF303B]/[0.06] to-white shadow-[0_18px_44px_-28px_rgba(239,48,59,0.55)]",
-    headIcon: "bg-[#EF303B]/20 text-[#EF303B]",
-    underline: "bg-[#EF303B]",
+      "border-[#ED6E21]/60 bg-gradient-to-br from-[#ED6E21]/[0.13] via-[#ED6E21]/[0.06] to-white shadow-[0_18px_44px_-28px_rgba(237,110,33,0.55)]",
+    headIcon: "bg-[#ED6E21]/20 text-[#ED6E21]",
+    underline: "bg-[#ED6E21]",
     explore:
-      "border-[#EF303B] text-[#EF303B] hover:bg-[#EF303B] hover:text-white focus-visible:ring-[#EF303B]/60 active:bg-[#d92730] active:text-white",
-    card: "border-[#EF303B]/60 hover:border-[#EF303B]/80 hover:shadow-[0_18px_36px_-20px_rgba(239,48,59,0.70)]",
-    icon: "bg-[#EF303B]/20 text-[#EF303B]",
+      "border-[#ED6E21] text-[#ED6E21] hover:bg-[#ED6E21] hover:text-white focus-visible:ring-[#ED6E21]/60 active:bg-[#C95716] active:text-white",
+    card: "border-[#ED6E21]/60 hover:border-[#ED6E21]/80 hover:shadow-[0_18px_36px_-20px_rgba(237,110,33,0.70)]",
+    icon: "bg-[#ED6E21]/20 text-[#ED6E21]",
     arrow:
-      "border-[#EF303B]/60 text-[#EF303B] group-hover/card:border-[#EF303B] group-hover/card:bg-[#EF303B] group-hover/card:text-white",
+      "border-[#ED6E21]/60 text-[#ED6E21] group-hover/card:border-[#ED6E21] group-hover/card:bg-[#ED6E21] group-hover/card:text-white",
   },
-  blue: {
+  green: {
     panel:
-      "border-[#214779]/60 bg-gradient-to-br from-[#214779]/[0.13] via-[#214779]/[0.06] to-white shadow-[0_18px_44px_-28px_rgba(16,44,77,0.55)]",
-    headIcon: "bg-[#214779]/20 text-[#214779]",
-    underline: "bg-[#214779]",
+      "border-[#0F5743]/60 bg-gradient-to-br from-[#0F5743]/[0.13] via-[#0F5743]/[0.06] to-white shadow-[0_18px_44px_-28px_rgba(10,64,51,0.55)]",
+    headIcon: "bg-[#0F5743]/20 text-[#0F5743]",
+    underline: "bg-[#0F5743]",
     explore:
-      "border-[#214779] text-[#214779] hover:bg-[#214779] hover:text-white focus-visible:ring-[#214779]/60 active:bg-[#102C4D] active:text-white",
-    card: "border-[#214779]/60 hover:border-[#214779]/80 hover:shadow-[0_18px_36px_-20px_rgba(16,44,77,0.70)]",
-    icon: "bg-[#214779]/20 text-[#214779]",
+      "border-[#0F5743] text-[#0F5743] hover:bg-[#0F5743] hover:text-white focus-visible:ring-[#0F5743]/60 active:bg-[#0A4033] active:text-white",
+    card: "border-[#0F5743]/60 hover:border-[#0F5743]/80 hover:shadow-[0_18px_36px_-20px_rgba(10,64,51,0.70)]",
+    icon: "bg-[#0F5743]/20 text-[#0F5743]",
     arrow:
-      "border-[#214779]/60 text-[#214779] group-hover/card:border-[#214779] group-hover/card:bg-[#214779] group-hover/card:text-white",
+      "border-[#0F5743]/60 text-[#0F5743] group-hover/card:border-[#0F5743] group-hover/card:bg-[#0F5743] group-hover/card:text-white",
   },
 };
 
@@ -490,7 +490,7 @@ function ServiceGroup({
           </span>
           <div className="min-w-0 sm:flex sm:flex-wrap sm:items-center sm:gap-x-6 sm:gap-y-1">
             <div>
-              <h3 className="text-2xl font-extrabold text-[#102C4D] sm:text-3xl">
+              <h3 className="text-2xl font-extrabold text-[#0A4033] sm:text-3xl">
                 {title}
               </h3>
               <span
@@ -498,7 +498,7 @@ function ServiceGroup({
                 className={`mt-1.5 block h-[3px] w-8 rounded-full ${t.underline}`}
               />
             </div>
-            <p className="mt-2 max-w-xl text-sm leading-relaxed text-[#334155] sm:mt-0 sm:text-[15px]">
+            <p className="mt-2 max-w-xl text-sm leading-relaxed text-[#26332E] sm:mt-0 sm:text-[15px]">
               {subtitle}
             </p>
           </div>
@@ -510,10 +510,10 @@ function ServiceGroup({
         {items.map(({ no, title: name, description, icon: Icon, deco: Deco }) => (
           <motion.li key={no} variants={fadeUp} className="group/card flex">
             <article
-              className={`relative flex w-full transform-gpu flex-col overflow-hidden rounded-2xl border bg-white/85 p-5 shadow-[0_8px_22px_-16px_rgba(16,44,77,0.25)] transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-1 motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 ${t.card}`}
+              className={`relative flex w-full transform-gpu flex-col overflow-hidden rounded-2xl border bg-white/85 p-5 shadow-[0_8px_22px_-16px_rgba(10,64,51,0.25)] transition-[translate,box-shadow,border-color] duration-300 ease-in-out group-hover/card:-translate-y-1 motion-reduce:transition-none motion-reduce:group-hover/card:translate-y-0 ${t.card}`}
             >
               <div className="flex items-start justify-between gap-3">
-                <span className="text-base font-semibold text-[#EF303B]">{no}</span>
+                <span className="text-base font-semibold text-[#ED6E21]">{no}</span>
                 <span
                   className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${t.icon}`}
                 >
@@ -521,10 +521,10 @@ function ServiceGroup({
                 </span>
               </div>
 
-              <h4 className="mt-3 text-lg font-bold leading-snug text-[#102C4D]">
+              <h4 className="mt-3 text-lg font-bold leading-snug text-[#0A4033]">
                 {name}
               </h4>
-              <p className="mt-2 text-sm leading-relaxed text-[#334155]">
+              <p className="mt-2 text-sm leading-relaxed text-[#26332E]">
                 {description}
               </p>
 
@@ -534,7 +534,7 @@ function ServiceGroup({
                   aria-hidden="true"
                   strokeWidth={1.25}
                   className={`h-10 w-10 opacity-60 ${
-                    tone === "red" ? "text-[#EF303B]" : "text-[#214779]"
+                    tone === "orange" ? "text-[#ED6E21]" : "text-[#0F5743]"
                   }`}
                 />
                 <span
@@ -656,13 +656,13 @@ export default function Services() {
     <section
       id="services"
       aria-labelledby="services-heading"
-      className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F5F7FB] to-white py-10 sm:py-20 md:-mt-20 lg:py-20"
+      className="relative isolate overflow-hidden bg-gradient-to-b from-white via-[#F3F8F5] to-white py-10 sm:py-20 md:-mt-20 lg:py-20"
     >
       {/* Decorative shapes */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -left-28 top-10 h-80 w-80 rounded-full bg-[#214779]/[0.05] blur-3xl" />
-        <div className="absolute -right-24 -top-16 h-96 w-96 rounded-full border-[28px] border-[#EF303B]/[0.07]" />
-        <div className="absolute -right-20 bottom-20 h-72 w-72 rounded-full bg-[#EF303B]/[0.04] blur-3xl" />
+        <div className="absolute -left-28 top-10 h-80 w-80 rounded-full bg-[#0F5743]/[0.05] blur-3xl" />
+        <div className="absolute -right-24 -top-16 h-96 w-96 rounded-full border-[28px] border-[#ED6E21]/[0.07]" />
+        <div className="absolute -right-20 bottom-20 h-72 w-72 rounded-full bg-[#ED6E21]/[0.04] blur-3xl" />
       </div>
 
       <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-8 lg:px-10 2xl:max-w-[1440px]">
@@ -676,8 +676,8 @@ export default function Services() {
             className="min-w-0 text-left"
           >
             <motion.div variants={fadeUp} className="flex items-center gap-3">
-              <span aria-hidden="true" className="h-[2px] w-10 bg-[#EF303B] sm:w-12" />
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EF303B] sm:text-sm">
+              <span aria-hidden="true" className="h-[2px] w-10 bg-[#ED6E21] sm:w-12" />
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#ED6E21] sm:text-sm">
                 {isHi ? "हमारी सेवाएँ" : "Our Services"}
               </p>
             </motion.div>
@@ -687,10 +687,10 @@ export default function Services() {
               variants={fadeUp}
               className="mt-5 text-[2rem] font-extrabold leading-[1.1] tracking-tight min-[400px]:text-4xl sm:text-5xl xl:text-[3.4rem]"
             >
-              <span className="block text-[#102C4D]">
+              <span className="block text-[#0A4033]">
                 {isHi ? "वित्तीय समाधान" : "Financial Solutions"}
               </span>
-              <span className="block text-[#EF303B]">
+              <span className="block text-[#ED6E21]">
                 {isHi ? "आपकी आवश्यकताओं के लिए" : "for Your Needs"}
               </span>
             </motion.h2>
@@ -698,12 +698,12 @@ export default function Services() {
             <motion.div
               variants={fadeUp}
               aria-hidden="true"
-              className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#EF303B] to-[#214779]"
+              className="mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-[#ED6E21] to-[#0F5743]"
             />
 
             <motion.p
               variants={fadeUp}
-              className="mt-6 max-w-xl text-base leading-relaxed text-[#334155] sm:text-lg"
+              className="mt-6 max-w-xl text-base leading-relaxed text-[#26332E] sm:text-lg"
             >
               {isHi
                 ? "अपनी वित्तीय आवश्यकताओं के अनुकूल विकल्पों को खोजने के लिए हमारी उपलब्ध बचत योजनाओं और ऋण सुविधाओं का अन्वेषण करें।"
@@ -719,7 +719,7 @@ export default function Services() {
             className="flex min-w-0 flex-col items-center gap-6 sm:flex-row sm:items-center sm:justify-between lg:gap-4"
           >
             {/* Illustration */}
-            <div className="group/img w-full max-w-md overflow-hidden rounded-3xl border border-[#214779]/50 bg-white shadow-[0_24px_50px_-24px_rgba(16,44,77,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#214779]/99 hover:shadow-[0_28px_56px_-22px_rgba(16,44,77,0.80)] sm:max-w-none sm:flex-1">
+            <div className="group/img w-full max-w-md overflow-hidden rounded-3xl border border-[#0F5743]/50 bg-white shadow-[0_24px_50px_-24px_rgba(10,64,51,0.60)] transition-[border-color,box-shadow] duration-300 ease-in-out hover:border-[#0F5743]/99 hover:shadow-[0_28px_56px_-22px_rgba(10,64,51,0.80)] sm:max-w-none sm:flex-1">
               <img
                 src={servicesIllustration}
                 alt={
@@ -736,10 +736,10 @@ export default function Services() {
             <ul className="m-0 grid w-full max-w-md list-none grid-cols-1 gap-3 p-0 min-[480px]:grid-cols-3 sm:w-auto sm:max-w-none sm:shrink-0 sm:grid-cols-1 sm:gap-4">
               {featureItems.map(({ icon: Icon, label }) => (
                 <li key={label} className="flex items-center gap-3">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#EF303B]/[0.08] text-[#EF303B] shadow-[0_8px_20px_-10px_rgba(239,48,59,0.60)] ring-1 ring-[#EF303B]/60">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#ED6E21]/[0.08] text-[#ED6E21] shadow-[0_8px_20px_-10px_rgba(237,110,33,0.60)] ring-1 ring-[#ED6E21]/60">
                     <Icon aria-hidden="true" className="h-5 w-5" />
                   </span>
-                  <span className="max-w-[7.5rem] text-sm font-medium leading-snug text-[#102C4D]">
+                  <span className="max-w-[7.5rem] text-sm font-medium leading-snug text-[#0A4033]">
                     {label}
                   </span>
                 </li>
@@ -751,7 +751,7 @@ export default function Services() {
         {/* Groups */}
         <div className="mt-12 space-y-6 sm:mt-14 lg:space-y-8">
           <ServiceGroup
-            tone="red"
+            tone="orange"
             headIcon={Coins}
             title={isHi ? "जमा योजनाएँ" : "Deposit Schemes"}
             subtitle={
@@ -764,7 +764,7 @@ export default function Services() {
             gridClass="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 sm:max-lg:[&>li:last-child]:col-span-2"
           />
           <ServiceGroup
-            tone="blue"
+            tone="green"
             headIcon={HandCoins}
             title={isHi ? "ऋण सुविधाएँ" : "Loan Facilities"}
             subtitle={
@@ -784,13 +784,13 @@ export default function Services() {
             whileInView="show"
             viewport={{ once: true, amount: 0.5 }}
             role="note"
-            className="flex items-start gap-3 rounded-2xl border border-[#214779]/60 bg-gradient-to-br from-[#214779]/[0.06] to-white px-4 py-3 shadow-[0_8px_22px_-18px_rgba(16,44,77,0.45)] sm:items-center sm:px-6"
+            className="flex items-start gap-3 rounded-2xl border border-[#0F5743]/60 bg-gradient-to-br from-[#0F5743]/[0.06] to-white px-4 py-3 shadow-[0_8px_22px_-18px_rgba(10,64,51,0.45)] sm:items-center sm:px-6"
           >
             <Info
               aria-hidden="true"
-              className="mt-0.5 h-5 w-5 shrink-0 text-[#214779] sm:mt-0"
+              className="mt-0.5 h-5 w-5 shrink-0 text-[#0F5743] sm:mt-0"
             />
-            <p className="text-xs leading-relaxed text-[#334155] sm:text-sm">
+            <p className="text-xs leading-relaxed text-[#26332E] sm:text-sm">
               {isHi
                 ? "सभी सेवाएँ उपलब्धता, पात्रता, दस्तावेज़ीकरण, लागू नीतियों और स्वीकृति आवश्यकताओं के अधीन हैं।"
                 : "All services are subject to availability, eligibility, documentation, applicable policies, and approval requirements."}

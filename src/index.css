@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  /* Approved Brand Color Palette */
-  --primary-navy: #214779;
-  --deep-navy: #102c4d;
-  --brand-red: #ef303b;
-  --bg-white: #ffffff;
-  --bg-light: #f5f7fb;
-  --text-primary: #183d6b;
-  --text-secondary: #64748b;
-  --navbar-height: 76px;
+  /* Kalyan Urban brand palette */
+  --primary-green: #0F5743;
+  --dark-green: #0A4033;
+  --brand-orange: #ED6E21;
+  --bg-white: #FFFFFF;
+  --bg-light-green: #F3F8F5;
+  --bg-light-orange: #FFF4EB;
+  --text-primary: #183D32;
+  --text-secondary: #64756D;
+  --border-color: #E3EBE6;
+  --navbar-height: 84px;
 }
 
 /* Global resets & scroll safety */
@@ -31,7 +33,7 @@ body {
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: var(--text-primary);
-  background-color: var(--bg-light);
+  background-color: var(--bg-light-green);
   overflow-x: hidden;
   width: 100%;
 }
@@ -53,7 +55,7 @@ html.lenis, html.lenis body {
 
 /* Accessible focus outline */
 :focus-visible {
-  outline: 2px solid var(--brand-red);
+  outline: 2px solid var(--brand-orange);
   outline-offset: 2px;
 }
 

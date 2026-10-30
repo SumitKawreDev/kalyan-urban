@@ -42,11 +42,11 @@ export default function App() {
 
   return (
     <LanguageProvider>
-      <div className="min-h-screen bg-[#F5F7FB] flex flex-col selection:bg-[#EF303B] selection:text-white">
+      <div className="min-h-screen bg-[#F3F8F5] flex flex-col selection:bg-[#ED6E21] selection:text-white">
         {/* Sticky Fixed Navbar */}
         <Navbar />
         {/* Main Content Area - padded to clear the navbar cleanly */}
-        <main className="flex-1 pt-16 sm:pt-20">
+        <main className="flex-1 pt-[var(--navbar-height)]">
           <Hero/>
           <About/>
           <Services/>
